@@ -18,7 +18,7 @@ jobs:
         run: |
           set -euo pipefail
           found=0
-          for area in data ai-ml it-ops; do
+          for area in data ai-ml it-ops experiments; do
             for proj in "$area"/*/; do
               [ -d "$proj" ] || continue
               [ -f "$proj/pyproject.toml" ] || continue

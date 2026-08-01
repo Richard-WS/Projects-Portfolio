@@ -4,7 +4,7 @@ Every project in this portfolio follows the same rules, so anyone — a recruite
 
 ## The rules
 
-1. **One project = one folder**, under `data/`, `ai-ml/`, or `it-ops/`, with a kebab-case name (`data/energy-demand-forecast`).
+1. **One project = one folder**, under `data/`, `ai-ml/`, `it-ops/`, or `experiments/`, with a kebab-case name (`data/energy-demand-forecast`).
 2. **Every new project follows the same layout** — the structure below (package code in `src/`, tests in `tests/`, raw data gitignored) is what the finished projects in this repo demonstrate. Copy an existing project folder as a starting point and rename it.
 3. **Python projects** use `pyproject.toml`, a `src/` package layout, and `pytest`.
 4. **No secrets.** Real credentials live in `.env` (gitignored); the committed `.env.example` shows only the shape.
