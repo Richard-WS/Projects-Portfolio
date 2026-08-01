@@ -38,7 +38,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 | Folder | Contents |
 |---|---|
 | `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/) |
-| `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/) |
+| `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/), [exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/) |
 | `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/) |
 | `docs/` | Project standards and skills matrix |
 
