@@ -44,6 +44,5 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 ## Contact
 
-- Email: richardwseyeau@gmail.com
 - LinkedIn: [linkedin.com/in/richard-w-seyeau](https://linkedin.com/in/richard-w-seyeau)
 - GitHub: [github.com/Richard-WS](https://github.com/Richard-WS)
