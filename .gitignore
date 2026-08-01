@@ -1,1 +1,45 @@
-# Ignore environment variables / secrets
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Secrets & environment ─────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# ── Data (keep the repo lean; document sources in README) ─
+data/raw/
+*.db
+*.sqlite
+*.parquet
+*.feather
+
+# ── Node (unused today, harmless to keep) ─────────────────
+node_modules/
+npm-debug.log*
+
+# ── OS & editors ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
