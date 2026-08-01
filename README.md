@@ -33,6 +33,16 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 - **Owner/Operator, Keirstead Manor Bed & Breakfast** (2017–2020) — ran daily guest operations and service delivery; built booking and guest-profile databases in Access, Excel, and Memento to track reservations and personalise service; maintained a 9.9/10 guest rating.
 - **Citizen-science classifier, Zooniverse** (2024–ongoing) — classifies SuperWASP stellar light curves and reviews NGTS exoplanet-transit candidates: pattern recognition and time-series review on real scientific data.
 
+## Featured projects
+
+- **[Exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/)** — 0.946 cross-validated ROC-AUC on 5,000+ Kepler light curves, zero false positives on the held-out test set. The same transit-hunting pattern I do on Zooniverse, made reproducible.
+
+- **[LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/)** — LoRA fine-tuning on a laptop CPU, validation perplexity 39.8 → 22.0. Config-driven, tested, documented end to end.
+
+- **[Infrastructure health monitor](it-ops/infra-health-monitor/)** — SLO tracking with four check types, transition and breach alerts, self-contained HTML reports. Live demo caught a flaky service and a crashed worker.
+
+- **[Canadian grocery inflation](data/canadian-food-inflation/)** — ten years of StatsCan CPI data showing groceries outrunning overall inflation (+43.4% vs +36.0%), with an EDA notebook and self-contained dashboard.
+
 ## Repo layout
 
 | Folder | Contents |
