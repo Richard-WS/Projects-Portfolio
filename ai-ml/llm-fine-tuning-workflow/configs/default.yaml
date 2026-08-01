@@ -1,0 +1,14 @@
+# Default (real) run configuration.
+model_name: "distilgpt2"
+data_path: "data/raw/dolly_subset.jsonl"
+max_examples: 1000
+val_fraction: 0.1
+max_length: 128
+batch_size: 4
+learning_rate: 3e-4
+epochs: 1
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+seed: 42
+output_dir: "models/fine-tuned"

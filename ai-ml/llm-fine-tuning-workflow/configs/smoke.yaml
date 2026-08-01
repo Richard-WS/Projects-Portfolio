@@ -1,0 +1,15 @@
+# Smoke-test configuration: tiny shape-test model, tiny data, one pass.
+# Validates the pipeline end-to-end quickly; the real run is default.yaml.
+model_name: "sshleifer/tiny-gpt2"
+data_path: "data/raw/dolly_subset.jsonl"
+max_examples: 400
+val_fraction: 0.1
+max_length: 128
+batch_size: 2
+learning_rate: 3e-4
+epochs: 1
+lora_r: 4
+lora_alpha: 8
+lora_dropout: 0.05
+seed: 42
+output_dir: "models/smoke"

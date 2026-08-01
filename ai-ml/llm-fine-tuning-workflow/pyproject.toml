@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-fine-tuning-workflow"
+version = "0.1.0"
+description = "A reproducible instruction fine-tuning workflow for small language models: data prep, LoRA training, evaluation, and local inference."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+train = [
+    "torch",
+    "transformers>=4.46",
+    "datasets",
+    "peft",
+    "accelerate",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
