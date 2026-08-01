@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Environment files — real values never committed; shape shown in .env.example
+.env
+.env.*
+
+# Raw data — downloaded, never committed
+data/raw/
+
+# Trained model artifacts
+outputs/
+
+# OS noise
+.DS_Store

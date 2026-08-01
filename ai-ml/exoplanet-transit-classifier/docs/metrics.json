@@ -1,0 +1,100 @@
+{
+  "chosen_model": "gradient_boosting",
+  "comparison": {
+    "logistic_regression": {
+      "val_roc_auc": 0.8725
+    },
+    "gradient_boosting": {
+      "val_roc_auc": 0.9167
+    }
+  },
+  "cv_roc_auc_mean": 0.9457,
+  "cv_roc_auc_std": 0.0488,
+  "cv_folds": 5,
+  "train_size": 3815,
+  "n_features": 420,
+  "class_counts": {
+    "non_exoplanet": 3787,
+    "exoplanet": 28
+  },
+  "params": {
+    "n_estimators": 200,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "test_size": 0.25,
+    "random_state": 42
+  },
+  "validation": {
+    "roc_auc": 0.9167,
+    "pr_auc": 0.5867,
+    "precision": 0.8,
+    "recall": 0.4444,
+    "f1": 0.5714,
+    "confusion": {
+      "tn": 1262,
+      "fp": 1,
+      "fn": 5,
+      "tp": 4
+    },
+    "n_positive": 9,
+    "n_negative": 1263
+  },
+  "test": {
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1": 0.75,
+    "confusion": {
+      "tn": 565,
+      "fp": 0,
+      "fn": 2,
+      "tp": 3
+    },
+    "n_positive": 5,
+    "n_negative": 565
+  },
+  "top_features": [
+    {
+      "feature": "mean",
+      "importance": 0.620139
+    },
+    {
+      "feature": "std",
+      "importance": 0.08262
+    },
+    {
+      "feature": "skew",
+      "importance": 0.057598
+    },
+    {
+      "feature": "kurtosis",
+      "importance": 0.039573
+    },
+    {
+      "feature": "min",
+      "importance": 0.026954
+    },
+    {
+      "feature": "max",
+      "importance": 0.024149
+    },
+    {
+      "feature": "p01",
+      "importance": 0.017664
+    },
+    {
+      "feature": "p05",
+      "importance": 0.017195
+    },
+    {
+      "feature": "p50",
+      "importance": 0.01718
+    },
+    {
+      "feature": "p95",
+      "importance": 0.015594
+    }
+  ],
+  "importance_source": "gradient_boosting"
+}

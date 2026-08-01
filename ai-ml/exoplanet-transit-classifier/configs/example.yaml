@@ -1,0 +1,35 @@
+# Exoplanet transit classifier — example configuration.
+# Relative paths resolve against this file's directory (configs/), so the
+# data/, docs/ and outputs/ paths below land at the project root.
+
+data:
+  raw_dir: ../data/raw
+  raw_train: exoTrain.csv
+  raw_test: exoTest.csv
+  samples_dir: ../data/samples
+  raw_sample_rows: 20
+
+split:
+  test_size: 0.25
+  random_state: 42
+
+features:
+  detrend_window: 64
+  dip_threshold_mad: 3.0
+  autocorr_max_lag: 400
+
+model:
+  n_estimators: 200
+  max_depth: 3
+  learning_rate: 0.05
+  cv_folds: 5
+
+paths:
+  model_path: ../outputs/model.joblib
+  report_path: ../docs/classification-report.html
+  metrics_path: ../docs/metrics.json
+  feature_train: ../data/samples/features_train.csv.gz
+  feature_val: ../data/samples/features_val.csv.gz
+  feature_test: ../data/samples/features_test.csv.gz
+  raw_sample: ../data/samples/raw_lightcurves_sample.csv
+  predictions_path: ../outputs/predictions.csv
