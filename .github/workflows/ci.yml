@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python-tests:
+    name: Python tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test every Python project
+        run: |
+          set -euo pipefail
+          found=0
+          for area in data ai-ml it-ops; do
+            for proj in "$area"/*/; do
+              [ -d "$proj" ] || continue
+              [ -f "$proj/pyproject.toml" ] || continue
+              echo "── Testing $proj"
+              python -m pip install --quiet -e "$proj[dev]"
+              (cd "$proj" && python -m pytest -q)
+              found=1
+            done
+          done
+          [ "$found" -eq 1 ] && echo "All projects passed." \
+                              || echo "No projects yet — CI is ready for the first one."
