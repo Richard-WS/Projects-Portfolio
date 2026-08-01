@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infrastructure health report</title>
+<style>
+  :root { --fg:#1c2733; --muted:#5b6b7b; --line:#dde5ec; --bg:#f5f8fa; --ok:#1a7f37; --bad:#cf222e; --warn:#9a6700; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--fg); }
+  header { padding:24px 32px; background:#fff; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 4px; font-size:22px; }
+  .sub { color:var(--muted); font-size:13px; }
+  main { padding:24px 32px; max-width:1100px; margin:0 auto; }
+  .cards { display:flex; gap:12px; margin:18px 0 24px; flex-wrap:wrap; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:14px 18px; min-width:150px; }
+  .card .n { font-size:26px; font-weight:600; }
+  .card .l { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .ok { color:var(--ok); } .bad { color:var(--bad); } .warn { color:var(--warn); }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; font-size:13px; }
+  th, td { padding:8px 10px; text-align:left; border-bottom:1px solid var(--line); }
+  th { background:#eef3f7; font-size:12px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); }
+  tr:last-child td { border-bottom:none; }
+  td.num { font-variant-numeric:tabular-nums; }
+  .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:600; }
+  .pill.up { background:#dafbe1; color:var(--ok); }
+  .pill.down { background:#ffebe9; color:var(--bad); }
+  .pill.unknown { background:#eaeef2; color:var(--muted); }
+  h2 { font-size:16px; margin:28px 0 10px; }
+  ul.incidents { background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 14px 10px 32px; font-size:13px; margin:0; }
+  ul.incidents li { padding:4px 0; }
+  .mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; }
+  footer { color:var(--muted); font-size:12px; padding:20px 32px 40px; max-width:1100px; margin:0 auto; line-height:1.5; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Infrastructure health report</h1>
+  <div class="sub">Generated 2026-08-01 21:12 (UTC) — uptime is measured over the samples available in each window; sample counts are shown alongside</div>
+</header>
+<main>
+  <div class="cards"><div class="card"><div class="n">5</div><div class="l">Checks</div></div>
+<div class="card"><div class="n ok">5</div><div class="l">Up now</div></div>
+<div class="card"><div class="n ok">0</div><div class="l">Down now</div></div>
+<div class="card"><div class="n bad">6</div><div class="l">SLO breaches</div></div></div>
+  <h2>Checks vs SLO</h2>
+  <table>
+    <thead>
+      <tr><th>Check</th><th>Type</th><th>Status</th><th>Uptime 24h</th><th>Uptime 7d</th><th>Uptime 30d</th><th>SLO</th><th>Breach</th><th>Est. downtime (30d)</th><th>Budget left (30d)</th></tr>
+    </thead>
+    <tbody><tr><td><strong>api-gateway</strong></td><td>http</td><td><span class="pill up">up</span></td><td class="num">75.0% (15/20)</td><td class="num">75.0% (15/20)</td><td class="num">75.0% (15/20)</td><td class="num">99.9%</td><td class="num bad">yes</td><td class="num">5s</td><td class="num">43m6s</td></tr>
+<tr><td><strong>auth-service</strong></td><td>http</td><td><span class="pill up">up</span></td><td class="num">100.0% (20/20)</td><td class="num">100.0% (20/20)</td><td class="num">100.0% (20/20)</td><td class="num">99.9%</td><td class="num ok">no</td><td class="num">0s</td><td class="num">43m11s</td></tr>
+<tr><td><strong>database-port</strong></td><td>tcp</td><td><span class="pill up">up</span></td><td class="num">100.0% (20/20)</td><td class="num">100.0% (20/20)</td><td class="num">100.0% (20/20)</td><td class="num">99.5%</td><td class="num ok">no</td><td class="num">0s</td><td class="num">3h36m0s</td></tr>
+<tr><td><strong>web-disk</strong></td><td>disk</td><td><span class="pill up">up</span></td><td class="num">100.0% (20/20)</td><td class="num">100.0% (20/20)</td><td class="num">100.0% (20/20)</td><td class="num">99.9%</td><td class="num ok">no</td><td class="num">0s</td><td class="num">43m11s</td></tr>
+<tr><td><strong>demo-worker</strong></td><td>process</td><td><span class="pill up">up</span></td><td class="num">75.0% (15/20)</td><td class="num">75.0% (15/20)</td><td class="num">75.0% (15/20)</td><td class="num">99.9%</td><td class="num bad">yes</td><td class="num">5s</td><td class="num">43m6s</td></tr></tbody>
+  </table>
+  <h2>Incidents</h2>
+  <ul class="incidents"><li><span class='mono'>2026-08-01T21:12:04+00:00</span> — <strong>demo-worker</strong> (process): process &#x27;sleep&#x27; not found</li>
+<li><span class='mono'>2026-08-01T21:12:03+00:00</span> — <strong>demo-worker</strong> (process): process &#x27;sleep&#x27; not found</li>
+<li><span class='mono'>2026-08-01T21:12:02+00:00</span> — <strong>demo-worker</strong> (process): process &#x27;sleep&#x27; not found</li>
+<li><span class='mono'>2026-08-01T21:12:01+00:00</span> — <strong>demo-worker</strong> (process): process &#x27;sleep&#x27; not found</li>
+<li><span class='mono'>2026-08-01T21:12:00+00:00</span> — <strong>demo-worker</strong> (process): process &#x27;sleep&#x27; not found</li>
+<li><span class='mono'>2026-08-01T21:11:54+00:00</span> — <strong>api-gateway</strong> (http): HTTP 503 (expected 200)</li>
+<li><span class='mono'>2026-08-01T21:11:53+00:00</span> — <strong>api-gateway</strong> (http): HTTP 503 (expected 200)</li>
+<li><span class='mono'>2026-08-01T21:11:52+00:00</span> — <strong>api-gateway</strong> (http): HTTP 503 (expected 200)</li>
+<li><span class='mono'>2026-08-01T21:11:51+00:00</span> — <strong>api-gateway</strong> (http): HTTP 503 (expected 200)</li>
+<li><span class='mono'>2026-08-01T21:11:50+00:00</span> — <strong>api-gateway</strong> (http): HTTP 503 (expected 200)</li></ul>
+</main>
+<footer>
+  Downtime is estimated as failed checks &times; the check's configured interval. The SLO budget is the allowed downtime over 30 days minus that estimate.
+  Windows with thin coverage show their sample counts so fresh history is not mistaken for long-running statistics.
+  History is stored in a local SQLite database (gitignored); this report is self-contained and can be archived or emailed as-is.
+</footer>
+</body>
+</html>

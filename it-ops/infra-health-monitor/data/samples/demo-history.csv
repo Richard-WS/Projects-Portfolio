@@ -1,0 +1,101 @@
+ts,check_name,check_type,ok,latency_ms,detail
+2026-08-01T21:11:50+00:00,api-gateway,http,0,4.9391669999749865,HTTP 503 (expected 200)
+2026-08-01T21:11:50+00:00,auth-service,http,1,2.7352600009180605,HTTP 200 in 3ms
+2026-08-01T21:11:50+00:00,database-port,tcp,1,0.8134379986586282,connected in 1ms
+2026-08-01T21:11:50+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:11:50+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:51+00:00,api-gateway,http,0,7.154271001127199,HTTP 503 (expected 200)
+2026-08-01T21:11:51+00:00,auth-service,http,1,4.104739999092999,HTTP 200 in 4ms
+2026-08-01T21:11:51+00:00,database-port,tcp,1,1.5890630002104444,connected in 2ms
+2026-08-01T21:11:51+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:11:51+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:52+00:00,api-gateway,http,0,1.9604160006565508,HTTP 503 (expected 200)
+2026-08-01T21:11:52+00:00,auth-service,http,1,1.8941150010505226,HTTP 200 in 2ms
+2026-08-01T21:11:52+00:00,database-port,tcp,1,1.7549999993207166,connected in 2ms
+2026-08-01T21:11:52+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:11:52+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:53+00:00,api-gateway,http,0,6.177552000735886,HTTP 503 (expected 200)
+2026-08-01T21:11:53+00:00,auth-service,http,1,4.252916998666478,HTTP 200 in 4ms
+2026-08-01T21:11:53+00:00,database-port,tcp,1,1.133907000621548,connected in 1ms
+2026-08-01T21:11:53+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:11:53+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:54+00:00,api-gateway,http,0,7.827916999303852,HTTP 503 (expected 200)
+2026-08-01T21:11:54+00:00,auth-service,http,1,4.601717999321409,HTTP 200 in 5ms
+2026-08-01T21:11:54+00:00,database-port,tcp,1,1.796561999071855,connected in 2ms
+2026-08-01T21:11:54+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:11:54+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:55+00:00,api-gateway,http,1,6.4936449998640455,HTTP 200 in 6ms
+2026-08-01T21:11:55+00:00,auth-service,http,1,4.553020999082946,HTTP 200 in 5ms
+2026-08-01T21:11:55+00:00,database-port,tcp,1,1.515833000667044,connected in 2ms
+2026-08-01T21:11:55+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:11:55+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:56+00:00,api-gateway,http,1,8.104115000605816,HTTP 200 in 8ms
+2026-08-01T21:11:56+00:00,auth-service,http,1,5.733436999435071,HTTP 200 in 6ms
+2026-08-01T21:11:56+00:00,database-port,tcp,1,1.5998440012481296,connected in 2ms
+2026-08-01T21:11:56+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:11:56+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:57+00:00,api-gateway,http,1,6.440156001190189,HTTP 200 in 6ms
+2026-08-01T21:11:57+00:00,auth-service,http,1,4.579479000312858,HTTP 200 in 5ms
+2026-08-01T21:11:57+00:00,database-port,tcp,1,1.0885409992624773,connected in 1ms
+2026-08-01T21:11:57+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:11:57+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:58+00:00,api-gateway,http,1,5.407917000411544,HTTP 200 in 5ms
+2026-08-01T21:11:58+00:00,auth-service,http,1,5.282292000629241,HTTP 200 in 5ms
+2026-08-01T21:11:58+00:00,database-port,tcp,1,1.1203639987797942,connected in 1ms
+2026-08-01T21:11:58+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:11:58+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:11:59+00:00,api-gateway,http,1,8.597395999458968,HTTP 200 in 9ms
+2026-08-01T21:11:59+00:00,auth-service,http,1,5.8813019986700965,HTTP 200 in 6ms
+2026-08-01T21:11:59+00:00,database-port,tcp,1,1.667188000283204,connected in 2ms
+2026-08-01T21:11:59+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:11:59+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:12:00+00:00,api-gateway,http,1,6.565313000464812,HTTP 200 in 7ms
+2026-08-01T21:12:00+00:00,auth-service,http,1,3.927292000298621,HTTP 200 in 4ms
+2026-08-01T21:12:00+00:00,database-port,tcp,1,0.8505210007569985,connected in 1ms
+2026-08-01T21:12:00+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:12:00+00:00,demo-worker,process,0,,process 'sleep' not found
+2026-08-01T21:12:01+00:00,api-gateway,http,1,8.422657001574407,HTTP 200 in 8ms
+2026-08-01T21:12:01+00:00,auth-service,http,1,5.375469001592137,HTTP 200 in 5ms
+2026-08-01T21:12:01+00:00,database-port,tcp,1,1.1473960003058892,connected in 1ms
+2026-08-01T21:12:01+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:12:01+00:00,demo-worker,process,0,,process 'sleep' not found
+2026-08-01T21:12:02+00:00,api-gateway,http,1,5.640989000312402,HTTP 200 in 6ms
+2026-08-01T21:12:02+00:00,auth-service,http,1,4.385259999253321,HTTP 200 in 4ms
+2026-08-01T21:12:02+00:00,database-port,tcp,1,0.9491149994573789,connected in 1ms
+2026-08-01T21:12:02+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:12:02+00:00,demo-worker,process,0,,process 'sleep' not found
+2026-08-01T21:12:03+00:00,api-gateway,http,1,5.666145001669065,HTTP 200 in 6ms
+2026-08-01T21:12:03+00:00,auth-service,http,1,4.083957999682752,HTTP 200 in 4ms
+2026-08-01T21:12:03+00:00,database-port,tcp,1,1.644478999878629,connected in 2ms
+2026-08-01T21:12:03+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:12:03+00:00,demo-worker,process,0,,process 'sleep' not found
+2026-08-01T21:12:04+00:00,api-gateway,http,1,5.843332999575068,HTTP 200 in 6ms
+2026-08-01T21:12:04+00:00,auth-service,http,1,4.631198000424774,HTTP 200 in 5ms
+2026-08-01T21:12:04+00:00,database-port,tcp,1,0.9763019988895394,connected in 1ms
+2026-08-01T21:12:04+00:00,web-disk,disk,1,,66.5% used (158031 MiB free)
+2026-08-01T21:12:04+00:00,demo-worker,process,0,,process 'sleep' not found
+2026-08-01T21:12:05+00:00,api-gateway,http,1,7.301769999685348,HTTP 200 in 7ms
+2026-08-01T21:12:05+00:00,auth-service,http,1,3.123645999949076,HTTP 200 in 3ms
+2026-08-01T21:12:05+00:00,database-port,tcp,1,1.1118750007881317,connected in 1ms
+2026-08-01T21:12:05+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:12:05+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:12:06+00:00,api-gateway,http,1,2.3028129999147495,HTTP 200 in 2ms
+2026-08-01T21:12:06+00:00,auth-service,http,1,1.973750000615837,HTTP 200 in 2ms
+2026-08-01T21:12:06+00:00,database-port,tcp,1,0.836093999168952,connected in 1ms
+2026-08-01T21:12:06+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:12:06+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:12:07+00:00,api-gateway,http,1,6.166563000078895,HTTP 200 in 6ms
+2026-08-01T21:12:07+00:00,auth-service,http,1,4.266093999831355,HTTP 200 in 4ms
+2026-08-01T21:12:07+00:00,database-port,tcp,1,1.2620830002560979,connected in 1ms
+2026-08-01T21:12:07+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:12:07+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:12:08+00:00,api-gateway,http,1,6.58640600158833,HTTP 200 in 7ms
+2026-08-01T21:12:08+00:00,auth-service,http,1,4.086926999661955,HTTP 200 in 4ms
+2026-08-01T21:12:08+00:00,database-port,tcp,1,1.1387499998818384,connected in 1ms
+2026-08-01T21:12:08+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:12:08+00:00,demo-worker,process,1,,process 'sleep' is running
+2026-08-01T21:12:09+00:00,api-gateway,http,1,6.603384999834816,HTTP 200 in 7ms
+2026-08-01T21:12:09+00:00,auth-service,http,1,5.143645999851287,HTTP 200 in 5ms
+2026-08-01T21:12:09+00:00,database-port,tcp,1,1.5194269999483367,connected in 2ms
+2026-08-01T21:12:09+00:00,web-disk,disk,1,,66.5% used (158030 MiB free)
+2026-08-01T21:12:09+00:00,demo-worker,process,1,,process 'sleep' is running

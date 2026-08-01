@@ -1,0 +1,42 @@
+# Example monitoring config — edit the checks to match your own services.
+# Relative paths are resolved against this file's directory.
+
+checks:
+  - name: api-gateway
+    type: http
+    url: https://api.example.com/health
+    expected_status: 200
+    interval_seconds: 60
+    timeout_seconds: 10
+    slo_percent: 99.9
+
+  - name: database-port
+    type: tcp
+    host: db.internal
+    port: 5432
+    interval_seconds: 60
+    timeout_seconds: 5
+    slo_percent: 99.5
+
+  - name: web-disk
+    type: disk
+    path: /var/lib/web
+    warn_percent: 80
+    critical_percent: 90
+    interval_seconds: 300
+    slo_percent: 99.9
+
+  - name: worker-process
+    type: process
+    process_name: worker
+    interval_seconds: 60
+    slo_percent: 99.9
+
+history:
+  db_path: data/raw/history.db
+  state_path: data/raw/state.json
+
+alerts:
+  log_level: info
+  webhook_url_env: ALERT_WEBHOOK_URL
+  cooldown_seconds: 300

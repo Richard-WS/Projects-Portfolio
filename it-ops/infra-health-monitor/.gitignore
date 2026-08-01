@@ -1,0 +1,21 @@
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+.pytest_cache/
+.coverage
+
+# ── Secrets & environment ─────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Runtime data (history database, state, demo scratch) ──
+data/raw/
+*.db
+*.db-wal
+*.db-shm
