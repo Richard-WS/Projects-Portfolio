@@ -11,6 +11,7 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 | IT service management | ITIL 4 Foundation (AXELOS) | IT Service Management Analyst, Technology Operations Analyst |
 | Data quality and governance | IBM certificate; Zooniverse classification work | Data Quality Analyst, Public-Sector Data Analyst |
 | Pattern recognition on time-series data | SuperWASP and NGTS citizen-science classification | Data Analyst, AI Data Analyst |
+| Query engines and performance work | Query engine benchmark project (pandas vs Polars vs DuckDB, cross-engine verification) | Analytics Engineer, Data Analyst |
 
 ## Target roles
 
