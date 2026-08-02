@@ -2,9 +2,18 @@
 
 from __future__ import annotations
 
+import warnings
 from pathlib import Path
 
 import pytest
+
+# ERFA warns on pre-1972 leap-second extrapolation and exact-boundary dates
+# (1900/2100). Benign for this range; positions are verified by golden tests.
+try:
+    from erfa import ErfaWarning
+except ImportError:  # pragma: no cover
+    ErfaWarning = UserWarning
+warnings.filterwarnings("ignore", category=ErfaWarning, module="erfa")
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 

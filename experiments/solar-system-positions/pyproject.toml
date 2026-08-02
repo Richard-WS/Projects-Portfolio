@@ -26,3 +26,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+# ERFA warns on pre-1972 leap-second extrapolation and exact-boundary dates
+# (1900/2100). Benign for this range; positions are verified by golden tests.
+filterwarnings = ["ignore::erfa.core.ErfaWarning"]

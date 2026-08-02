@@ -13,12 +13,22 @@ no Pluto).
 
 import argparse
 import sys
+import warnings
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from solarpositions.config import load_config  # noqa: E402
 from solarpositions.positions import generate_rows, write_csv  # noqa: E402
+
+# ERFA warns about (a) pre-1972 leap-second extrapolation when parsing
+# calendar dates and (b) epv00 exact-boundary dates at 1900/2100. Both are
+# benign for this range: positions are verified by the golden-value tests.
+try:
+    from erfa import ErfaWarning
+except ImportError:  # pragma: no cover
+    ErfaWarning = UserWarning
+warnings.filterwarnings("ignore", category=ErfaWarning, module="erfa")
 
 
 def main() -> int:
