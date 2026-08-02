@@ -8,6 +8,7 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 | Statistical analysis and regression modelling | Google Advanced Data Analytics; Wolfram Statistics Foundations | Data Analyst, Junior Data Scientist |
 | Power BI dashboards and reporting | Microsoft Power BI Data Analyst certificate | BI Analyst, Reporting Analyst |
 | Python, SQL, and database work | IBM Data Analyst certificate; Programming Hub certificates | Analytics Engineer, Data Analyst |
+| SQL analytics and data warehousing | Canadian labour market analysis project (SQLite star schema, 14-query SQL catalog: window functions, CTEs, pivots, cross-table joins) | Analytics Engineer, Data Analyst |
 | IT service management | ITIL 4 Foundation (AXELOS) | IT Service Management Analyst, Technology Operations Analyst |
 | Data quality and governance | IBM certificate; Zooniverse classification work | Data Quality Analyst, Public-Sector Data Analyst |
 | Pattern recognition on time-series data | SuperWASP and NGTS citizen-science classification | Data Analyst, AI Data Analyst |
