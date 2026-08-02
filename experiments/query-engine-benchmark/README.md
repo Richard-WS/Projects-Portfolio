@@ -123,5 +123,5 @@ query-engine-benchmark/
 │   ├── generate_data.py        # write dataset + samples
 │   └── run_benchmark.py        # verify, time all engines, write results
 ├── docs/benchmark-results.csv  # committed raw results
-└── tests/                      # 72 hermetic tests, incl. cross-engine equality
+└── tests/                      # 64 hermetic tests, incl. cross-engine equality
 ```
