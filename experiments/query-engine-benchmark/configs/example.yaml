@@ -1,0 +1,15 @@
+# Benchmark knobs — everything else in the pipeline is derived from these.
+dataset:
+  n_orders: 5000000
+  n_customers: 200000
+  seed: 42
+  format: parquet        # parquet | csv
+queries:
+  - q1_filter_sum
+  - q2_groupby
+  - q3_multi_groupby
+  - q4_join
+  - q5_topn
+  - q6_monthly_revenue
+runs: 3
+warmup: 1
