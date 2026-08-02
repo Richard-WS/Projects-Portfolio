@@ -101,5 +101,5 @@ exoplanet-transit-classifier/
 │   └── cli.py                  # prepare / train / predict / report
 ├── docs/                       # committed results: metrics.json, HTML report
 ├── outputs/                    # trained model + predictions (gitignored)
-└── tests/                      # 61 hermetic tests
+└── tests/                      # 62 hermetic tests
 ```

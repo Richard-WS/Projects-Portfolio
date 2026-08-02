@@ -120,5 +120,5 @@ solar-system-positions/
 ├── templates/viewer_template.html  # the Canvas app (placeholder for data)
 ├── data/positions.csv        # committed generated data (19,296 rows)
 ├── viewer.html               # committed self-contained viewer
-└── tests/                    # 19 hermetic tests
+└── tests/                    # 20 hermetic tests
 ```
