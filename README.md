@@ -45,6 +45,8 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 - **[Query engine benchmark](experiments/query-engine-benchmark/)** — pandas, Polars, and DuckDB on 5M orders with cross-engine result verification. DuckDB was 5–28× faster than pandas on most queries with ~2.2× less peak memory; Polars won load time and group-bys.
 
+- **[Solar system positions viewer](experiments/solar-system-positions/)** — an interactive 2D scatter-plot model of the solar system: every planet's position for every month 1900–2100, computed with Astropy's built-in ephemeris and viewable as a self-contained HTML timeline on GitHub Pages.
+
 ## Repo layout
 
 | Folder | Contents |
@@ -52,7 +54,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 | `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/) |
 | `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/), [exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/) |
 | `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/) |
-| `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/) |
+| `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/), [solar system positions viewer](experiments/solar-system-positions/) |
 | `docs/` | Project standards and skills matrix |
 
 ## Contact
