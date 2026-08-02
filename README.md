@@ -45,8 +45,6 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 - **[Query engine benchmark](experiments/query-engine-benchmark/)** — pandas, Polars, and DuckDB on 5M orders with cross-engine result verification. DuckDB was 5–28× faster than pandas on most queries with ~2.2× less peak memory; Polars won load time and group-bys.
 
-- **[Query engine benchmark](experiments/query-engine-benchmark/)** — pandas vs. Polars vs. DuckDB on 5M orders: DuckDB 5–28× faster than pandas on most queries at ~2.2× less peak memory; Polars fastest at loading and group-bys. Every engine verified to return identical results.
-
 ## Repo layout
 
 | Folder | Contents |
