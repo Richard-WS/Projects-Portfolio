@@ -1,0 +1,6 @@
+# Linguist treats .sql as a data language and hides it from the repo
+# language statistics; sql/ also looks like a fixture directory to its
+# vendoring detector. Force SQL to be detectable and counted, the same
+# way sqlfluff does it:
+*.sql linguist-language=SQL linguist-detectable
+sql/** linguist-detectable
