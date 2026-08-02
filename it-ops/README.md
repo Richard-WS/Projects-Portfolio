@@ -6,4 +6,6 @@ Infrastructure, automation, security, and operations tooling — built for relia
 
 - **[Infrastructure health monitor](infra-health-monitor/)** — a config-driven monitoring tool with SLO tracking: HTTP, TCP, disk, and process checks, SQLite history, rolling uptime vs availability targets, and transition/breach alerts with an optional webhook. A live demo caught a flaky service and a crashed worker, and the suite covers it with 60 hermetic tests.
 
+- **[Disk failure prediction](disk-failure-prediction/)** — a machine-learning pipeline that flags drives at risk of imminent failure from S.M.A.R.T. telemetry. Trained on a 60,000-drive sample of Backblaze's real Q1 2024 data with an F1-tuned decision threshold: 0.9999 held-out ROC-AUC, 0.994 precision / 0.970 recall, and recalls above 0.98 up to 30 days before failure. Includes a scored-risk CLI for fresh snapshots and an honest breakdown of the false-alarm trade-off.
+
 New projects are added here as they are completed.

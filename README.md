@@ -41,6 +41,8 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 - **[Infrastructure health monitor](it-ops/infra-health-monitor/)** — SLO tracking with four check types, transition and breach alerts, self-contained HTML reports. Live demo caught a flaky service and a crashed worker.
 
+- **[Disk failure prediction](it-ops/disk-failure-prediction/)** — flags drives at risk of imminent failure from S.M.A.R.T. telemetry: gradient boosting on a 60,000-drive sample of Backblaze's real Q1 2024 data, 0.9999 held-out ROC-AUC, 0.994 precision / 0.970 recall, with recall above 0.98 up to 30 days before failure and an honest false-alarm analysis.
+
 - **[Canadian grocery inflation](data/canadian-food-inflation/)** — ten years of StatsCan CPI data showing groceries outrunning overall inflation (+43.4% vs +36.0%), with an EDA notebook and self-contained dashboard.
 
 - **[Canadian labour market analysis](data/canadian-labour-market-analysis/)** — Statistics Canada labour force and population tables normalized into a SQLite warehouse, answered through a 14-query SQL catalog. New Brunswick's unemployment gap versus Canada narrowed from 4.2 pp (1970s) to 1.1 pp (2020s).
@@ -57,7 +59,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 |---|---|
 | `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/), [Canadian labour market analysis](data/canadian-labour-market-analysis/), [Canadian labour market explorer](data/canadian-labour-market-explorer/) |
 | `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/), [exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/) |
-| `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/) |
+| `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/), [disk failure prediction](it-ops/disk-failure-prediction/) |
 | `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/), [solar system positions viewer](experiments/solar-system-positions/) |
 | `docs/` | Project standards and skills matrix |
 

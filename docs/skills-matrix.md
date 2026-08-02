@@ -12,6 +12,7 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 | R statistical analysis and pipelines | Canadian labour market explorer project (base-R analysis: decade averages, linear trends, JSON export; testthat suite) | Data Analyst, Analytics Engineer |
 | JavaScript interactive visualisation | Canadian labour market explorer project (zero-dependency SVG dashboard: region and metric switching, recession shading, hover readouts; contract-tested against the real R-generated data) | Data Analyst, Reporting Analyst, Analytics Engineer |
 | IT service management | ITIL 4 Foundation (AXELOS) | IT Service Management Analyst, Technology Operations Analyst |
+| Predictive analytics for IT operations | Disk failure prediction project (gradient boosting on real S.M.A.R.T. telemetry: held-out ROC-AUC 0.9999, precision/recall trade-off, lead-time recall, deployment caveats) | Technology Operations Analyst, Data Centre Operations, Data Analyst |
 | Data quality and governance | IBM certificate; Zooniverse classification work | Data Quality Analyst, Public-Sector Data Analyst |
 | Pattern recognition on time-series data | SuperWASP and NGTS citizen-science classification | Data Analyst, AI Data Analyst |
 | Query engines and performance work | Query engine benchmark project (pandas vs Polars vs DuckDB, cross-engine verification) | Analytics Engineer, Data Analyst |
