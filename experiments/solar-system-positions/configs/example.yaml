@@ -1,0 +1,20 @@
+# Positions are computed for the first day of every month between start and
+# end (inclusive). Paths are relative to this configs/ directory, so they
+# use ../ to land at the project root.
+start: "1900-01-01"
+end: "2100-12-01"
+step_months: 1
+bodies:
+  - mercury
+  - venus
+  - earth
+  - mars
+  - jupiter
+  - saturn
+  - uranus
+  - neptune
+ephemeris: builtin
+output_csv: "../data/positions.csv"
+output_html: "../viewer.html"
+template: "../templates/viewer_template.html"
+precision: 6

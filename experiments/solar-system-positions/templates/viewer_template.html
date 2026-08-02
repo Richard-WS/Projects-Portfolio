@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Interactive 2D scatter plot of the eight planets' monthly positions, January 1900 to December 2100. Heliocentric ecliptic view, positions from Astropy's built-in ephemeris.">
+<title>Solar System Positions 1900–2100</title>
+<style>
+  :root {
+    --bg: #070b14;
+    --panel: #0f1626;
+    --panel-border: #1e2a44;
+    --text: #d7e0ee;
+    --muted: #8fa0bb;
+    --accent: #f0b429;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  header { padding: 18px 20px 6px; max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; letter-spacing: 0.3px; }
+  #subtitle { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+  #canvas-wrap { position: relative; max-width: 980px; margin: 10px auto 0; padding: 0 12px; }
+  canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: radial-gradient(ellipse at center, #101a30 0%, #070b14 75%);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    touch-action: none;
+  }
+  #tooltip {
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    background: rgba(10, 16, 30, 0.92);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    padding: 6px 9px;
+    font-size: 12px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  .controls {
+    max-width: 980px;
+    margin: 10px auto 0;
+    padding: 10px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+  }
+  #play {
+    width: 46px; height: 34px;
+    font-size: 15px;
+    background: var(--accent);
+    color: #1a1200;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  #play:hover { filter: brightness(1.1); }
+  #slider { flex: 1 1 220px; accent-color: var(--accent); }
+  #frame-label {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    min-width: 88px;
+    color: var(--text);
+  }
+  select {
+    background: #18233a;
+    color: var(--text);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  .toggles {
+    max-width: 980px;
+    margin: 8px auto 0;
+    padding: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .toggles label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+  .toggles input { accent-color: var(--accent); }
+  .legend {
+    max-width: 980px;
+    margin: 10px auto 0;
+    padding: 0 16px 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 12.5px;
+    color: var(--text);
+  }
+  .legend .item { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .swatch { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .hint { max-width: 980px; margin: 0 auto; padding: 0 16px 26px; font-size: 11.5px; color: var(--muted); }
+  kbd {
+    background: #18233a;
+    border: 1px solid var(--panel-border);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 10.5px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Solar System Positions · 1900–2100</h1>
+  <p id="subtitle">A 2D scatter-plot model of the solar system: monthly positions of the eight planets, Jan 1900 → Dec 2100. Heliocentric ecliptic view, distances in AU, positions from Astropy's built-in ephemeris. Use the timeline to scrub or play through two centuries of orbits.</p>
+</header>
+
+<div id="canvas-wrap">
+  <canvas id="chart" width="900" height="900"></canvas>
+  <div id="tooltip"></div>
+</div>
+
+<div class="controls">
+  <button id="play" title="Play/pause (Space)">▶</button>
+  <input type="range" id="slider" min="0" max="0" value="0" step="1">
+  <span id="frame-label">Jan 1900</span>
+  <label>Speed
+    <select id="speed">
+      <option value="1">1 mo/s</option>
+      <option value="5" selected>5 mo/s</option>
+      <option value="15">15 mo/s</option>
+      <option value="30">30 mo/s</option>
+      <option value="60">60 mo/s</option>
+      <option value="120">120 mo/s</option>
+    </select>
+  </label>
+</div>
+
+<div class="toggles">
+  <label><input type="checkbox" id="orbits" checked> Orbit guides</label>
+  <label><input type="checkbox" id="logscale"> Log scale (inner planets)</label>
+  <label><input type="checkbox" id="trails" checked> Trails (past 24 months)</label>
+</div>
+
+<div class="legend" id="legend"></div>
+<p class="hint">Drag the slider or press <kbd>←</kbd>/<kbd>→</kbd> to step one month, <kbd>Space</kbd> to play/pause. Hover a planet for its exact distance from the Sun. Planet dots sit on their current-distance orbit guide. Data generated with <code>astropy</code> — one frame per month, all 2,412 frames embedded in this file.</p>
+
+<script>
+const DATA = __POSITIONS_JSON__;
+</script>
+<script>
+"use strict";
+
+const canvas = document.getElementById("chart");
+const ctx = canvas.getContext("2d");
+const slider = document.getElementById("slider");
+const frameLabel = document.getElementById("frame-label");
+const playBtn = document.getElementById("play");
+const speedSel = document.getElementById("speed");
+const orbitsChk = document.getElementById("orbits");
+const logChk = document.getElementById("logscale");
+const trailsChk = document.getElementById("trails");
+const tooltip = document.getElementById("tooltip");
+const legend = document.getElementById("legend");
+
+const dates = DATA.dates;
+const planets = DATA.planets;
+const colors = DATA.colors || {};
+const N = dates.length;
+
+const PLANET_RADIUS = {
+  mercury: 3, venus: 4.5, earth: 5, mars: 4,
+  jupiter: 8, saturn: 7.5, uranus: 6, neptune: 6, pluto: 2.5
+};
+const names = Object.keys(planets);
+const TRAIL = 24;
+
+// Global scale from the full dataset (linear), so the view is stable.
+let maxR = 1e-9;
+for (const pts of Object.values(planets)) {
+  for (const [x, y] of pts) {
+    maxR = Math.max(maxR, Math.hypot(x, y));
+  }
+}
+const PAD = 1.06;
+
+let frame = 0;
+let playing = false;
+let lastTs = 0;
+let acc = 0;
+
+// ---------- helpers ----------
+function fmtDate(iso) {
+  const [y, m] = iso.split("-").map(Number);
+  const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  return MONTHS[m - 1] + " " + y;
+}
+
+function distToPx(r) {
+  const R = (canvas.width / 2) * 0.92;
+  if (logChk.checked) {
+    const t = Math.log10(1 + r) / Math.log10(1 + maxR);
+    return t * R;
+  }
+  return (r / maxR) * R * PAD;
+}
+
+function posToCanvas(x, y) {
+  const cx = canvas.width / 2;
+  const cy = canvas.height / 2;
+  const d = Math.hypot(x, y);
+  const px = distToPx(d);
+  if (d < 1e-12) return [cx, cy];
+  return [cx + (x / d) * px, cy - (y / d) * px];
+}
+
+// ---------- drawing ----------
+function draw() {
+  const W = canvas.width, H = canvas.height;
+  const cx = W / 2, cy = H / 2;
+  ctx.clearRect(0, 0, W, H);
+
+  // faint guide grid rings at 1 AU intervals (linear scale only)
+  if (!logChk.checked) {
+    ctx.strokeStyle = "rgba(120, 150, 200, 0.07)";
+    ctx.lineWidth = 1;
+    for (let au = 1; au < maxR; au++) {
+      const r = (au / maxR) * W * 0.46 * PAD;
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+  }
+
+  // sun
+  const sunGlow = ctx.createRadialGradient(cx, cy, 0, cx, cy, W * 0.05);
+  sunGlow.addColorStop(0, "rgba(255, 220, 120, 0.55)");
+  sunGlow.addColorStop(1, "rgba(255, 220, 120, 0)");
+  ctx.fillStyle = sunGlow;
+  ctx.beginPath(); ctx.arc(cx, cy, W * 0.05, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = "#ffd24a";
+  ctx.beginPath(); ctx.arc(cx, cy, 5.5, 0, Math.PI * 2); ctx.fill();
+
+  const f = frame % N;
+
+  // trails (past TRAIL months)
+  if (trailsChk.checked) {
+    for (const name of names) {
+      const pts = planets[name];
+      const color = colors[name] || "#ffffff";
+      ctx.strokeStyle = color;
+      ctx.globalAlpha = 0.28;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      for (let k = TRAIL; k >= 0; k--) {
+        const i = (f - k + N * 2) % N;
+        const [px, py] = posToCanvas(pts[i][0], pts[i][1]);
+        if (k === TRAIL) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+      }
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  // orbit guides: circle at the planet's current distance
+  if (orbitsChk.checked) {
+    for (const name of names) {
+      const [x, y] = planets[name][f];
+      const r = Math.hypot(x, y);
+      if (r < 1e-9) continue;
+      const d = distToPx(r);
+      ctx.strokeStyle = (colors[name] || "#ffffff") + "44";
+      ctx.lineWidth = 1;
+      ctx.setLineDash([3, 5]);
+      ctx.beginPath(); ctx.arc(cx, cy, d, 0, Math.PI * 2); ctx.stroke();
+      ctx.setLineDash([]);
+    }
+  }
+
+  // planets
+  for (const name of names) {
+    const [x, y] = planets[name][f];
+    const [px, py] = posToCanvas(x, y);
+    const r = PLANET_RADIUS[name] || 4;
+    ctx.fillStyle = colors[name] || "#ffffff";
+    ctx.beginPath(); ctx.arc(px, py, r, 0, Math.PI * 2); ctx.fill();
+    // subtle halo
+    ctx.strokeStyle = (colors[name] || "#ffffff") + "55";
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(px, py, r + 3, 0, Math.PI * 2); ctx.stroke();
+    // label, pushed outward so it clears the sun
+    const ang = Math.atan2(-(py - cy), px - cx);
+    const lx = px + Math.cos(ang) * (r + 10);
+    const ly = py + Math.sin(ang) * (r + 10);
+    ctx.font = "11px ui-sans-serif, system-ui, sans-serif";
+    ctx.textAlign = ang > Math.PI / 2 || ang < -Math.PI / 2 ? "right" : "left";
+    ctx.fillStyle = "rgba(215, 224, 238, 0.85)";
+    ctx.fillText(name.charAt(0).toUpperCase() + name.slice(1), lx, ly + 3.5);
+  }
+
+  frameLabel.textContent = fmtDate(dates[f]);
+  slider.value = f;
+}
+
+// ---------- animation ----------
+function tick(ts) {
+  if (!playing) return;
+  if (!lastTs) lastTs = ts;
+  const dt = (ts - lastTs) / 1000;
+  lastTs = ts;
+  const fps = Number(speedSel.value);
+  acc += dt * fps;
+  while (acc >= 1) {
+    frame = (frame + 1) % N;
+    acc -= 1;
+  }
+  draw();
+  requestAnimationFrame(tick);
+}
+
+function togglePlay() {
+  playing = !playing;
+  playBtn.textContent = playing ? "⏸" : "▶";
+  if (playing) { lastTs = 0; acc = 0; requestAnimationFrame(tick); }
+}
+
+// ---------- interactions ----------
+playBtn.addEventListener("click", togglePlay);
+slider.addEventListener("input", () => { frame = Number(slider.value); draw(); });
+speedSel.addEventListener("change", draw);
+orbitsChk.addEventListener("change", draw);
+logChk.addEventListener("change", draw);
+trailsChk.addEventListener("change", draw);
+
+document.addEventListener("keydown", (e) => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.key === "ArrowRight") { frame = (frame + 1) % N; draw(); e.preventDefault(); }
+  else if (e.key === "ArrowLeft") { frame = (frame - 1 + N) % N; draw(); e.preventDefault(); }
+  else if (e.key === " ") { togglePlay(); e.preventDefault(); }
+});
+
+// hover readout
+function toWorld(clientX, clientY) {
+  const rect = canvas.getBoundingClientRect();
+  const x = (clientX - rect.left) * (canvas.width / rect.width);
+  const y = (clientY - rect.top) * (canvas.height / rect.height);
+  return [x - canvas.width / 2, canvas.height / 2 - y];
+}
+canvas.addEventListener("mousemove", (e) => {
+  const [wx, wy] = toWorld(e.clientX, e.clientY);
+  const f = frame % N;
+  let best = null, bestD = 14; // px threshold
+  for (const name of names) {
+    const [x, y] = planets[name][f];
+    const [px, py] = posToCanvas(x, y);
+    const d = Math.hypot(px - (wx + canvas.width / 2), py - (canvas.height / 2 - wy));
+    if (d < bestD) { bestD = d; best = name; }
+  }
+  if (best) {
+    const [x, y] = planets[best][f];
+    const au = Math.hypot(x, y).toFixed(3);
+    tooltip.innerHTML = "<b>" + best.charAt(0).toUpperCase() + best.slice(1) + "</b><br>" + au + " AU from Sun";
+    tooltip.style.display = "block";
+    const rect = canvas.getBoundingClientRect();
+    tooltip.style.left = (e.clientX - rect.left + 14) + "px";
+    tooltip.style.top = (e.clientY - rect.top - 10) + "px";
+    canvas.style.cursor = "pointer";
+  } else {
+    tooltip.style.display = "none";
+    canvas.style.cursor = "default";
+  }
+});
+canvas.addEventListener("mouseleave", () => { tooltip.style.display = "none"; });
+
+// legend
+for (const name of names) {
+  const item = document.createElement("span");
+  item.className = "item";
+  item.innerHTML = '<span class="swatch" style="background:' + (colors[name] || "#fff") + '"></span>' +
+    name.charAt(0).toUpperCase() + name.slice(1);
+  legend.appendChild(item);
+}
+const sunItem = document.createElement("span");
+sunItem.className = "item";
+sunItem.innerHTML = '<span class="swatch" style="background:#ffd24a"></span>Sun';
+legend.appendChild(sunItem);
+
+// init
+slider.max = N - 1;
+slider.value = 0;
+draw();
+</script>
+</body>
+</html>
