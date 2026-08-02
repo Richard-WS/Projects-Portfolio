@@ -140,7 +140,7 @@ function gapStory(data) {
   const seventies = decadeHighlight(data, "1970s");
   const latest = data.decades[data.decades.length - 1];
   if (!seventies || !latest) return "—";
-  const change = seventies.gapPp - latest.gapPp;
+  const change = seventies.gap_pp - latest.gap_pp;
   return `narrowed ${change.toFixed(1)} pp`;
 }
 
@@ -149,8 +149,8 @@ function renderDecades(data) {
   tbody.innerHTML = data.decades
     .map(
       (d) =>
-        `<tr><td>${d.decade}</td><td>${d.nbUnemployment.toFixed(1)}</td>` +
-        `<td>${d.canadaUnemployment.toFixed(1)}</td><td>${d.gapPp.toFixed(2)}</td></tr>`
+        `<tr><td>${d.decade}</td><td>${d.nb_unemployment.toFixed(1)}</td>` +
+        `<td>${d.canada_unemployment.toFixed(1)}</td><td>${d.gap_pp.toFixed(2)}</td></tr>`
     )
     .join("");
 }

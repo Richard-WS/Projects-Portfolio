@@ -21,8 +21,8 @@ const fixture = {
     },
   ],
   decades: [
-    { decade: "1970s", nbUnemployment: 10.0, canadaUnemployment: 7.0, gapPp: 3.0 },
-    { decade: "2000s", nbUnemployment: 9.0, canadaUnemployment: 6.75, gapPp: 2.25 },
+    { decade: "1970s", nb_unemployment: 10.0, canada_unemployment: 7.0, gap_pp: 3.0 },
+    { decade: "2000s", nb_unemployment: 9.0, canada_unemployment: 6.75, gap_pp: 2.25 },
   ],
   highlights: { latestYear: 2002, canadaUnemploymentLatest: 7.0, newBrunswickUnemploymentLatest: 9.0, youthPrimeGapLatest: 7.0 },
 };
@@ -77,7 +77,7 @@ test("svgPoint maps data coordinates to pixels monotonically", () => {
 
 test("decadeHighlight finds a decade row", () => {
   const d = Core.decadeHighlight(fixture, "1970s");
-  assert.equal(d.gapPp, 3.0);
+  assert.equal(d.gap_pp, 3.0);
   assert.equal(Core.decadeHighlight(fixture, "1990s"), null);
 });
 
