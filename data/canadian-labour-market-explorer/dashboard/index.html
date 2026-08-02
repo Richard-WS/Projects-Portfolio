@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canadian Labour Market Explorer</title>
+<style>
+  :root {
+    --ink: #1c2733;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --accent: #1f77b4;
+    --bg: #f8fafc;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  header {
+    padding: 2rem 1.5rem 1rem;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  header h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+  header p { margin: 0; color: var(--muted); font-size: .95rem; }
+  main { max-width: 980px; margin: 0 auto; padding: 0 1.5rem 2rem; }
+  .controls { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin: 1rem 0; }
+  .controls label { font-size: .85rem; color: var(--muted); }
+  select, .metric-btn {
+    font: inherit;
+    padding: .35rem .7rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .metric-btn { color: var(--muted); }
+  .metric-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chart-wrap { position: relative; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .75rem; }
+  svg { display: block; width: 100%; height: auto; }
+  .axis-label { fill: var(--muted); font-size: 12px; }
+  .grid-line { stroke: var(--line); stroke-dasharray: 3 3; }
+  .recession-band { fill: #fecaca; opacity: .35; }
+  .recession-label { fill: #b91c1c; font-size: 10px; }
+  .tooltip {
+    position: absolute; display: none; pointer-events: none;
+    background: rgba(28,39,51,.92); color: #fff; font-size: .8rem;
+    padding: .5rem .7rem; border-radius: 6px; white-space: nowrap;
+  }
+  .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .75rem; margin-top: 1rem; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
+  .card .k { font-size: .8rem; color: var(--muted); }
+  .card .v { font-size: 1.35rem; font-weight: 600; margin-top: .15rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 1rem; background: #fff; border: 1px solid var(--line); border-radius: 10px; }
+  th, td { padding: .5rem .75rem; text-align: right; font-size: .88rem; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--muted); font-weight: 600; }
+  footer { max-width: 980px; margin: 0 auto; padding: .5rem 1.5rem 2rem; color: var(--muted); font-size: .8rem; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Canadian Labour Market Explorer</h1>
+  <p>Unemployment, employment, and participation across Canada and the provinces, 1976–2025. Analysis computed in R from Statistics Canada data; rendered here in plain JavaScript.</p>
+</header>
+
+<main>
+  <div class="controls">
+    <label for="region">Region</label>
+    <select id="region"></select>
+    <div id="metrics"></div>
+  </div>
+
+  <div class="chart-wrap">
+    <svg id="chart" viewBox="0 0 860 420" role="img" aria-label="Labour market line chart"></svg>
+    <div class="tooltip" id="tooltip"></div>
+  </div>
+
+  <div class="highlights" id="highlights"></div>
+
+  <h2 style="font-size:1.05rem; margin-top:1.5rem;">New Brunswick vs Canada unemployment gap, by decade</h2>
+  <table id="decades">
+    <thead><tr><th>Decade</th><th>New Brunswick (%)</th><th>Canada (%)</th><th>Gap (pp)</th></tr></thead>
+    <tbody></tbody>
+  </table>
+
+  <p style="color:var(--muted); font-size:.85rem; margin-top:1rem;">
+    Recession shading: 1981–82, 1990–91, 2008–09, and 2020. Source:
+    <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410032701" rel="noopener">Statistics Canada Table 14-10-0327-01</a>,
+    used under the Statistics Canada Open Licence.
+  </p>
+</main>
+
+<footer>Computed with R (base graphics + jsonlite) · interactive chart in JavaScript · no external libraries</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

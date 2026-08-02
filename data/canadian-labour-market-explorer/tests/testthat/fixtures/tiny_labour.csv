@@ -1,0 +1,13 @@
+year,region_code,region_name,unemployment_rate,employment_thousands,participation_rate,youth_unemployment_rate,prime_age_unemployment_rate
+2000,CA,Canada,6.0,1000,60,12,5
+2001,CA,Canada,6.5,1010,60,12,5
+2002,CA,Canada,7.0,1020,60,12,5
+2003,CA,Canada,7.5,1030,60,12,5
+2000,NB,New Brunswick,9.0,300,55,15,7
+2001,NB,New Brunswick,9.0,305,55,15,7
+2002,NB,New Brunswick,9.0,310,55,15,7
+2003,NB,New Brunswick,9.0,315,55,15,7
+2000,ON,Ontario,5.0,2000,62,7,5
+2001,ON,Ontario,5.0,2100,62,7,5
+2002,ON,Ontario,5.0,2200,62,7,5
+2003,ON,Ontario,5.0,2300,62,7,5

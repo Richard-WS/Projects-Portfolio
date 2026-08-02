@@ -1,0 +1,4585 @@
+{
+  "meta": {
+    "title": "Canadian Labour Market Explorer",
+    "source": "Statistics Canada Table 14-10-0327-01 (Labour force characteristics, annual)",
+    "licence": "Statistics Canada Open Licence",
+    "period": "1976-2025",
+    "generated": "2026-08-02",
+    "regions": 11
+  },
+  "regions": [
+    {
+      "code": "AB",
+      "name": "Alberta",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 3.9,
+          "employmentThousands": 854.9,
+          "participationRate": 67.4,
+          "youthUnemploymentRate": 7.4,
+          "primeAgeUnemploymentRate": 2.5
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 4.5,
+          "employmentThousands": 903.7,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 8,
+          "primeAgeUnemploymentRate": 3
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 4.8,
+          "employmentThousands": 959.2,
+          "participationRate": 68.5,
+          "youthUnemploymentRate": 8.1,
+          "primeAgeUnemploymentRate": 3.4
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 3.9,
+          "employmentThousands": 1033.9,
+          "participationRate": 69.9,
+          "youthUnemploymentRate": 6.3,
+          "primeAgeUnemploymentRate": 2.9
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 3.9,
+          "employmentThousands": 1102.5,
+          "participationRate": 70.8,
+          "youthUnemploymentRate": 6.7,
+          "primeAgeUnemploymentRate": 2.7
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 3.9,
+          "employmentThousands": 1182.8,
+          "participationRate": 72.3,
+          "youthUnemploymentRate": 6.5,
+          "primeAgeUnemploymentRate": 2.9
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 1164.3,
+          "participationRate": 71.7,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 6.1
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 11,
+          "employmentThousands": 1133.8,
+          "participationRate": 71.7,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 9.5
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 11.3,
+          "employmentThousands": 1138.1,
+          "participationRate": 72.2,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 10.1
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 9.8,
+          "employmentThousands": 1173.8,
+          "participationRate": 72.6,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 8.5
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 9.9,
+          "employmentThousands": 1184.5,
+          "participationRate": 72.6,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 1187.7,
+          "participationRate": 72.4,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 8.2
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 8,
+          "employmentThousands": 1222.3,
+          "participationRate": 72.7,
+          "youthUnemploymentRate": 12.3,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 1251.3,
+          "participationRate": 72.7,
+          "youthUnemploymentRate": 10.3,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 1276.8,
+          "participationRate": 72.5,
+          "youthUnemploymentRate": 10.5,
+          "primeAgeUnemploymentRate": 6.1
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 1284.4,
+          "participationRate": 72.6,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 9.5,
+          "employmentThousands": 1280,
+          "participationRate": 72.2,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 1288.7,
+          "participationRate": 71.8,
+          "youthUnemploymentRate": 13.3,
+          "primeAgeUnemploymentRate": 8.8
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 1324.5,
+          "participationRate": 72,
+          "youthUnemploymentRate": 12.6,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 7.8,
+          "employmentThousands": 1364.9,
+          "participationRate": 72.3,
+          "youthUnemploymentRate": 11.8,
+          "primeAgeUnemploymentRate": 7
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 1405.6,
+          "participationRate": 72.3,
+          "youthUnemploymentRate": 11.5,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 5.9,
+          "employmentThousands": 1453.2,
+          "participationRate": 72.2,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.8
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 1508.9,
+          "participationRate": 72.6,
+          "youthUnemploymentRate": 10.2,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 1543.2,
+          "participationRate": 72.6,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 5,
+          "employmentThousands": 1583.1,
+          "participationRate": 72.2,
+          "youthUnemploymentRate": 10.6,
+          "primeAgeUnemploymentRate": 3.7
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 1627.4,
+          "participationRate": 72.3,
+          "youthUnemploymentRate": 9.2,
+          "primeAgeUnemploymentRate": 3.8
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 1673.8,
+          "participationRate": 72.9,
+          "youthUnemploymentRate": 10.6,
+          "primeAgeUnemploymentRate": 4.3
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 5.1,
+          "employmentThousands": 1729,
+          "participationRate": 73.5,
+          "youthUnemploymentRate": 9.3,
+          "primeAgeUnemploymentRate": 4.2
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 1774.8,
+          "participationRate": 73.5,
+          "youthUnemploymentRate": 8.5,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 4,
+          "employmentThousands": 1820.4,
+          "participationRate": 72.7,
+          "youthUnemploymentRate": 7.3,
+          "primeAgeUnemploymentRate": 3.3
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 3.6,
+          "employmentThousands": 1916.6,
+          "participationRate": 73.6,
+          "youthUnemploymentRate": 6.9,
+          "primeAgeUnemploymentRate": 2.9
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 3.7,
+          "employmentThousands": 1994.4,
+          "participationRate": 74.5,
+          "youthUnemploymentRate": 7.1,
+          "primeAgeUnemploymentRate": 2.9
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 3.8,
+          "employmentThousands": 2050.3,
+          "participationRate": 74.8,
+          "youthUnemploymentRate": 7.7,
+          "primeAgeUnemploymentRate": 3
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 2030.2,
+          "participationRate": 74.6,
+          "youthUnemploymentRate": 12.3,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 2029.1,
+          "participationRate": 73.2,
+          "youthUnemploymentRate": 11,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 2101.1,
+          "participationRate": 73.8,
+          "youthUnemploymentRate": 10.7,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 2166.1,
+          "participationRate": 73.7,
+          "youthUnemploymentRate": 8.6,
+          "primeAgeUnemploymentRate": 3.9
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 4.6,
+          "employmentThousands": 2215,
+          "participationRate": 73.3,
+          "youthUnemploymentRate": 8.5,
+          "primeAgeUnemploymentRate": 3.8
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 4.8,
+          "employmentThousands": 2250.3,
+          "participationRate": 72.8,
+          "youthUnemploymentRate": 9.3,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 2263,
+          "participationRate": 73.3,
+          "youthUnemploymentRate": 10.4,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 2198.3,
+          "participationRate": 72.3,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 7.2
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 8,
+          "employmentThousands": 2218.4,
+          "participationRate": 72.1,
+          "youthUnemploymentRate": 13.1,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 2279.3,
+          "participationRate": 71.8,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 2305.5,
+          "participationRate": 71.8,
+          "youthUnemploymentRate": 12.2,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 11.4,
+          "employmentThousands": 2137.1,
+          "participationRate": 68.9,
+          "youthUnemploymentRate": 24.4,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 8.6,
+          "employmentThousands": 2245.9,
+          "participationRate": 69.7,
+          "youthUnemploymentRate": 14.9,
+          "primeAgeUnemploymentRate": 7.2
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 5.8,
+          "employmentThousands": 2356,
+          "participationRate": 69.6,
+          "youthUnemploymentRate": 11,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 5.9,
+          "employmentThousands": 2442.6,
+          "participationRate": 69.5,
+          "youthUnemploymentRate": 12.2,
+          "primeAgeUnemploymentRate": 4.9
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 7,
+          "employmentThousands": 2518.9,
+          "participationRate": 69.2,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 2590.1,
+          "participationRate": 68.9,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 5.9
+        }
+      ]
+    },
+    {
+      "code": "BC",
+      "name": "British Columbia",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 8.4,
+          "employmentThousands": 1060.9,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 14.4,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 1089.1,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 1137.5,
+          "participationRate": 62.9,
+          "youthUnemploymentRate": 13.7,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 1188.5,
+          "participationRate": 63.6,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 6.7,
+          "employmentThousands": 1266.4,
+          "participationRate": 64.7,
+          "youthUnemploymentRate": 11.3,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 1319.6,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 11.2,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 1253.4,
+          "participationRate": 64.6,
+          "youthUnemploymentRate": 20.7,
+          "primeAgeUnemploymentRate": 9.5
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 13.9,
+          "employmentThousands": 1244.9,
+          "participationRate": 64.5,
+          "youthUnemploymentRate": 22.8,
+          "primeAgeUnemploymentRate": 11.6
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 15,
+          "employmentThousands": 1245.1,
+          "participationRate": 64.3,
+          "youthUnemploymentRate": 22.8,
+          "primeAgeUnemploymentRate": 13.1
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 14.3,
+          "employmentThousands": 1279.7,
+          "participationRate": 64.7,
+          "youthUnemploymentRate": 20.9,
+          "primeAgeUnemploymentRate": 12.6
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 12.7,
+          "employmentThousands": 1331.8,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 18.9,
+          "primeAgeUnemploymentRate": 11.2
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 1377.7,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 18.2,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 10.3,
+          "employmentThousands": 1434.6,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 14.7,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 1508.3,
+          "participationRate": 67,
+          "youthUnemploymentRate": 12.6,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 8.4,
+          "employmentThousands": 1559.6,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 12.7,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 9.9,
+          "employmentThousands": 1577.5,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 10.1,
+          "employmentThousands": 1617.2,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 15.6,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 1668,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 13.9,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 1743.2,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 1785.6,
+          "participationRate": 66.3,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 8.7,
+          "employmentThousands": 1813.4,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 14.2,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 1859.9,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 15.3,
+          "primeAgeUnemploymentRate": 7.2
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 1857.7,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 1893.7,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 1930.8,
+          "participationRate": 64.8,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 6.1
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 1920.9,
+          "participationRate": 64,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 1952.4,
+          "participationRate": 65,
+          "youthUnemploymentRate": 15.1,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 8,
+          "employmentThousands": 1998.1,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 2028.3,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 5.9,
+          "employmentThousands": 2089.7,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 10.1,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 4.9,
+          "employmentThousands": 2153.4,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 8.5,
+          "primeAgeUnemploymentRate": 4.2
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 4.4,
+          "employmentThousands": 2211.3,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 7.7,
+          "primeAgeUnemploymentRate": 3.7
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 4.8,
+          "employmentThousands": 2244.4,
+          "participationRate": 66.4,
+          "youthUnemploymentRate": 8.6,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 7.8,
+          "employmentThousands": 2202,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 7.8,
+          "employmentThousands": 2221.7,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 13.9,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 7.6,
+          "employmentThousands": 2229.7,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 2283.6,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 13,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 6.7,
+          "employmentThousands": 2305,
+          "participationRate": 64.8,
+          "youthUnemploymentRate": 12.7,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 6.2,
+          "employmentThousands": 2330.3,
+          "participationRate": 64.1,
+          "youthUnemploymentRate": 11.4,
+          "primeAgeUnemploymentRate": 5.3
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 6.2,
+          "employmentThousands": 2375,
+          "participationRate": 64.1,
+          "youthUnemploymentRate": 11.1,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 2464.7,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 10.1,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 2562.9,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 8.5,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 4.6,
+          "employmentThousands": 2609.9,
+          "participationRate": 65.7,
+          "youthUnemploymentRate": 7.5,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 4.8,
+          "employmentThousands": 2681.1,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 9.2,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 2527.3,
+          "participationRate": 64.5,
+          "youthUnemploymentRate": 18.9,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 2683.9,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 12.3,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 4.6,
+          "employmentThousands": 2775.7,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 8.9,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 5.2,
+          "employmentThousands": 2847.9,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 9.6,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 2914,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 11.4,
+          "primeAgeUnemploymentRate": 4.9
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 6.2,
+          "employmentThousands": 2946.2,
+          "participationRate": 65,
+          "youthUnemploymentRate": 13.4,
+          "primeAgeUnemploymentRate": 5.3
+        }
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 7.1,
+          "employmentThousands": 9747.5,
+          "participationRate": 61.5,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 5.3
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 8,
+          "employmentThousands": 9917.1,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 8.4,
+          "employmentThousands": 10220.3,
+          "participationRate": 62.7,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 10668.6,
+          "participationRate": 63.7,
+          "youthUnemploymentRate": 12.7,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 10984,
+          "participationRate": 64.3,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 7.6,
+          "employmentThousands": 11305,
+          "participationRate": 65,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 11,
+          "employmentThousands": 10943.7,
+          "participationRate": 64.4,
+          "youthUnemploymentRate": 18.2,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 12,
+          "employmentThousands": 11022,
+          "participationRate": 64.7,
+          "youthUnemploymentRate": 19.2,
+          "primeAgeUnemploymentRate": 10
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 11.3,
+          "employmentThousands": 11301.7,
+          "participationRate": 65,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 9.8
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 10.5,
+          "employmentThousands": 11658,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 15.8,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 12008.5,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 14.7,
+          "primeAgeUnemploymentRate": 8.3
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 12333,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 7.7
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 7.8,
+          "employmentThousands": 12709.6,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 11.5,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 12996.2,
+          "participationRate": 67.3,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 8.1,
+          "employmentThousands": 13086.4,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 12.3,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 10.3,
+          "employmentThousands": 12857.4,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 15.8,
+          "primeAgeUnemploymentRate": 9.2
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 11.2,
+          "employmentThousands": 12730.9,
+          "participationRate": 65.7,
+          "youthUnemploymentRate": 17.2,
+          "primeAgeUnemploymentRate": 10
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 11.4,
+          "employmentThousands": 12792.7,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 17.2,
+          "primeAgeUnemploymentRate": 10.3
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 10.4,
+          "employmentThousands": 13058.7,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 15.9,
+          "primeAgeUnemploymentRate": 9.4
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 9.5,
+          "employmentThousands": 13295.4,
+          "participationRate": 64.8,
+          "youthUnemploymentRate": 14.8,
+          "primeAgeUnemploymentRate": 8.5
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 13420.1,
+          "participationRate": 64.7,
+          "youthUnemploymentRate": 15.4,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 13708.2,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 14047,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 15.1,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 7.6,
+          "employmentThousands": 14402,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 14760.1,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 12.7,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 14932.3,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 12.9,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 15291.3,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 6.6
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 7.6,
+          "employmentThousands": 15660.8,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 15915,
+          "participationRate": 67.5,
+          "youthUnemploymentRate": 13.4,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 16123.5,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 16413.7,
+          "participationRate": 67.2,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 6.2,
+          "employmentThousands": 16756.8,
+          "participationRate": 67.5,
+          "youthUnemploymentRate": 11,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 6.3,
+          "employmentThousands": 16996.8,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 11.4,
+          "primeAgeUnemploymentRate": 5.3
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 16755.4,
+          "participationRate": 67.3,
+          "youthUnemploymentRate": 15.1,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 16978.2,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 17219.6,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 7.4,
+          "employmentThousands": 17431.6,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 17667.7,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 13.3,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 7,
+          "employmentThousands": 17738.5,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 13.3,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 7,
+          "employmentThousands": 17857.2,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 7.1,
+          "employmentThousands": 17966.9,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 12.6,
+          "primeAgeUnemploymentRate": 6.1
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 6.4,
+          "employmentThousands": 18372.2,
+          "participationRate": 66,
+          "youthUnemploymentRate": 11.2,
+          "primeAgeUnemploymentRate": 5.6
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 5.8,
+          "employmentThousands": 18706.6,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 10.6,
+          "primeAgeUnemploymentRate": 5
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 19070.8,
+          "participationRate": 66,
+          "youthUnemploymentRate": 10.7,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 18068.5,
+          "participationRate": 64.4,
+          "youthUnemploymentRate": 20.1,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 18964.1,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 13.5,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 19739.5,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 10,
+          "primeAgeUnemploymentRate": 4.3
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 5.4,
+          "employmentThousands": 20334.8,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 10.7,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 6.3,
+          "employmentThousands": 20730.5,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 13.1,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 21028.7,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 5.8
+        }
+      ]
+    },
+    {
+      "code": "MB",
+      "name": "Manitoba",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 434.4,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 8.3,
+          "primeAgeUnemploymentRate": 3.3
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 438.2,
+          "participationRate": 62.1,
+          "youthUnemploymentRate": 9.2,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 444.4,
+          "participationRate": 63,
+          "youthUnemploymentRate": 11.3,
+          "primeAgeUnemploymentRate": 4.8
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 454.6,
+          "participationRate": 63.5,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 462,
+          "participationRate": 64.3,
+          "youthUnemploymentRate": 9.6,
+          "primeAgeUnemploymentRate": 4.2
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 6,
+          "employmentThousands": 468.8,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 10.1,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 460.3,
+          "participationRate": 65,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 9.5,
+          "employmentThousands": 467.9,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 14.7,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 8.6,
+          "employmentThousands": 479.1,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 486.9,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 13.4,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 7.6,
+          "employmentThousands": 500.7,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 6.6
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 505.2,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 506.3,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 512.7,
+          "participationRate": 67.4,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 7.4,
+          "employmentThousands": 513.8,
+          "participationRate": 67.3,
+          "youthUnemploymentRate": 12.7,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 8.6,
+          "employmentThousands": 506.8,
+          "participationRate": 67,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 9.3,
+          "employmentThousands": 499.9,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 15.4,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 9.3,
+          "employmentThousands": 503.8,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 14.8,
+          "primeAgeUnemploymentRate": 8.3
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 507.7,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 14.9,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 7.3,
+          "employmentThousands": 516.5,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 12.1,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 517.7,
+          "participationRate": 66.4,
+          "youthUnemploymentRate": 12,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 524.9,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 5.3
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 534.8,
+          "participationRate": 67,
+          "youthUnemploymentRate": 10.6,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 541.8,
+          "participationRate": 67.5,
+          "youthUnemploymentRate": 10.3,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 5,
+          "employmentThousands": 552.2,
+          "participationRate": 67.9,
+          "youthUnemploymentRate": 9.3,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 5,
+          "employmentThousands": 549.9,
+          "participationRate": 67.7,
+          "youthUnemploymentRate": 9.8,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 5.1,
+          "employmentThousands": 563.3,
+          "participationRate": 68.9,
+          "youthUnemploymentRate": 10.1,
+          "primeAgeUnemploymentRate": 3.8
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 4.9,
+          "employmentThousands": 566.5,
+          "participationRate": 68.6,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 572.6,
+          "participationRate": 68.9,
+          "youthUnemploymentRate": 11,
+          "primeAgeUnemploymentRate": 4.3
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 576.5,
+          "participationRate": 68.4,
+          "youthUnemploymentRate": 9.7,
+          "primeAgeUnemploymentRate": 3.8
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 4.5,
+          "employmentThousands": 583.4,
+          "participationRate": 68.5,
+          "youthUnemploymentRate": 9.3,
+          "primeAgeUnemploymentRate": 3.4
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 4.6,
+          "employmentThousands": 593.1,
+          "participationRate": 69.1,
+          "youthUnemploymentRate": 9.4,
+          "primeAgeUnemploymentRate": 3.5
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 4.3,
+          "employmentThousands": 602.5,
+          "participationRate": 69.4,
+          "youthUnemploymentRate": 8.8,
+          "primeAgeUnemploymentRate": 3.3
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 5.4,
+          "employmentThousands": 600.1,
+          "participationRate": 69.2,
+          "youthUnemploymentRate": 10.1,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 5.4,
+          "employmentThousands": 610.2,
+          "participationRate": 69.5,
+          "youthUnemploymentRate": 11,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 615.5,
+          "participationRate": 69.3,
+          "youthUnemploymentRate": 11.5,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 5.4,
+          "employmentThousands": 620.7,
+          "participationRate": 68.9,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 626.1,
+          "participationRate": 68.7,
+          "youthUnemploymentRate": 10.3,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 628.2,
+          "participationRate": 68.2,
+          "youthUnemploymentRate": 10.7,
+          "primeAgeUnemploymentRate": 4.5
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 637.9,
+          "participationRate": 68.7,
+          "youthUnemploymentRate": 11.3,
+          "primeAgeUnemploymentRate": 4.8
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 638,
+          "participationRate": 68,
+          "youthUnemploymentRate": 12.5,
+          "primeAgeUnemploymentRate": 5
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 648.8,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 6,
+          "employmentThousands": 653.6,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 10.8,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 661.6,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 10.7,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 8.1,
+          "employmentThousands": 635.6,
+          "participationRate": 65.7,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 664,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 11.5,
+          "primeAgeUnemploymentRate": 5.6
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 4.5,
+          "employmentThousands": 687.9,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 8.3,
+          "primeAgeUnemploymentRate": 3.6
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 4.9,
+          "employmentThousands": 706.8,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 5.4,
+          "employmentThousands": 724.4,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 10.6,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 5.9,
+          "employmentThousands": 736.2,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 4.8
+        }
+      ]
+    },
+    {
+      "code": "NB",
+      "name": "New Brunswick",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 11,
+          "employmentThousands": 231.1,
+          "participationRate": 53.9,
+          "youthUnemploymentRate": 16.8,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 13.3,
+          "employmentThousands": 228.3,
+          "participationRate": 53.6,
+          "youthUnemploymentRate": 21.1,
+          "primeAgeUnemploymentRate": 10.6
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 12.4,
+          "employmentThousands": 239.3,
+          "participationRate": 54.8,
+          "youthUnemploymentRate": 19.2,
+          "primeAgeUnemploymentRate": 9.8
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 10.9,
+          "employmentThousands": 250.1,
+          "participationRate": 55.4,
+          "youthUnemploymentRate": 17.3,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 11.1,
+          "employmentThousands": 253.9,
+          "participationRate": 55.7,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 11.6,
+          "employmentThousands": 257.7,
+          "participationRate": 56.4,
+          "youthUnemploymentRate": 18.6,
+          "primeAgeUnemploymentRate": 9.3
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 14,
+          "employmentThousands": 248.4,
+          "participationRate": 55.3,
+          "youthUnemploymentRate": 22.8,
+          "primeAgeUnemploymentRate": 11.3
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 14.9,
+          "employmentThousands": 251.3,
+          "participationRate": 55.7,
+          "youthUnemploymentRate": 24.3,
+          "primeAgeUnemploymentRate": 12.1
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 14.6,
+          "employmentThousands": 255.2,
+          "participationRate": 55.6,
+          "youthUnemploymentRate": 22.8,
+          "primeAgeUnemploymentRate": 12.7
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 15.2,
+          "employmentThousands": 262,
+          "participationRate": 56.9,
+          "youthUnemploymentRate": 22.9,
+          "primeAgeUnemploymentRate": 13.3
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 14.4,
+          "employmentThousands": 271,
+          "participationRate": 57.8,
+          "youthUnemploymentRate": 22.6,
+          "primeAgeUnemploymentRate": 12.4
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 13.2,
+          "employmentThousands": 280.3,
+          "participationRate": 58.5,
+          "youthUnemploymentRate": 20,
+          "primeAgeUnemploymentRate": 11.7
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 11.8,
+          "employmentThousands": 291,
+          "participationRate": 59.2,
+          "youthUnemploymentRate": 18.1,
+          "primeAgeUnemploymentRate": 10.2
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 296.8,
+          "participationRate": 60,
+          "youthUnemploymentRate": 18.1,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 300.3,
+          "participationRate": 60,
+          "youthUnemploymentRate": 18.9,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 12.7,
+          "employmentThousands": 295.2,
+          "participationRate": 58.8,
+          "youthUnemploymentRate": 20.1,
+          "primeAgeUnemploymentRate": 11.2
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 13,
+          "employmentThousands": 296.9,
+          "participationRate": 58.9,
+          "youthUnemploymentRate": 20.7,
+          "primeAgeUnemploymentRate": 11.5
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 12.6,
+          "employmentThousands": 299.9,
+          "participationRate": 58.9,
+          "youthUnemploymentRate": 19.7,
+          "primeAgeUnemploymentRate": 11
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 12.5,
+          "employmentThousands": 298.6,
+          "participationRate": 58.4,
+          "youthUnemploymentRate": 18.8,
+          "primeAgeUnemploymentRate": 11.4
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 11.4,
+          "employmentThousands": 307.5,
+          "participationRate": 59.1,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 10.3
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 11.6,
+          "employmentThousands": 305.8,
+          "participationRate": 58.7,
+          "youthUnemploymentRate": 18.5,
+          "primeAgeUnemploymentRate": 10.1
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 12.6,
+          "employmentThousands": 310.1,
+          "participationRate": 59.9,
+          "youthUnemploymentRate": 20.4,
+          "primeAgeUnemploymentRate": 11.2
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 12.2,
+          "employmentThousands": 316.1,
+          "participationRate": 60.6,
+          "youthUnemploymentRate": 18.1,
+          "primeAgeUnemploymentRate": 10.9
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 10.2,
+          "employmentThousands": 325.7,
+          "participationRate": 60.8,
+          "youthUnemploymentRate": 16.4,
+          "primeAgeUnemploymentRate": 9
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 10,
+          "employmentThousands": 331.6,
+          "participationRate": 61.6,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 8.8
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 11.1,
+          "employmentThousands": 330,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 17,
+          "primeAgeUnemploymentRate": 9.7
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 10.1,
+          "employmentThousands": 341.9,
+          "participationRate": 63.3,
+          "youthUnemploymentRate": 15.2,
+          "primeAgeUnemploymentRate": 9
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 10.2,
+          "employmentThousands": 341.7,
+          "participationRate": 63.1,
+          "youthUnemploymentRate": 16.2,
+          "primeAgeUnemploymentRate": 9
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 9.8,
+          "employmentThousands": 348.1,
+          "participationRate": 63.8,
+          "youthUnemploymentRate": 15.3,
+          "primeAgeUnemploymentRate": 8.8
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 346.5,
+          "participationRate": 63.2,
+          "youthUnemploymentRate": 14.8,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 9.2,
+          "employmentThousands": 349.7,
+          "participationRate": 63.5,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 357.8,
+          "participationRate": 63.8,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 8.7,
+          "employmentThousands": 362.1,
+          "participationRate": 65,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 9,
+          "employmentThousands": 361.9,
+          "participationRate": 64.7,
+          "youthUnemploymentRate": 14.4,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 9.4,
+          "employmentThousands": 359.4,
+          "participationRate": 64.2,
+          "youthUnemploymentRate": 16,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 356.4,
+          "participationRate": 63.5,
+          "youthUnemploymentRate": 17.1,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 10.5,
+          "employmentThousands": 354.4,
+          "participationRate": 63.5,
+          "youthUnemploymentRate": 17.8,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 10.4,
+          "employmentThousands": 357,
+          "participationRate": 63.7,
+          "youthUnemploymentRate": 17,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 10.1,
+          "employmentThousands": 357.4,
+          "participationRate": 63.4,
+          "youthUnemploymentRate": 16.9,
+          "primeAgeUnemploymentRate": 8.4
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 10.1,
+          "employmentThousands": 354.7,
+          "participationRate": 62.8,
+          "youthUnemploymentRate": 17.1,
+          "primeAgeUnemploymentRate": 8.4
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 357.6,
+          "participationRate": 62.8,
+          "youthUnemploymentRate": 14.4,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 359.4,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 13.1,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 8.1,
+          "employmentThousands": 359.9,
+          "participationRate": 61.5,
+          "youthUnemploymentRate": 12.5,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 361.7,
+          "participationRate": 61.4,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 6.6
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 10.4,
+          "employmentThousands": 351.5,
+          "participationRate": 60.6,
+          "youthUnemploymentRate": 18.7,
+          "primeAgeUnemploymentRate": 8.2
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 9.3,
+          "employmentThousands": 364.6,
+          "participationRate": 61.4,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 375.6,
+          "participationRate": 60.5,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 388.6,
+          "participationRate": 60.4,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 7,
+          "employmentThousands": 400,
+          "participationRate": 60.6,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 7.1,
+          "employmentThousands": 405.2,
+          "participationRate": 60.5,
+          "youthUnemploymentRate": 14.9,
+          "primeAgeUnemploymentRate": 5.6
+        }
+      ]
+    },
+    {
+      "code": "NL",
+      "name": "Newfoundland and Labrador",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 13.4,
+          "employmentThousands": 158.8,
+          "participationRate": 49.4,
+          "youthUnemploymentRate": 20.5,
+          "primeAgeUnemploymentRate": 10.6
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 15.4,
+          "employmentThousands": 160.9,
+          "participationRate": 50.6,
+          "youthUnemploymentRate": 24.4,
+          "primeAgeUnemploymentRate": 11.7
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 15.9,
+          "employmentThousands": 166.1,
+          "participationRate": 51.7,
+          "youthUnemploymentRate": 23.3,
+          "primeAgeUnemploymentRate": 12.9
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 14.8,
+          "employmentThousands": 176.7,
+          "participationRate": 53.4,
+          "youthUnemploymentRate": 23.7,
+          "primeAgeUnemploymentRate": 11.4
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 13.3,
+          "employmentThousands": 182.6,
+          "participationRate": 53.2,
+          "youthUnemploymentRate": 21.1,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 13.5,
+          "employmentThousands": 186.1,
+          "participationRate": 53.5,
+          "youthUnemploymentRate": 22.5,
+          "primeAgeUnemploymentRate": 10
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 16.2,
+          "employmentThousands": 180.8,
+          "participationRate": 53.1,
+          "youthUnemploymentRate": 27.3,
+          "primeAgeUnemploymentRate": 12.5
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 18.1,
+          "employmentThousands": 180.8,
+          "participationRate": 53.3,
+          "youthUnemploymentRate": 29.7,
+          "primeAgeUnemploymentRate": 14.3
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 20.1,
+          "employmentThousands": 179,
+          "participationRate": 53.5,
+          "youthUnemploymentRate": 32.4,
+          "primeAgeUnemploymentRate": 16.3
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 20.2,
+          "employmentThousands": 182.5,
+          "participationRate": 54.2,
+          "youthUnemploymentRate": 31.3,
+          "primeAgeUnemploymentRate": 16.9
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 18.8,
+          "employmentThousands": 187.1,
+          "participationRate": 54.3,
+          "youthUnemploymentRate": 29.4,
+          "primeAgeUnemploymentRate": 15.8
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 17.8,
+          "employmentThousands": 190.3,
+          "participationRate": 54.2,
+          "youthUnemploymentRate": 28.1,
+          "primeAgeUnemploymentRate": 15.1
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 16.2,
+          "employmentThousands": 199.7,
+          "participationRate": 55.3,
+          "youthUnemploymentRate": 25.2,
+          "primeAgeUnemploymentRate": 13.8
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 15.5,
+          "employmentThousands": 206.3,
+          "participationRate": 56,
+          "youthUnemploymentRate": 23.7,
+          "primeAgeUnemploymentRate": 13.5
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 17,
+          "employmentThousands": 206.9,
+          "participationRate": 56.7,
+          "youthUnemploymentRate": 25.1,
+          "primeAgeUnemploymentRate": 14.9
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 18,
+          "employmentThousands": 204.7,
+          "participationRate": 56.2,
+          "youthUnemploymentRate": 27.8,
+          "primeAgeUnemploymentRate": 15.7
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 20,
+          "employmentThousands": 194.9,
+          "participationRate": 54.4,
+          "youthUnemploymentRate": 29.6,
+          "primeAgeUnemploymentRate": 17.6
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 20.1,
+          "employmentThousands": 193.8,
+          "participationRate": 53.9,
+          "youthUnemploymentRate": 30.8,
+          "primeAgeUnemploymentRate": 17.7
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 20,
+          "employmentThousands": 193.5,
+          "participationRate": 53.8,
+          "youthUnemploymentRate": 29.7,
+          "primeAgeUnemploymentRate": 18
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 18,
+          "employmentThousands": 194.4,
+          "participationRate": 53.1,
+          "youthUnemploymentRate": 27.1,
+          "primeAgeUnemploymentRate": 16.2
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 18.9,
+          "employmentThousands": 188.8,
+          "participationRate": 52.5,
+          "youthUnemploymentRate": 27.9,
+          "primeAgeUnemploymentRate": 17
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 18.1,
+          "employmentThousands": 189.6,
+          "participationRate": 52.7,
+          "youthUnemploymentRate": 26.1,
+          "primeAgeUnemploymentRate": 16.8
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 17.6,
+          "employmentThousands": 193.7,
+          "participationRate": 54.2,
+          "youthUnemploymentRate": 27.4,
+          "primeAgeUnemploymentRate": 16.1
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 16.7,
+          "employmentThousands": 201.9,
+          "participationRate": 56.2,
+          "youthUnemploymentRate": 26.8,
+          "primeAgeUnemploymentRate": 15
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 16.6,
+          "employmentThousands": 198.8,
+          "participationRate": 55.5,
+          "youthUnemploymentRate": 25.4,
+          "primeAgeUnemploymentRate": 15
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 16,
+          "employmentThousands": 203.7,
+          "participationRate": 56.8,
+          "youthUnemploymentRate": 24.6,
+          "primeAgeUnemploymentRate": 14.3
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 16.7,
+          "employmentThousands": 206.5,
+          "participationRate": 58.2,
+          "youthUnemploymentRate": 22.7,
+          "primeAgeUnemploymentRate": 15.6
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 16.5,
+          "employmentThousands": 210.7,
+          "participationRate": 59.1,
+          "youthUnemploymentRate": 23.8,
+          "primeAgeUnemploymentRate": 14.9
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 15.6,
+          "employmentThousands": 213.2,
+          "participationRate": 59.1,
+          "youthUnemploymentRate": 22.7,
+          "primeAgeUnemploymentRate": 14.6
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 15.2,
+          "employmentThousands": 212.3,
+          "participationRate": 58.7,
+          "youthUnemploymentRate": 21.6,
+          "primeAgeUnemploymentRate": 14
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 15,
+          "employmentThousands": 214.4,
+          "participationRate": 59.3,
+          "youthUnemploymentRate": 22.1,
+          "primeAgeUnemploymentRate": 13.7
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 13.7,
+          "employmentThousands": 218,
+          "participationRate": 59.4,
+          "youthUnemploymentRate": 19.4,
+          "primeAgeUnemploymentRate": 12.5
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 13.3,
+          "employmentThousands": 221.5,
+          "participationRate": 59.7,
+          "youthUnemploymentRate": 18.7,
+          "primeAgeUnemploymentRate": 11.9
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 15.8,
+          "employmentThousands": 215.6,
+          "participationRate": 59.2,
+          "youthUnemploymentRate": 22.2,
+          "primeAgeUnemploymentRate": 13.5
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 14.9,
+          "employmentThousands": 224.5,
+          "participationRate": 60.3,
+          "youthUnemploymentRate": 21.4,
+          "primeAgeUnemploymentRate": 12.9
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 13.1,
+          "employmentThousands": 232.8,
+          "participationRate": 60.8,
+          "youthUnemploymentRate": 20.5,
+          "primeAgeUnemploymentRate": 10.8
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 12.7,
+          "employmentThousands": 240,
+          "participationRate": 62.1,
+          "youthUnemploymentRate": 18.3,
+          "primeAgeUnemploymentRate": 10.9
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 11.9,
+          "employmentThousands": 242,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 17,
+          "primeAgeUnemploymentRate": 9.9
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 12.4,
+          "employmentThousands": 239.9,
+          "participationRate": 61.4,
+          "youthUnemploymentRate": 16.1,
+          "primeAgeUnemploymentRate": 10.7
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 13.1,
+          "employmentThousands": 240.1,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 16.5,
+          "primeAgeUnemploymentRate": 11.3
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 13.7,
+          "employmentThousands": 235.1,
+          "participationRate": 60.7,
+          "youthUnemploymentRate": 16.6,
+          "primeAgeUnemploymentRate": 12
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 15.2,
+          "employmentThousands": 226.8,
+          "participationRate": 59.5,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 13.3
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 14,
+          "employmentThousands": 228,
+          "participationRate": 59.1,
+          "youthUnemploymentRate": 18.7,
+          "primeAgeUnemploymentRate": 12.1
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 12.2,
+          "employmentThousands": 231.3,
+          "participationRate": 58.7,
+          "youthUnemploymentRate": 17.6,
+          "primeAgeUnemploymentRate": 10.2
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 14.3,
+          "employmentThousands": 217.3,
+          "participationRate": 56.4,
+          "youthUnemploymentRate": 21.1,
+          "primeAgeUnemploymentRate": 11.5
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 13,
+          "employmentThousands": 225.1,
+          "participationRate": 57.5,
+          "youthUnemploymentRate": 18.3,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 11.3,
+          "employmentThousands": 234.2,
+          "participationRate": 58.3,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 9.9,
+          "employmentThousands": 238.3,
+          "participationRate": 57.6,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 10,
+          "employmentThousands": 245,
+          "participationRate": 58.3,
+          "youthUnemploymentRate": 14.2,
+          "primeAgeUnemploymentRate": 8.3
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 10.1,
+          "employmentThousands": 244.8,
+          "participationRate": 57.8,
+          "youthUnemploymentRate": 16.4,
+          "primeAgeUnemploymentRate": 8.4
+        }
+      ]
+    },
+    {
+      "code": "NS",
+      "name": "Nova Scotia",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 9.2,
+          "employmentThousands": 297.9,
+          "participationRate": 55.6,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 6.6
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 10.3,
+          "employmentThousands": 298.3,
+          "participationRate": 55.6,
+          "youthUnemploymentRate": 16.8,
+          "primeAgeUnemploymentRate": 8.3
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 10.5,
+          "employmentThousands": 306,
+          "participationRate": 56.2,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 8.2
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 10,
+          "employmentThousands": 317.3,
+          "participationRate": 57,
+          "youthUnemploymentRate": 18,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 324.4,
+          "participationRate": 57.3,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 10,
+          "employmentThousands": 328.3,
+          "participationRate": 57.7,
+          "youthUnemploymentRate": 16.7,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 12.8,
+          "employmentThousands": 321.1,
+          "participationRate": 57.5,
+          "youthUnemploymentRate": 21.7,
+          "primeAgeUnemploymentRate": 10.2
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 13.4,
+          "employmentThousands": 324.8,
+          "participationRate": 57.7,
+          "youthUnemploymentRate": 21.8,
+          "primeAgeUnemploymentRate": 11.1
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 13,
+          "employmentThousands": 339.9,
+          "participationRate": 59.2,
+          "youthUnemploymentRate": 20.9,
+          "primeAgeUnemploymentRate": 10.9
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 13.4,
+          "employmentThousands": 343.7,
+          "participationRate": 59.4,
+          "youthUnemploymentRate": 21.4,
+          "primeAgeUnemploymentRate": 11.4
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 13.3,
+          "employmentThousands": 350.5,
+          "participationRate": 59.9,
+          "youthUnemploymentRate": 20.5,
+          "primeAgeUnemploymentRate": 11.5
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 12,
+          "employmentThousands": 359,
+          "participationRate": 60,
+          "youthUnemploymentRate": 18.3,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 10.2,
+          "employmentThousands": 373.7,
+          "participationRate": 60.7,
+          "youthUnemploymentRate": 15.6,
+          "primeAgeUnemploymentRate": 9
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 9.9,
+          "employmentThousands": 381.6,
+          "participationRate": 61.3,
+          "youthUnemploymentRate": 15,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 10.7,
+          "employmentThousands": 385.3,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 15.5,
+          "primeAgeUnemploymentRate": 9.7
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 380.6,
+          "participationRate": 61.6,
+          "youthUnemploymentRate": 19.5,
+          "primeAgeUnemploymentRate": 10.4
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 13.1,
+          "employmentThousands": 368.9,
+          "participationRate": 60,
+          "youthUnemploymentRate": 20.2,
+          "primeAgeUnemploymentRate": 11.7
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 14.3,
+          "employmentThousands": 366.5,
+          "participationRate": 60,
+          "youthUnemploymentRate": 21.5,
+          "primeAgeUnemploymentRate": 13
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 13.5,
+          "employmentThousands": 372.6,
+          "participationRate": 60.1,
+          "youthUnemploymentRate": 22.1,
+          "primeAgeUnemploymentRate": 11.7
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 12.2,
+          "employmentThousands": 375.9,
+          "participationRate": 59.4,
+          "youthUnemploymentRate": 19,
+          "primeAgeUnemploymentRate": 10.8
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 12.4,
+          "employmentThousands": 376.8,
+          "participationRate": 59.4,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 11.3
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 382.3,
+          "participationRate": 59.7,
+          "youthUnemploymentRate": 20.6,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 10.5,
+          "employmentThousands": 395.9,
+          "participationRate": 60.5,
+          "youthUnemploymentRate": 19,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 403.7,
+          "participationRate": 60.8,
+          "youthUnemploymentRate": 18.2,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 411.7,
+          "participationRate": 61.2,
+          "youthUnemploymentRate": 15.8,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 415.4,
+          "participationRate": 62,
+          "youthUnemploymentRate": 17.6,
+          "primeAgeUnemploymentRate": 8.3
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 422.5,
+          "participationRate": 62.6,
+          "youthUnemploymentRate": 17.9,
+          "primeAgeUnemploymentRate": 8
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 431.3,
+          "participationRate": 63,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 7.7
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 441.7,
+          "participationRate": 63.9,
+          "youthUnemploymentRate": 15.1,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 8.4,
+          "employmentThousands": 442.1,
+          "participationRate": 63.4,
+          "youthUnemploymentRate": 15,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 440.2,
+          "participationRate": 62.8,
+          "youthUnemploymentRate": 13.7,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 446.3,
+          "participationRate": 63.5,
+          "youthUnemploymentRate": 13.1,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 7.9,
+          "employmentThousands": 451.8,
+          "participationRate": 63.9,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 9.4,
+          "employmentThousands": 450.7,
+          "participationRate": 64.5,
+          "youthUnemploymentRate": 17,
+          "primeAgeUnemploymentRate": 8.2
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 452.5,
+          "participationRate": 64.5,
+          "youthUnemploymentRate": 16,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 9,
+          "employmentThousands": 456,
+          "participationRate": 64.3,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 9.3,
+          "employmentThousands": 457.3,
+          "participationRate": 64.6,
+          "youthUnemploymentRate": 17.8,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 453.4,
+          "participationRate": 64.1,
+          "youthUnemploymentRate": 17.6,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 446.9,
+          "participationRate": 63.2,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 8.9,
+          "employmentThousands": 443.7,
+          "participationRate": 62.6,
+          "youthUnemploymentRate": 15.2,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 8.4,
+          "employmentThousands": 441.9,
+          "participationRate": 61.7,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 8.7,
+          "employmentThousands": 444.8,
+          "participationRate": 61.7,
+          "youthUnemploymentRate": 16.4,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 7.9,
+          "employmentThousands": 451.1,
+          "participationRate": 61.3,
+          "youthUnemploymentRate": 15.1,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 7.5,
+          "employmentThousands": 463.8,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 13.5,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 9.9,
+          "employmentThousands": 447.2,
+          "participationRate": 60.4,
+          "youthUnemploymentRate": 16.7,
+          "primeAgeUnemploymentRate": 8.5
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 8.6,
+          "employmentThousands": 475.5,
+          "participationRate": 62.5,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 492.1,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 11.4,
+          "primeAgeUnemploymentRate": 5.3
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 6.4,
+          "employmentThousands": 505.3,
+          "participationRate": 61.5,
+          "youthUnemploymentRate": 12,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 521.3,
+          "participationRate": 61.8,
+          "youthUnemploymentRate": 12.1,
+          "primeAgeUnemploymentRate": 5.6
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 523.5,
+          "participationRate": 61.3,
+          "youthUnemploymentRate": 13,
+          "primeAgeUnemploymentRate": 5.6
+        }
+      ]
+    },
+    {
+      "code": "ON",
+      "name": "Ontario",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 3740.7,
+          "participationRate": 64.2,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 3803.9,
+          "participationRate": 64.5,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 3923.6,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 4092.8,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 5
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 4165.1,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 12.2,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 4292.5,
+          "participationRate": 67.7,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 4.9
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 9.8,
+          "employmentThousands": 4198.6,
+          "participationRate": 67.5,
+          "youthUnemploymentRate": 16.7,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 10.4,
+          "employmentThousands": 4249,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 17.3,
+          "primeAgeUnemploymentRate": 8.4
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 9,
+          "employmentThousands": 4410.2,
+          "participationRate": 67.8,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 7.9,
+          "employmentThousands": 4576.6,
+          "participationRate": 68.4,
+          "youthUnemploymentRate": 12.5,
+          "primeAgeUnemploymentRate": 6.6
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 7,
+          "employmentThousands": 4733.9,
+          "participationRate": 68.8,
+          "youthUnemploymentRate": 11.2,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 4895.6,
+          "participationRate": 69.1,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 5,
+          "employmentThousands": 5083.1,
+          "participationRate": 69.6,
+          "youthUnemploymentRate": 7.9,
+          "primeAgeUnemploymentRate": 4.3
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 5,
+          "employmentThousands": 5199,
+          "participationRate": 70,
+          "youthUnemploymentRate": 7.7,
+          "primeAgeUnemploymentRate": 4.4
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 6.2,
+          "employmentThousands": 5194.1,
+          "participationRate": 69.5,
+          "youthUnemploymentRate": 10,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 9.5,
+          "employmentThousands": 5017.1,
+          "participationRate": 68.5,
+          "youthUnemploymentRate": 15.1,
+          "primeAgeUnemploymentRate": 8.5
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 10.8,
+          "employmentThousands": 4932.9,
+          "participationRate": 67.3,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 9.4
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 10.9,
+          "employmentThousands": 4938,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 9.7
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 5013.6,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 8.5
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 8.7,
+          "employmentThousands": 5100,
+          "participationRate": 65.5,
+          "youthUnemploymentRate": 14.7,
+          "primeAgeUnemploymentRate": 7.7
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 9,
+          "employmentThousands": 5165.9,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 14.9,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 8.4,
+          "employmentThousands": 5290.7,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 16.5,
+          "primeAgeUnemploymentRate": 7
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 5453.9,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 6.3,
+          "employmentThousands": 5635.3,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 5814.9,
+          "participationRate": 67,
+          "youthUnemploymentRate": 11.8,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 6.3,
+          "employmentThousands": 5921.3,
+          "participationRate": 67.3,
+          "youthUnemploymentRate": 12.5,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 7.1,
+          "employmentThousands": 6034.2,
+          "participationRate": 67.8,
+          "youthUnemploymentRate": 13.9,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 6212.9,
+          "participationRate": 68.5,
+          "youthUnemploymentRate": 14.4,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 6314.3,
+          "participationRate": 68.4,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 6381,
+          "participationRate": 68,
+          "youthUnemploymentRate": 13.9,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 6.4,
+          "employmentThousands": 6460.5,
+          "participationRate": 67.7,
+          "youthUnemploymentRate": 12.9,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 6.4,
+          "employmentThousands": 6537.3,
+          "participationRate": 67.7,
+          "youthUnemploymentRate": 12.6,
+          "primeAgeUnemploymentRate": 5.3
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 6600.7,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 13.4,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 9.2,
+          "employmentThousands": 6444.7,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 17.1,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 6547.4,
+          "participationRate": 67,
+          "youthUnemploymentRate": 16.9,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 8,
+          "employmentThousands": 6647.6,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 15.6,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 8,
+          "employmentThousands": 6685.4,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 16.7,
+          "primeAgeUnemploymentRate": 6.6
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 7.6,
+          "employmentThousands": 6790.9,
+          "participationRate": 66.3,
+          "youthUnemploymentRate": 15.6,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 7.4,
+          "employmentThousands": 6823.4,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 15.3,
+          "primeAgeUnemploymentRate": 6.1
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 6.8,
+          "employmentThousands": 6862.7,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 14.4,
+          "primeAgeUnemploymentRate": 5.6
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 6934.5,
+          "participationRate": 65,
+          "youthUnemploymentRate": 13.4,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 7109.2,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 7240.4,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 7412.9,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 9.8,
+          "employmentThousands": 7043.4,
+          "participationRate": 63.7,
+          "youthUnemploymentRate": 22.1,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 8.1,
+          "employmentThousands": 7404.8,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 15.9,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 7764.1,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 11.4,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 8006.1,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 12.5,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 7,
+          "employmentThousands": 8146.1,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 15.7,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 8227,
+          "participationRate": 65,
+          "youthUnemploymentRate": 16,
+          "primeAgeUnemploymentRate": 6.7
+        }
+      ]
+    },
+    {
+      "code": "PE",
+      "name": "Prince Edward Island",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 9.3,
+          "employmentThousands": 43,
+          "participationRate": 57.1,
+          "youthUnemploymentRate": 14.8,
+          "primeAgeUnemploymentRate": 7.2
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 9.5,
+          "employmentThousands": 43.6,
+          "participationRate": 57,
+          "youthUnemploymentRate": 13.3,
+          "primeAgeUnemploymentRate": 8.3
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 44.9,
+          "participationRate": 57.4,
+          "youthUnemploymentRate": 15.2,
+          "primeAgeUnemploymentRate": 7.9
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 11.6,
+          "employmentThousands": 46.4,
+          "participationRate": 59.3,
+          "youthUnemploymentRate": 16.2,
+          "primeAgeUnemploymentRate": 10.1
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 10.5,
+          "employmentThousands": 47.8,
+          "participationRate": 59.5,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 9.2
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 11.3,
+          "employmentThousands": 47.1,
+          "participationRate": 58.7,
+          "youthUnemploymentRate": 19.2,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 12.6,
+          "employmentThousands": 46.6,
+          "participationRate": 58.5,
+          "youthUnemploymentRate": 20.4,
+          "primeAgeUnemploymentRate": 10.3
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 12.2,
+          "employmentThousands": 48.8,
+          "participationRate": 60,
+          "youthUnemploymentRate": 19.9,
+          "primeAgeUnemploymentRate": 10.4
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 12.5,
+          "employmentThousands": 49.5,
+          "participationRate": 60.1,
+          "youthUnemploymentRate": 19.3,
+          "primeAgeUnemploymentRate": 10.4
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 13.5,
+          "employmentThousands": 50.7,
+          "participationRate": 61.5,
+          "youthUnemploymentRate": 20,
+          "primeAgeUnemploymentRate": 11.7
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 13,
+          "employmentThousands": 52.3,
+          "participationRate": 62.6,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 11.9
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 12.3,
+          "employmentThousands": 53.4,
+          "participationRate": 63.2,
+          "youthUnemploymentRate": 16.8,
+          "primeAgeUnemploymentRate": 11.4
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 12.2,
+          "employmentThousands": 54.6,
+          "participationRate": 64.2,
+          "youthUnemploymentRate": 15.8,
+          "primeAgeUnemploymentRate": 11.9
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 13.7,
+          "employmentThousands": 55,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 18.4,
+          "primeAgeUnemploymentRate": 13
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 14.4,
+          "employmentThousands": 55.1,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 18.5,
+          "primeAgeUnemploymentRate": 13.9
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 16.5,
+          "employmentThousands": 53.4,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 20.6,
+          "primeAgeUnemploymentRate": 16
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 17.6,
+          "employmentThousands": 53.7,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 22.7,
+          "primeAgeUnemploymentRate": 16.8
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 16.9,
+          "employmentThousands": 54.6,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 21.9,
+          "primeAgeUnemploymentRate": 16.4
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 16.5,
+          "employmentThousands": 55.7,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 20,
+          "primeAgeUnemploymentRate": 15.8
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 14.8,
+          "employmentThousands": 57.2,
+          "participationRate": 65,
+          "youthUnemploymentRate": 18.6,
+          "primeAgeUnemploymentRate": 14.2
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 14.6,
+          "employmentThousands": 58.8,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 14
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 15.3,
+          "employmentThousands": 58.6,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 17.2,
+          "primeAgeUnemploymentRate": 15.2
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 13.9,
+          "employmentThousands": 59.6,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 16.8,
+          "primeAgeUnemploymentRate": 13.3
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 14.3,
+          "employmentThousands": 60.3,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 17.6,
+          "primeAgeUnemploymentRate": 13.3
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 12,
+          "employmentThousands": 62.8,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 11.6
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 11.9,
+          "employmentThousands": 63.8,
+          "participationRate": 67.1,
+          "youthUnemploymentRate": 16.2,
+          "primeAgeUnemploymentRate": 10.8
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 11.9,
+          "employmentThousands": 64.7,
+          "participationRate": 67.6,
+          "youthUnemploymentRate": 15.6,
+          "primeAgeUnemploymentRate": 11.2
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 10.9,
+          "employmentThousands": 66.1,
+          "participationRate": 67.8,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 10
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 11.2,
+          "employmentThousands": 66.6,
+          "participationRate": 67.9,
+          "youthUnemploymentRate": 16.9,
+          "primeAgeUnemploymentRate": 10
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 10.9,
+          "employmentThousands": 67.7,
+          "participationRate": 68.1,
+          "youthUnemploymentRate": 16.7,
+          "primeAgeUnemploymentRate": 9.3
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 11.5,
+          "employmentThousands": 68,
+          "participationRate": 68.6,
+          "youthUnemploymentRate": 14.8,
+          "primeAgeUnemploymentRate": 10.6
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 10.6,
+          "employmentThousands": 68.2,
+          "participationRate": 67.8,
+          "youthUnemploymentRate": 14.2,
+          "primeAgeUnemploymentRate": 9.5
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 11.2,
+          "employmentThousands": 68.8,
+          "participationRate": 68.4,
+          "youthUnemploymentRate": 16.2,
+          "primeAgeUnemploymentRate": 9.8
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 12,
+          "employmentThousands": 68.5,
+          "participationRate": 67.9,
+          "youthUnemploymentRate": 17.6,
+          "primeAgeUnemploymentRate": 10.6
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 11.5,
+          "employmentThousands": 70.1,
+          "participationRate": 68,
+          "youthUnemploymentRate": 15.9,
+          "primeAgeUnemploymentRate": 10.2
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 11.2,
+          "employmentThousands": 72.2,
+          "participationRate": 68.6,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 10.4
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 11.2,
+          "employmentThousands": 73,
+          "participationRate": 69,
+          "youthUnemploymentRate": 17.6,
+          "primeAgeUnemploymentRate": 9
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 11.5,
+          "employmentThousands": 73.9,
+          "participationRate": 70,
+          "youthUnemploymentRate": 17.4,
+          "primeAgeUnemploymentRate": 9.9
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 10.7,
+          "employmentThousands": 73.3,
+          "participationRate": 68.8,
+          "youthUnemploymentRate": 16.4,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 10.7,
+          "employmentThousands": 72.7,
+          "participationRate": 68.1,
+          "youthUnemploymentRate": 15.3,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 10.8,
+          "employmentThousands": 72.1,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 14.4,
+          "primeAgeUnemploymentRate": 9.1
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 10,
+          "employmentThousands": 74.2,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 12.9,
+          "primeAgeUnemploymentRate": 8.7
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 9.9,
+          "employmentThousands": 76.1,
+          "participationRate": 67.2,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 9,
+          "employmentThousands": 78.1,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 10.4,
+          "primeAgeUnemploymentRate": 7.7
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 10.6,
+          "employmentThousands": 76.2,
+          "participationRate": 64.7,
+          "youthUnemploymentRate": 16.4,
+          "primeAgeUnemploymentRate": 9.3
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 9.8,
+          "employmentThousands": 80,
+          "participationRate": 65.8,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 8.4
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 84.1,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 89.3,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 11.5,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 8,
+          "employmentThousands": 92.5,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 11.1,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 8,
+          "employmentThousands": 93.5,
+          "participationRate": 66,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 6.8
+        }
+      ]
+    },
+    {
+      "code": "QC",
+      "name": "Quebec",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 8.7,
+          "employmentThousands": 2543.4,
+          "participationRate": 58.8,
+          "youthUnemploymentRate": 15.2,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 10.4,
+          "employmentThousands": 2556,
+          "participationRate": 59.3,
+          "youthUnemploymentRate": 17.5,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 11,
+          "employmentThousands": 2596.1,
+          "participationRate": 60,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 9.7,
+          "employmentThousands": 2692,
+          "participationRate": 60.6,
+          "youthUnemploymentRate": 16,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 10,
+          "employmentThousands": 2756.2,
+          "participationRate": 61.4,
+          "youthUnemploymentRate": 16.7,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 10.5,
+          "employmentThousands": 2791.2,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 17,
+          "primeAgeUnemploymentRate": 8.6
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 14,
+          "employmentThousands": 2640.1,
+          "participationRate": 60.4,
+          "youthUnemploymentRate": 22.6,
+          "primeAgeUnemploymentRate": 11.6
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 14.2,
+          "employmentThousands": 2683.8,
+          "participationRate": 61.1,
+          "youthUnemploymentRate": 22.3,
+          "primeAgeUnemploymentRate": 11.9
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 13.1,
+          "employmentThousands": 2762.5,
+          "participationRate": 61.7,
+          "youthUnemploymentRate": 19.5,
+          "primeAgeUnemploymentRate": 11.5
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 12.2,
+          "employmentThousands": 2848.6,
+          "participationRate": 62.4,
+          "youthUnemploymentRate": 17.5,
+          "primeAgeUnemploymentRate": 10.7
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 11,
+          "employmentThousands": 2933.5,
+          "participationRate": 62.9,
+          "youthUnemploymentRate": 16.3,
+          "primeAgeUnemploymentRate": 9.6
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 10.2,
+          "employmentThousands": 3022.1,
+          "participationRate": 63.6,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 9.2
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 9.5,
+          "employmentThousands": 3081.4,
+          "participationRate": 63.8,
+          "youthUnemploymentRate": 13,
+          "primeAgeUnemploymentRate": 8.8
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 9.6,
+          "employmentThousands": 3128.8,
+          "participationRate": 64.2,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 8.9
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 10.4,
+          "employmentThousands": 3140.3,
+          "participationRate": 64.2,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 9.7
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 12.1,
+          "employmentThousands": 3084.4,
+          "participationRate": 63.6,
+          "youthUnemploymentRate": 18.2,
+          "primeAgeUnemploymentRate": 11
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 12.7,
+          "employmentThousands": 3038.6,
+          "participationRate": 62.6,
+          "youthUnemploymentRate": 17.7,
+          "primeAgeUnemploymentRate": 11.8
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 13.2,
+          "employmentThousands": 3030.9,
+          "participationRate": 62.3,
+          "youthUnemploymentRate": 18.8,
+          "primeAgeUnemploymentRate": 12.2
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 12.3,
+          "employmentThousands": 3094.8,
+          "participationRate": 62.5,
+          "youthUnemploymentRate": 16.9,
+          "primeAgeUnemploymentRate": 11.4
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 11.5,
+          "employmentThousands": 3135.3,
+          "participationRate": 62.2,
+          "youthUnemploymentRate": 16.1,
+          "primeAgeUnemploymentRate": 10.5
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 11.8,
+          "employmentThousands": 3132.7,
+          "participationRate": 61.9,
+          "youthUnemploymentRate": 18.4,
+          "primeAgeUnemploymentRate": 10.7
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 11.4,
+          "employmentThousands": 3174.5,
+          "participationRate": 62.1,
+          "youthUnemploymentRate": 19.3,
+          "primeAgeUnemploymentRate": 10.1
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 10.3,
+          "employmentThousands": 3257.7,
+          "participationRate": 62.6,
+          "youthUnemploymentRate": 17.3,
+          "primeAgeUnemploymentRate": 9
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 9.3,
+          "employmentThousands": 3326.6,
+          "participationRate": 62.8,
+          "youthUnemploymentRate": 15.8,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 3401.5,
+          "participationRate": 63.1,
+          "youthUnemploymentRate": 14,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 3441.3,
+          "participationRate": 63.6,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 7.8
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 8.7,
+          "employmentThousands": 3564.3,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 7.6
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 9.1,
+          "employmentThousands": 3628.8,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 8.1
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 8.5,
+          "employmentThousands": 3675.8,
+          "participationRate": 65.9,
+          "youthUnemploymentRate": 14.6,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 3705.5,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 13.4,
+          "primeAgeUnemploymentRate": 7.4
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 3736,
+          "participationRate": 65.4,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 7.4,
+          "employmentThousands": 3824.1,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 12.4,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 7.4,
+          "employmentThousands": 3876,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 8.8,
+          "employmentThousands": 3854.5,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 15,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 8.2,
+          "employmentThousands": 3928.1,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 13.8,
+          "primeAgeUnemploymentRate": 7.2
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 8,
+          "employmentThousands": 3967.4,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 7.9,
+          "employmentThousands": 4000.4,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 6.9
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 7.8,
+          "employmentThousands": 4038.8,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 12.8,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 7.9,
+          "employmentThousands": 4020.2,
+          "participationRate": 64.8,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 4041.9,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 12.2,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 7.2,
+          "employmentThousands": 4063.6,
+          "participationRate": 64.6,
+          "youthUnemploymentRate": 12.2,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 4165.1,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 9.8,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 4243.2,
+          "participationRate": 65,
+          "youthUnemploymentRate": 9,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 5.1,
+          "employmentThousands": 4300.3,
+          "participationRate": 65.1,
+          "youthUnemploymentRate": 8.3,
+          "primeAgeUnemploymentRate": 4.3
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 8.9,
+          "employmentThousands": 4087.5,
+          "participationRate": 63.9,
+          "youthUnemploymentRate": 16.6,
+          "primeAgeUnemploymentRate": 7.3
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 4261.8,
+          "participationRate": 64.3,
+          "youthUnemploymentRate": 9.6,
+          "primeAgeUnemploymentRate": 5.2
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 4.3,
+          "employmentThousands": 4392,
+          "participationRate": 64.4,
+          "youthUnemploymentRate": 7.6,
+          "primeAgeUnemploymentRate": 3.5
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 4.5,
+          "employmentThousands": 4522.8,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 7.4,
+          "primeAgeUnemploymentRate": 3.8
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 4566,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 4644.8,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 9.7,
+          "primeAgeUnemploymentRate": 4.8
+        }
+      ]
+    },
+    {
+      "code": "SK",
+      "name": "Saskatchewan",
+      "series": [
+        {
+          "year": 1976,
+          "unemploymentRate": 3.8,
+          "employmentThousands": 382.3,
+          "participationRate": 60.6,
+          "youthUnemploymentRate": 6.9,
+          "primeAgeUnemploymentRate": 2.8
+        },
+        {
+          "year": 1977,
+          "unemploymentRate": 4.4,
+          "employmentThousands": 395.4,
+          "participationRate": 61.6,
+          "youthUnemploymentRate": 8.1,
+          "primeAgeUnemploymentRate": 3
+        },
+        {
+          "year": 1978,
+          "unemploymentRate": 4.8,
+          "employmentThousands": 403.2,
+          "participationRate": 62.2,
+          "youthUnemploymentRate": 8.9,
+          "primeAgeUnemploymentRate": 3.5
+        },
+        {
+          "year": 1979,
+          "unemploymentRate": 4.2,
+          "employmentThousands": 416.1,
+          "participationRate": 62.9,
+          "youthUnemploymentRate": 7.6,
+          "primeAgeUnemploymentRate": 3
+        },
+        {
+          "year": 1980,
+          "unemploymentRate": 4.3,
+          "employmentThousands": 423.1,
+          "participationRate": 63.1,
+          "youthUnemploymentRate": 8,
+          "primeAgeUnemploymentRate": 3
+        },
+        {
+          "year": 1981,
+          "unemploymentRate": 4.5,
+          "employmentThousands": 430.9,
+          "participationRate": 63.6,
+          "youthUnemploymentRate": 8.3,
+          "primeAgeUnemploymentRate": 3.3
+        },
+        {
+          "year": 1982,
+          "unemploymentRate": 6.3,
+          "employmentThousands": 430,
+          "participationRate": 63.8,
+          "youthUnemploymentRate": 11.3,
+          "primeAgeUnemploymentRate": 4.8
+        },
+        {
+          "year": 1983,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 436.9,
+          "participationRate": 64.9,
+          "youthUnemploymentRate": 14.1,
+          "primeAgeUnemploymentRate": 5.9
+        },
+        {
+          "year": 1984,
+          "unemploymentRate": 8.1,
+          "employmentThousands": 443.2,
+          "participationRate": 65.2,
+          "youthUnemploymentRate": 14.5,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 1985,
+          "unemploymentRate": 8.1,
+          "employmentThousands": 453.6,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 13.6,
+          "primeAgeUnemploymentRate": 6.8
+        },
+        {
+          "year": 1986,
+          "unemploymentRate": 7.7,
+          "employmentThousands": 463.1,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 13.2,
+          "primeAgeUnemploymentRate": 6.5
+        },
+        {
+          "year": 1987,
+          "unemploymentRate": 7.3,
+          "employmentThousands": 461.9,
+          "participationRate": 66.3,
+          "youthUnemploymentRate": 12.2,
+          "primeAgeUnemploymentRate": 6.4
+        },
+        {
+          "year": 1988,
+          "unemploymentRate": 7.3,
+          "employmentThousands": 462.8,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 12.7,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 1989,
+          "unemploymentRate": 7.3,
+          "employmentThousands": 456.4,
+          "participationRate": 66.4,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 6.7
+        },
+        {
+          "year": 1990,
+          "unemploymentRate": 7,
+          "employmentThousands": 454.2,
+          "participationRate": 66.6,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 6.2
+        },
+        {
+          "year": 1991,
+          "unemploymentRate": 7.4,
+          "employmentThousands": 453.3,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 13,
+          "primeAgeUnemploymentRate": 6.3
+        },
+        {
+          "year": 1992,
+          "unemploymentRate": 8,
+          "employmentThousands": 448,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 14.3,
+          "primeAgeUnemploymentRate": 7.1
+        },
+        {
+          "year": 1993,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 448.5,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 14.2,
+          "primeAgeUnemploymentRate": 7.5
+        },
+        {
+          "year": 1994,
+          "unemploymentRate": 6.9,
+          "employmentThousands": 454.5,
+          "participationRate": 66.1,
+          "youthUnemploymentRate": 12.5,
+          "primeAgeUnemploymentRate": 6
+        },
+        {
+          "year": 1995,
+          "unemploymentRate": 6.7,
+          "employmentThousands": 458,
+          "participationRate": 66,
+          "youthUnemploymentRate": 11.8,
+          "primeAgeUnemploymentRate": 6.1
+        },
+        {
+          "year": 1996,
+          "unemploymentRate": 6.6,
+          "employmentThousands": 454.6,
+          "participationRate": 65.3,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 5.8
+        },
+        {
+          "year": 1997,
+          "unemploymentRate": 5.9,
+          "employmentThousands": 464.4,
+          "participationRate": 66.2,
+          "youthUnemploymentRate": 10.3,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 1998,
+          "unemploymentRate": 5.8,
+          "employmentThousands": 468.7,
+          "participationRate": 66.5,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.9
+        },
+        {
+          "year": 1999,
+          "unemploymentRate": 6,
+          "employmentThousands": 469.6,
+          "participationRate": 66.8,
+          "youthUnemploymentRate": 11.8,
+          "primeAgeUnemploymentRate": 5.1
+        },
+        {
+          "year": 2000,
+          "unemploymentRate": 5.1,
+          "employmentThousands": 472.9,
+          "participationRate": 66.7,
+          "youthUnemploymentRate": 10.5,
+          "primeAgeUnemploymentRate": 4.2
+        },
+        {
+          "year": 2001,
+          "unemploymentRate": 5.8,
+          "employmentThousands": 458.6,
+          "participationRate": 65.6,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2002,
+          "unemploymentRate": 5.7,
+          "employmentThousands": 467.7,
+          "participationRate": 66.9,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2003,
+          "unemploymentRate": 5.6,
+          "employmentThousands": 475.9,
+          "participationRate": 67.8,
+          "youthUnemploymentRate": 10.9,
+          "primeAgeUnemploymentRate": 4.7
+        },
+        {
+          "year": 2004,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 479.8,
+          "participationRate": 67.8,
+          "youthUnemploymentRate": 10.5,
+          "primeAgeUnemploymentRate": 4.3
+        },
+        {
+          "year": 2005,
+          "unemploymentRate": 5.1,
+          "employmentThousands": 481.8,
+          "participationRate": 67.9,
+          "youthUnemploymentRate": 10.1,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2006,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 491.6,
+          "participationRate": 68.8,
+          "youthUnemploymentRate": 8.9,
+          "primeAgeUnemploymentRate": 3.8
+        },
+        {
+          "year": 2007,
+          "unemploymentRate": 4.4,
+          "employmentThousands": 506.3,
+          "participationRate": 69.7,
+          "youthUnemploymentRate": 7.9,
+          "primeAgeUnemploymentRate": 3.6
+        },
+        {
+          "year": 2008,
+          "unemploymentRate": 4.2,
+          "employmentThousands": 518.7,
+          "participationRate": 70.1,
+          "youthUnemploymentRate": 7.6,
+          "primeAgeUnemploymentRate": 3.6
+        },
+        {
+          "year": 2009,
+          "unemploymentRate": 5.1,
+          "employmentThousands": 527.1,
+          "participationRate": 70.6,
+          "youthUnemploymentRate": 9.9,
+          "primeAgeUnemploymentRate": 4.2
+        },
+        {
+          "year": 2010,
+          "unemploymentRate": 5.3,
+          "employmentThousands": 535.1,
+          "participationRate": 70.6,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2011,
+          "unemploymentRate": 5,
+          "employmentThousands": 540.9,
+          "participationRate": 70,
+          "youthUnemploymentRate": 10,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2012,
+          "unemploymentRate": 4.9,
+          "employmentThousands": 550.8,
+          "participationRate": 70.1,
+          "youthUnemploymentRate": 9.5,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2013,
+          "unemploymentRate": 4.2,
+          "employmentThousands": 565.7,
+          "participationRate": 70.4,
+          "youthUnemploymentRate": 7.6,
+          "primeAgeUnemploymentRate": 3.6
+        },
+        {
+          "year": 2014,
+          "unemploymentRate": 3.9,
+          "employmentThousands": 568.5,
+          "participationRate": 69.8,
+          "youthUnemploymentRate": 7.5,
+          "primeAgeUnemploymentRate": 3.4
+        },
+        {
+          "year": 2015,
+          "unemploymentRate": 5.2,
+          "employmentThousands": 565.5,
+          "participationRate": 69.9,
+          "youthUnemploymentRate": 9.9,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2016,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 561.1,
+          "participationRate": 69.7,
+          "youthUnemploymentRate": 11.4,
+          "primeAgeUnemploymentRate": 5.7
+        },
+        {
+          "year": 2017,
+          "unemploymentRate": 6.4,
+          "employmentThousands": 562.5,
+          "participationRate": 69.2,
+          "youthUnemploymentRate": 11.8,
+          "primeAgeUnemploymentRate": 5.6
+        },
+        {
+          "year": 2018,
+          "unemploymentRate": 6.1,
+          "employmentThousands": 565.2,
+          "participationRate": 68.8,
+          "youthUnemploymentRate": 11.6,
+          "primeAgeUnemploymentRate": 5.4
+        },
+        {
+          "year": 2019,
+          "unemploymentRate": 5.5,
+          "employmentThousands": 574.5,
+          "participationRate": 69,
+          "youthUnemploymentRate": 11.3,
+          "primeAgeUnemploymentRate": 4.9
+        },
+        {
+          "year": 2020,
+          "unemploymentRate": 8.3,
+          "employmentThousands": 545.3,
+          "participationRate": 67.3,
+          "youthUnemploymentRate": 17.5,
+          "primeAgeUnemploymentRate": 7
+        },
+        {
+          "year": 2021,
+          "unemploymentRate": 6.5,
+          "employmentThousands": 558.3,
+          "participationRate": 67.5,
+          "youthUnemploymentRate": 11.7,
+          "primeAgeUnemploymentRate": 5.5
+        },
+        {
+          "year": 2022,
+          "unemploymentRate": 4.6,
+          "employmentThousands": 577.8,
+          "participationRate": 67.7,
+          "youthUnemploymentRate": 8.1,
+          "primeAgeUnemploymentRate": 4
+        },
+        {
+          "year": 2023,
+          "unemploymentRate": 4.7,
+          "employmentThousands": 587,
+          "participationRate": 67.2,
+          "youthUnemploymentRate": 9.6,
+          "primeAgeUnemploymentRate": 4.1
+        },
+        {
+          "year": 2024,
+          "unemploymentRate": 5.4,
+          "employmentThousands": 602.2,
+          "participationRate": 67.4,
+          "youthUnemploymentRate": 11.5,
+          "primeAgeUnemploymentRate": 4.6
+        },
+        {
+          "year": 2025,
+          "unemploymentRate": 5.2,
+          "employmentThousands": 617.4,
+          "participationRate": 67.4,
+          "youthUnemploymentRate": 11.9,
+          "primeAgeUnemploymentRate": 4.2
+        }
+      ]
+    }
+  ],
+  "decades": [
+    {
+      "decade": "1970s",
+      "decade_start": 1970,
+      "nb_unemployment": 11.9,
+      "canada_unemployment": 7.75,
+      "gap_pp": 4.15
+    },
+    {
+      "decade": "1980s",
+      "decade_start": 1980,
+      "nb_unemployment": 13.29,
+      "canada_unemployment": 9.36,
+      "gap_pp": 3.93
+    },
+    {
+      "decade": "1990s",
+      "decade_start": 1990,
+      "nb_unemployment": 12.09,
+      "canada_unemployment": 9.55,
+      "gap_pp": 2.54
+    },
+    {
+      "decade": "2000s",
+      "decade_start": 2000,
+      "nb_unemployment": 9.55,
+      "canada_unemployment": 7.08,
+      "gap_pp": 2.47
+    },
+    {
+      "decade": "2010s",
+      "decade_start": 2010,
+      "nb_unemployment": 9.44,
+      "canada_unemployment": 6.95,
+      "gap_pp": 2.49
+    },
+    {
+      "decade": "2020s",
+      "decade_start": 2020,
+      "nb_unemployment": 7.933333,
+      "canada_unemployment": 6.833333,
+      "gap_pp": 1.1
+    }
+  ],
+  "trends": [
+    {
+      "region_code": "AB",
+      "slope_pp_per_decade": -0.084,
+      "r_squared": 0.0031
+    },
+    {
+      "region_code": "BC",
+      "slope_pp_per_decade": -1.146,
+      "r_squared": 0.4331
+    },
+    {
+      "region_code": "CA",
+      "slope_pp_per_decade": -0.655,
+      "r_squared": 0.3245
+    },
+    {
+      "region_code": "MB",
+      "slope_pp_per_decade": -0.452,
+      "r_squared": 0.2009
+    },
+    {
+      "region_code": "NB",
+      "slope_pp_per_decade": -1.207,
+      "r_squared": 0.6724
+    },
+    {
+      "region_code": "NL",
+      "slope_pp_per_decade": -1.172,
+      "r_squared": 0.3883
+    },
+    {
+      "region_code": "NS",
+      "slope_pp_per_decade": -0.979,
+      "r_squared": 0.4907
+    },
+    {
+      "region_code": "ON",
+      "slope_pp_per_decade": -0.153,
+      "r_squared": 0.022
+    },
+    {
+      "region_code": "PE",
+      "slope_pp_per_decade": -0.756,
+      "r_squared": 0.2181
+    },
+    {
+      "region_code": "QC",
+      "slope_pp_per_decade": -1.361,
+      "r_squared": 0.6474
+    },
+    {
+      "region_code": "SK",
+      "slope_pp_per_decade": -0.186,
+      "r_squared": 0.0437
+    }
+  ],
+  "highlights": {
+    "latestYear": 2025,
+    "canadaUnemploymentLatest": 6.8,
+    "newBrunswickUnemploymentLatest": 7.1,
+    "youthPrimeGapLatest": 8
+  }
+}
