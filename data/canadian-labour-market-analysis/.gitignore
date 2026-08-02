@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+
+# Data — raw Statistics Canada downloads are large and reproducible, never committed
+data/raw/
+
+# Runtime artifacts — the database is rebuilt from the raw CSVs, never committed
+*.db
+*.db-journal
+*.sqlite

@@ -1,0 +1,16 @@
+region_code,region_name,region_type
+CA,Canada,country
+NL,Newfoundland and Labrador,province
+PE,Prince Edward Island,province
+NS,Nova Scotia,province
+NB,New Brunswick,province
+QC,Quebec,province
+ON,Ontario,province
+MB,Manitoba,province
+SK,Saskatchewan,province
+AB,Alberta,province
+BC,British Columbia,province
+YT,Yukon,territory
+NT,Northwest Territories,territory
+NU,Nunavut,territory
+NTI,Northwest Territories including Nunavut,territory

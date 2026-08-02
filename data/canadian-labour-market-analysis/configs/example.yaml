@@ -1,0 +1,45 @@
+# Canadian Labour Market Analysis — pipeline knobs.
+# Paths are resolved relative to the project root (configs/ -> ../data/...).
+
+# Statistics Canada table IDs (8-digit product IDs, see docs/data-dictionary.md)
+sources:
+  labour_force_product_id: 14100327
+  population_product_id: 17100005
+  licence: "Statistics Canada Open Licence"
+
+# Where raw downloads land (gitignored) and where the built database goes
+paths:
+  raw_dir: ../data/raw
+  db_path: ../data/canlab.db
+  sql_dir: ../sql
+  samples_dir: ../data/samples
+
+# Population rows kept in the warehouse: age groups shared with the labour
+# force table (so the two fact tables can be joined), plus "All ages".
+population_age_groups:
+  - "All ages"
+  - "15 to 24 years"
+  - "15 to 64 years"
+  - "15 years and over"
+  - "25 to 44 years"
+  - "25 to 54 years"
+
+# Query catalog to run in the build pipeline
+queries:
+  - q01_unemployment_national
+  - q02_unemployment_by_province_latest
+  - q03_employment_growth_yoy
+  - q04_provincial_employment_share
+  - q05_fastest_growing_provinces
+  - q06_recession_2008_recovery
+  - q07_covid_shock_2020
+  - q08_nb_vs_canada_unemployment
+  - q09_unemployment_moving_average
+  - q10_employment_per_working_age
+  - q11_gender_participation_gap
+  - q12_youth_unemployment
+  - q13_part_time_share
+  - q14_nb_employment_by_decade
+
+# Latest year used by "latest year" queries when no explicit year is given
+latest_year: 2025

@@ -1,0 +1,253 @@
+ref_year,region_code,gender,age_group,value
+2020,AB,Total,15 to 64 years,2974507.0
+2020,AB,Total,25 to 44 years,1336431.0
+2020,AB,Total,All ages,4407495.0
+2020,BC,Total,15 to 64 years,3461633.0
+2020,BC,Total,25 to 44 years,1452613.0
+2020,BC,Total,All ages,5176101.0
+2020,CA,Total,15 to 64 years,25121768.0
+2020,CA,Total,25 to 44 years,10418231.0
+2020,CA,Total,All ages,38028638.0
+2020,MB,Total,15 to 64 years,897925.0
+2020,MB,Total,25 to 44 years,376759.0
+2020,MB,Total,All ages,1380132.0
+2020,NB,Total,15 to 64 years,499056.0
+2020,NB,Total,25 to 44 years,184328.0
+2020,NB,Total,All ages,783432.0
+2020,NL,Total,15 to 64 years,338453.0
+2020,NL,Total,25 to 44 years,120419.0
+2020,NL,Total,All ages,526884.0
+2020,NS,Total,15 to 64 years,640554.0
+2020,NS,Total,25 to 44 years,242711.0
+2020,NS,Total,All ages,989168.0
+2020,NT,Total,15 to 64 years,31339.0
+2020,NT,Total,25 to 44 years,13948.0
+2020,NT,Total,All ages,44504.0
+2020,NU,Total,15 to 64 years,25303.0
+2020,NU,Total,25 to 44 years,11455.0
+2020,NU,Total,All ages,39479.0
+2020,ON,Total,15 to 64 years,9862599.0
+2020,ON,Total,25 to 44 years,4036673.0
+2020,ON,Total,All ages,14761811.0
+2020,PE,Total,15 to 64 years,102991.0
+2020,PE,Total,25 to 44 years,38257.0
+2020,PE,Total,All ages,159193.0
+2020,QC,Total,15 to 64 years,5510595.0
+2020,QC,Total,25 to 44 years,2270656.0
+2020,QC,Total,All ages,8551095.0
+2020,SK,Total,15 to 64 years,747567.0
+2020,SK,Total,25 to 44 years,320683.0
+2020,SK,Total,All ages,1167386.0
+2020,YT,Total,15 to 64 years,29246.0
+2020,YT,Total,25 to 44 years,13298.0
+2020,YT,Total,All ages,41958.0
+2021,AB,Total,15 to 64 years,2970980.0
+2021,AB,Total,25 to 44 years,1332424.0
+2021,AB,Total,All ages,4431531.0
+2021,BC,Total,15 to 64 years,3474097.0
+2021,BC,Total,25 to 44 years,1492386.0
+2021,BC,Total,All ages,5226665.0
+2021,CA,Total,15 to 64 years,25104410.0
+2021,CA,Total,25 to 44 years,10527072.0
+2021,CA,Total,All ages,38239864.0
+2021,MB,Total,15 to 64 years,902941.0
+2021,MB,Total,25 to 44 years,380598.0
+2021,MB,Total,All ages,1391924.0
+2021,NB,Total,15 to 64 years,500127.0
+2021,NB,Total,25 to 44 years,186695.0
+2021,NB,Total,All ages,790802.0
+2021,NL,Total,15 to 64 years,334999.0
+2021,NL,Total,25 to 44 years,119507.0
+2021,NL,Total,All ages,527056.0
+2021,NS,Total,15 to 64 years,643343.0
+2021,NS,Total,25 to 44 years,249061.0
+2021,NS,Total,All ages,999908.0
+2021,NT,Total,15 to 64 years,31243.0
+2021,NT,Total,25 to 44 years,14025.0
+2021,NT,Total,All ages,44579.0
+2021,NU,Total,15 to 64 years,25593.0
+2021,NU,Total,25 to 44 years,11582.0
+2021,NU,Total,All ages,40086.0
+2021,ON,Total,15 to 64 years,9863801.0
+2021,ON,Total,25 to 44 years,4097244.0
+2021,ON,Total,All ages,14842488.0
+2021,PE,Total,15 to 64 years,104595.0
+2021,PE,Total,25 to 44 years,39606.0
+2021,PE,Total,All ages,162133.0
+2021,QC,Total,15 to 64 years,5480388.0
+2021,QC,Total,25 to 44 years,2271471.0
+2021,QC,Total,All ages,8572020.0
+2021,SK,Total,15 to 64 years,742571.0
+2021,SK,Total,25 to 44 years,318741.0
+2021,SK,Total,All ages,1167711.0
+2021,YT,Total,15 to 64 years,29732.0
+2021,YT,Total,25 to 44 years,13732.0
+2021,YT,Total,All ages,42961.0
+2022,AB,Total,15 to 64 years,3015412.0
+2022,AB,Total,25 to 44 years,1353670.0
+2022,AB,Total,All ages,4512731.0
+2022,BC,Total,15 to 64 years,3562585.0
+2022,BC,Total,25 to 44 years,1558355.0
+2022,BC,Total,All ages,5358845.0
+2022,CA,Total,15 to 64 years,25526667.0
+2022,CA,Total,25 to 44 years,10823022.0
+2022,CA,Total,All ages,38950132.0
+2022,MB,Total,15 to 64 years,916982.0
+2022,MB,Total,25 to 44 years,389261.0
+2022,MB,Total,All ages,1413498.0
+2022,NB,Total,15 to 64 years,509284.0
+2022,NB,Total,25 to 44 years,192975.0
+2022,NB,Total,All ages,808869.0
+2022,NL,Total,15 to 64 years,335687.0
+2022,NL,Total,25 to 44 years,120202.0
+2022,NL,Total,All ages,531257.0
+2022,NS,Total,15 to 64 years,656959.0
+2022,NS,Total,25 to 44 years,260646.0
+2022,NS,Total,All ages,1024034.0
+2022,NT,Total,15 to 64 years,31273.0
+2022,NT,Total,25 to 44 years,14072.0
+2022,NT,Total,All ages,44631.0
+2022,NU,Total,15 to 64 years,25930.0
+2022,NU,Total,25 to 44 years,11654.0
+2022,NU,Total,All ages,40603.0
+2022,ON,Total,15 to 64 years,10076944.0
+2022,ON,Total,25 to 44 years,4250427.0
+2022,ON,Total,All ages,15155836.0
+2022,PE,Total,15 to 64 years,107995.0
+2022,PE,Total,25 to 44 years,41525.0
+2022,PE,Total,All ages,167200.0
+2022,QC,Total,15 to 64 years,5510289.0
+2022,QC,Total,25 to 44 years,2294238.0
+2022,QC,Total,All ages,8669963.0
+2022,SK,Total,15 to 64 years,747009.0
+2022,SK,Total,25 to 44 years,321733.0
+2022,SK,Total,All ages,1178796.0
+2022,YT,Total,15 to 64 years,30318.0
+2022,YT,Total,25 to 44 years,14264.0
+2022,YT,Total,All ages,43869.0
+2023,AB,Total,15 to 64 years,3138383.0
+2023,AB,Total,25 to 44 years,1428075.0
+2023,AB,Total,All ages,4688576.0
+2023,BC,Total,15 to 64 years,3678367.0
+2023,BC,Total,25 to 44 years,1645541.0
+2023,BC,Total,All ages,5515296.0
+2023,CA,Total,15 to 64 years,26304672.0
+2023,CA,Total,25 to 44 years,11366186.0
+2023,CA,Total,All ages,40049088.0
+2023,MB,Total,15 to 64 years,946017.0
+2023,MB,Total,25 to 44 years,409247.0
+2023,MB,Total,All ages,1453202.0
+2023,NB,Total,15 to 64 years,522124.0
+2023,NB,Total,25 to 44 years,203044.0
+2023,NB,Total,All ages,831103.0
+2023,NL,Total,15 to 64 years,339400.0
+2023,NL,Total,25 to 44 years,123831.0
+2023,NL,Total,All ages,538789.0
+2023,NS,Total,15 to 64 years,675896.0
+2023,NS,Total,25 to 44 years,276902.0
+2023,NS,Total,All ages,1053005.0
+2023,NT,Total,15 to 64 years,31287.0
+2023,NT,Total,25 to 44 years,14160.0
+2023,NT,Total,All ages,44614.0
+2023,NU,Total,15 to 64 years,26191.0
+2023,NU,Total,25 to 44 years,11778.0
+2023,NU,Total,All ages,40916.0
+2023,ON,Total,15 to 64 years,10439604.0
+2023,ON,Total,25 to 44 years,4505083.0
+2023,ON,Total,All ages,15632481.0
+2023,PE,Total,15 to 64 years,113098.0
+2023,PE,Total,25 to 44 years,44559.0
+2023,PE,Total,All ages,173734.0
+2023,QC,Total,15 to 64 years,5594825.0
+2023,QC,Total,25 to 44 years,2354277.0
+2023,QC,Total,All ages,8821696.0
+2023,SK,Total,15 to 64 years,768080.0
+2023,SK,Total,25 to 44 years,334559.0
+2023,SK,Total,All ages,1210257.0
+2023,YT,Total,15 to 64 years,31400.0
+2023,YT,Total,25 to 44 years,15130.0
+2023,YT,Total,All ages,45419.0
+2024,AB,Total,15 to 64 years,3299160.0
+2024,AB,Total,25 to 44 years,1519553.0
+2024,AB,Total,All ages,4909030.0
+2024,BC,Total,15 to 64 years,3791255.0
+2024,BC,Total,25 to 44 years,1717128.0
+2024,BC,Total,All ages,5671114.0
+2024,CA,Total,15 to 64 years,27168360.0
+2024,CA,Total,25 to 44 years,11923829.0
+2024,CA,Total,All ages,41262329.0
+2024,MB,Total,15 to 64 years,973745.0
+2024,MB,Total,25 to 44 years,429365.0
+2024,MB,Total,All ages,1492144.0
+2024,NB,Total,15 to 64 years,539958.0
+2024,NB,Total,25 to 44 years,215850.0
+2024,NB,Total,All ages,858293.0
+2024,NL,Total,15 to 64 years,343699.0
+2024,NL,Total,25 to 44 years,127918.0
+2024,NL,Total,All ages,546869.0
+2024,NS,Total,15 to 64 years,696373.0
+2024,NS,Total,25 to 44 years,293141.0
+2024,NS,Total,All ages,1082769.0
+2024,NT,Total,15 to 64 years,31837.0
+2024,NT,Total,25 to 44 years,14555.0
+2024,NT,Total,All ages,45257.0
+2024,NU,Total,15 to 64 years,26615.0
+2024,NU,Total,25 to 44 years,11997.0
+2024,NU,Total,All ages,41410.0
+2024,ON,Total,15 to 64 years,10814563.0
+2024,ON,Total,25 to 44 years,4758744.0
+2024,ON,Total,All ages,16144797.0
+2024,PE,Total,15 to 64 years,117577.0
+2024,PE,Total,25 to 44 years,48044.0
+2024,PE,Total,All ages,179709.0
+2024,QC,Total,15 to 64 years,5704962.0
+2024,QC,Total,25 to 44 years,2421365.0
+2024,QC,Total,All ages,8995474.0
+2024,SK,Total,15 to 64 years,795512.0
+2024,SK,Total,25 to 44 years,349959.0
+2024,SK,Total,All ages,1247868.0
+2024,YT,Total,15 to 64 years,33104.0
+2024,YT,Total,25 to 44 years,16210.0
+2024,YT,Total,All ages,47595.0
+2025,AB,Total,15 to 64 years,3371898.0
+2025,AB,Total,25 to 44 years,1557403.0
+2025,AB,Total,All ages,5029346.0
+2025,BC,Total,15 to 64 years,3784416.0
+2025,BC,Total,25 to 44 years,1722911.0
+2025,BC,Total,All ages,5697536.0
+2025,CA,Total,15 to 64 years,27282024.0
+2025,CA,Total,25 to 44 years,12063525.0
+2025,CA,Total,All ages,41651653.0
+2025,MB,Total,15 to 64 years,982880.0
+2025,MB,Total,25 to 44 years,440028.0
+2025,MB,Total,All ages,1509702.0
+2025,NB,Total,15 to 64 years,544757.0
+2025,NB,Total,25 to 44 years,220769.0
+2025,NB,Total,All ages,869682.0
+2025,NL,Total,15 to 64 years,343648.0
+2025,NL,Total,25 to 44 years,129271.0
+2025,NL,Total,All ages,549911.0
+2025,NS,Total,15 to 64 years,700288.0
+2025,NS,Total,25 to 44 years,300468.0
+2025,NS,Total,All ages,1093245.0
+2025,NT,Total,15 to 64 years,32452.0
+2025,NT,Total,25 to 44 years,14965.0
+2025,NT,Total,All ages,45950.0
+2025,NU,Total,15 to 64 years,27009.0
+2025,NU,Total,25 to 44 years,12201.0
+2025,NU,Total,All ages,41830.0
+2025,ON,Total,15 to 64 years,10816896.0
+2025,ON,Total,25 to 44 years,4818032.0
+2025,ON,Total,All ages,16258260.0
+2025,PE,Total,15 to 64 years,119218.0
+2025,PE,Total,25 to 44 years,50339.0
+2025,PE,Total,All ages,182657.0
+2025,QC,Total,15 to 64 years,5717528.0
+2025,QC,Total,25 to 44 years,2423737.0
+2025,QC,Total,All ages,9058297.0
+2025,SK,Total,15 to 64 years,807522.0
+2025,SK,Total,25 to 44 years,356806.0
+2025,SK,Total,All ages,1266959.0
+2025,YT,Total,15 to 64 years,33512.0
+2025,YT,Total,25 to 44 years,16595.0
+2025,YT,Total,All ages,48278.0
