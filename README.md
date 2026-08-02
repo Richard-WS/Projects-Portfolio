@@ -45,6 +45,8 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 - **[Canadian labour market analysis](data/canadian-labour-market-analysis/)** — Statistics Canada labour force and population tables normalized into a SQLite warehouse, answered through a 14-query SQL catalog. New Brunswick's unemployment gap versus Canada narrowed from 4.2 pp (1970s) to 1.1 pp (2020s).
 
+- **[Canadian labour market explorer](data/canadian-labour-market-explorer/)** — the warehouse's interactive companion: R computes 50 years of labour-market statistics and exports JSON; a zero-dependency JavaScript dashboard renders them with region and metric switching, recession shading, and hover readouts. Live on GitHub Pages.
+
 - **[Query engine benchmark](experiments/query-engine-benchmark/)** — pandas, Polars, and DuckDB on 5M orders with cross-engine result verification. DuckDB was 5–28× faster than pandas on most queries with ~2.2× less peak memory; Polars won load time and group-bys.
 
 - **[Solar system positions viewer](experiments/solar-system-positions/)** — an interactive 2D scatter-plot model of the solar system: every planet's position for every month 1900–2100, computed with Astropy's built-in ephemeris and viewable as a self-contained HTML timeline on GitHub Pages.
@@ -53,7 +55,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 | Folder | Contents |
 |---|---|
-| `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/), [Canadian labour market analysis](data/canadian-labour-market-analysis/) |
+| `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/), [Canadian labour market analysis](data/canadian-labour-market-analysis/), [Canadian labour market explorer](data/canadian-labour-market-explorer/) |
 | `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/), [exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/) |
 | `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/) |
 | `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/), [solar system positions viewer](experiments/solar-system-positions/) |
