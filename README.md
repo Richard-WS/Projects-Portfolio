@@ -12,7 +12,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 |---|---|
 | Data analysis | Exploratory analysis, data cleaning, transformation, validation, modelling, predictive analytics, regression |
 | BI & reporting | Power BI, Tableau, Excel, IBM Cognos Analytics, dashboards, report writing, data storytelling |
-| Programming & databases | Python, Pandas, NumPy, SQL, R, PostgreSQL, MySQL, MongoDB, GraphQL, Jupyter |
+| Programming & databases | Python, Pandas, NumPy, Polars, DuckDB, SQL, R, PostgreSQL, MySQL, MongoDB, GraphQL, Jupyter |
 | Statistics & ML | Descriptive and inferential statistics, probability, hypothesis testing, ANOVA, regression, supervised and unsupervised learning, model interpretation |
 | IT service management | ITIL 4 Foundation — service value system, governance, continual improvement |
 | Data quality & governance | Metadata management, documentation, integrity checks, privacy-aware handling of information |
@@ -43,6 +43,10 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 - **[Canadian grocery inflation](data/canadian-food-inflation/)** — ten years of StatsCan CPI data showing groceries outrunning overall inflation (+43.4% vs +36.0%), with an EDA notebook and self-contained dashboard.
 
+- **[Query engine benchmark](experiments/query-engine-benchmark/)** — pandas, Polars, and DuckDB on 5M orders with cross-engine result verification. DuckDB was 5–28× faster than pandas on most queries with ~2.2× less peak memory; Polars won load time and group-bys.
+
+- **[Query engine benchmark](experiments/query-engine-benchmark/)** — pandas vs. Polars vs. DuckDB on 5M orders: DuckDB 5–28× faster than pandas on most queries at ~2.2× less peak memory; Polars fastest at loading and group-bys. Every engine verified to return identical results.
+
 ## Repo layout
 
 | Folder | Contents |
@@ -50,7 +54,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 | `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/) |
 | `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/), [exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/) |
 | `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/) |
-| `experiments/` | Prototypes, tools, and personal projects that don't fit the other categories |
+| `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/) |
 | `docs/` | Project standards and skills matrix |
 
 ## Contact
