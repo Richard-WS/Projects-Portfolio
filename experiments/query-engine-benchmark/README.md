@@ -45,7 +45,8 @@ answers* before any timing is taken seriously.
    measured cleanly via `ru_maxrss`), each query times best-of-3 after one
    warmup run, and the median is reported.
 5. **Artifacts**: per-engine timings and peak memory in
-   `docs/benchmark-results.csv`, this README's results table, and a summary
+   `docs/benchmark-results.csv`, the chart in `docs/screenshot.png`
+   (`scripts/make_chart.py`), this README's results table, and a summary
    printed to the console.
 
 ## Results
@@ -63,6 +64,8 @@ machine, 10 GB RAM.
 | DuckDB | 319 | 9 | 30 | 43 | 34 | 65 | 46 | 863 |
 
 Raw timings: `docs/benchmark-results.csv`.
+
+[![Query time and peak memory by engine](docs/screenshot.png)](docs/benchmark-results.csv)
 
 The short version:
 
@@ -123,5 +126,6 @@ query-engine-benchmark/
 │   ├── generate_data.py        # write dataset + samples
 │   └── run_benchmark.py        # verify, time all engines, write results
 ├── docs/benchmark-results.csv  # committed raw results
+├── docs/screenshot.png         # chart of the results (scripts/make_chart.py)
 └── tests/                      # 64 hermetic tests, incl. cross-engine equality
 ```
