@@ -18,6 +18,7 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 | Query engines and performance work | Query engine benchmark project (pandas vs Polars vs DuckDB, cross-engine verification) | Analytics Engineer, Data Analyst |
 | Astronomy data and ephemeris work | Solar system positions viewer (Astropy built-in ephemeris, 2,412 monthly frames, interactive HTML timeline) | Data Analyst, AI Data Analyst |
 | Procedural generation and seeded systems | Seedworlds experiment (one seed word grows a deterministic world: constructed language, terrain with biomes and rivers, creatures, creation myth; xmur3 + mulberry32 seeded streams; golden-value tests) | Analytics Engineer, Data Analyst, AI Data Analyst |
+| Formal logic and reasoning algorithms | Paradox Engine experiment (Kripke-style fixed-point truth evaluation with strong Kleene semantics and oscillation detection, Condorcet cycle detection, heuristic fallacy pattern library, zero-dependency interactive JS, golden-value tests) | Analytics Engineer, AI Data Analyst, Data Analyst |
 
 ## Target roles
 

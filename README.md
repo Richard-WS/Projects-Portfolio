@@ -55,6 +55,8 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 
 - **[Seedworlds](experiments/seedworlds/)** — one word grows an entire world: a constructed language, a map with biomes and rivers, six creatures, and a creation myth — all consistent with each other and deterministic from the seed, so the same word always grows the same world. Pure client-side JavaScript, live on GitHub Pages.
 
+- **[Paradox Engine](experiments/paradox-engine/)** — four browser instruments that break your own reasoning: an interrogator that builds justification trees and flags circularity, a fallacy foundry that highlights twelve classic fallacies inline, a Kripke-style self-reference lab that evaluates networks of self-referential sentences (the liar → PARADOX), and a preference lab that catches Condorcet cycles in your own pairwise choices. Pure client-side JavaScript, live on GitHub Pages.
+
 ## Repo layout
 
 | Folder | Contents |
@@ -62,7 +64,7 @@ I work across the data lifecycle: cleaning and validating data, analysing it wit
 | `data/` | Data pipelines, analysis, and reporting — [Canadian grocery inflation project](data/canadian-food-inflation/), [Canadian labour market analysis](data/canadian-labour-market-analysis/), [Canadian labour market explorer](data/canadian-labour-market-explorer/) |
 | `ai-ml/` | Machine learning and AI applications — [LLM fine-tuning workflow](ai-ml/llm-fine-tuning-workflow/), [exoplanet transit classifier](ai-ml/exoplanet-transit-classifier/) |
 | `it-ops/` | Infrastructure, automation, and operations — [infrastructure health monitor](it-ops/infra-health-monitor/), [disk failure prediction](it-ops/disk-failure-prediction/) |
-| `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/), [solar system positions viewer](experiments/solar-system-positions/), [seedworlds](experiments/seedworlds/) |
+| `experiments/` | Prototypes, tools, and personal projects — [query engine benchmark](experiments/query-engine-benchmark/), [solar system positions viewer](experiments/solar-system-positions/), [seedworlds](experiments/seedworlds/), [paradox engine](experiments/paradox-engine/) |
 | `docs/` | Project standards and skills matrix |
 
 ## Contact

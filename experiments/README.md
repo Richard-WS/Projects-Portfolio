@@ -10,4 +10,6 @@ Prototypes, tools, and side explorations that don't fit the other categories —
 
 - **[Seedworlds](seedworlds/)** — one word grows a complete world: a constructed language with its own sound rules and a 49-word vocabulary, a map with biomes, rivers and named places, six creatures that live in them, and a creation myth whose names all resolve to real parts of that world. Fully deterministic from the seed, pure client-side JavaScript, live on GitHub Pages.
 
+- **[Paradox Engine](paradox-engine/)** — a museum of four instruments that break your own reasoning: a Socratic interrogator that builds justification trees and flags circularity, a fallacy foundry that highlights twelve classic fallacies inline, a Kripke-style self-reference lab that evaluates networks of self-referential sentences (TRUE / FALSE / UNGROUNDED / PARADOX), and a preference-paradox lab that catches Condorcet cycles in your own pairwise choices. Pure client-side JavaScript, live on GitHub Pages.
+
 New experiments are added here as they are completed.
