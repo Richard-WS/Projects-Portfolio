@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Paradox Engine — instruments that break your reasoning</title>
+<style>
+  :root {
+    --bg: #0d1420;
+    --panel: #141e2e;
+    --panel2: #1a2638;
+    --ink: #e6edf5;
+    --muted: #8fa3bd;
+    --line: #24344c;
+    --accent: #c792ea;
+    --accent2: #ffd54d;
+    --good: #7bd88f;
+    --bad: #ff7b72;
+    --warn: #ffa657;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: radial-gradient(1200px 600px at 50% -100px, #1c1630 0%, var(--bg) 60%);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  header { padding: 2.2rem 1.25rem 1rem; max-width: 1000px; margin: 0 auto; }
+  .brand { margin: 0 0 .3rem; color: var(--accent); font-size: .78rem; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+  header h1 { margin: 0 0 .3rem; font-size: 1.7rem; letter-spacing: .01em; }
+  header p { margin: 0; color: var(--muted); font-size: .95rem; max-width: 64ch; }
+  main { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem 2.5rem; }
+
+  .tabs { display: flex; gap: .35rem; flex-wrap: wrap; margin: 1.2rem 0 1.1rem; }
+  .tab-btn { border-radius: 999px; padding: .4rem 1rem; font-size: .92rem; }
+  .tab-btn.active { background: var(--accent); border-color: var(--accent); color: #1a0f2e; font-weight: 600; }
+
+  .pane { display: block; }
+  .pane.hidden { display: none; }
+  .pane h2 { margin: 0 0 .3rem; font-size: 1.25rem; }
+  .lede { color: var(--muted); font-size: .92rem; max-width: 72ch; margin: 0 0 1rem; }
+
+  .box {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 1rem 1.1rem; margin: 0 0 1.1rem;
+  }
+  label { display: block; font-size: .82rem; color: var(--muted); margin: 0 0 .35rem; }
+  input[type="text"], input:not([type]), textarea, select {
+    font: inherit; padding: .55rem .8rem; width: 100%;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--panel2); color: var(--ink); margin: 0 0 .6rem;
+  }
+  input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  textarea { resize: vertical; }
+  .row { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+  button {
+    font: inherit; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--panel2); color: var(--ink);
+    padding: .5rem .9rem; touch-action: manipulation;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #1a0f2e; font-weight: 600; }
+  button.primary:hover { filter: brightness(1.08); }
+  button.ghost { background: transparent; color: var(--muted); }
+  button.big { flex: 1 1 200px; padding: 1.1rem 1rem; font-size: 1.05rem; background: var(--panel2); }
+  button.big:hover { border-color: var(--accent2); color: var(--accent2); }
+  .presets { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .6rem; }
+  .presets button { font-size: .82rem; padding: .3rem .7rem; border-radius: 999px; color: var(--muted); }
+  .presets button:hover { color: var(--ink); border-color: var(--accent2); }
+  .muted { color: var(--muted); font-size: .85rem; }
+  .question { font-size: 1.1rem; color: var(--accent2); margin: 0 0 .6rem; }
+  .hidden { display: none; }
+
+  .tree { font-size: .95rem; }
+  .tree .claim { background: var(--panel); border: 1px solid var(--accent); border-radius: 10px; padding: .7rem .9rem; margin-bottom: .5rem; }
+  .tree .node { border-left: 2px solid var(--line); margin-left: 1.1rem; padding: .4rem 0 .4rem 1rem; }
+  .tree .q { color: var(--muted); font-size: .82rem; font-style: italic; }
+  .tree .a { margin-top: .15rem; }
+  .tree .unknown { color: var(--warn); font-style: italic; }
+  .findings { margin-top: .8rem; }
+  .finding { border-radius: 8px; padding: .5rem .7rem; margin-bottom: .4rem; font-size: .88rem; border: 1px solid; }
+  .finding.circular, .finding.contradiction { border-color: var(--bad); color: #ffb3ad; background: rgba(255,123,114,.08); }
+  .finding.unsupported { border-color: var(--warn); color: #ffd0a3; background: rgba(255,166,87,.08); }
+  .finding.unexamined { border-color: var(--line); color: var(--muted); }
+
+  mark { background: rgba(255,213,77,.25); color: var(--accent2); border-radius: 3px; padding: 0 2px; }
+  .fal-hit { font-size: .88rem; border: 1px solid var(--line); border-left: 3px solid var(--accent2); border-radius: 8px; padding: .5rem .7rem; margin-bottom: .5rem; }
+  .fal-hit b { color: var(--accent2); }
+  .fal-hit .phrase { color: var(--muted); font-size: .82rem; font-style: italic; }
+  .fal-hit .note { font-size: .88rem; margin-top: .2rem; }
+  .annotated { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .8rem .9rem; white-space: pre-wrap; line-height: 1.7; }
+
+  .sr-row { display: grid; grid-template-columns: 1fr 150px 90px 36px; gap: .4rem; margin-bottom: .4rem; align-items: center; }
+  .sr-row input, .sr-row select { margin: 0; }
+  .sr-row .del { padding: .35rem; color: var(--muted); }
+  .verdict { display: inline-block; font-weight: 700; font-size: .8rem; letter-spacing: .05em; border-radius: 999px; padding: .15rem .6rem; }
+  .verdict.TRUE { background: rgba(123,216,143,.15); color: var(--good); border: 1px solid var(--good); }
+  .verdict.FALSE { background: rgba(255,123,114,.12); color: var(--bad); border: 1px solid var(--bad); }
+  .verdict.UNGROUNDED { background: rgba(143,163,189,.14); color: var(--muted); border: 1px solid var(--line); }
+  .verdict.PARADOX { background: rgba(255,166,87,.14); color: var(--warn); border: 1px solid var(--warn); }
+  .system { border-radius: 10px; padding: .6rem .9rem; margin-bottom: .7rem; font-weight: 600; border: 1px solid var(--line); }
+  .system.PARADOX { color: var(--warn); border-color: var(--warn); }
+  .system.UNGROUNDED { color: var(--muted); }
+  .system.GROUNDED { color: var(--good); border-color: var(--good); }
+  table.h2h { border-collapse: collapse; margin: .6rem 0; }
+  table.h2h th, table.h2h td { border: 1px solid var(--line); padding: .35rem .7rem; text-align: center; font-size: .9rem; }
+  table.h2h th { color: var(--muted); font-weight: 500; }
+  .cycle { color: var(--warn); font-weight: 600; }
+  .good { color: var(--good); }
+  footer { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem 2rem; color: var(--muted); font-size: .8rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">experiments · paradox-engine</div>
+  <h1>The Paradox Engine</h1>
+  <p>Four instruments that break your own reasoning, in your browser. Nothing here uses an AI, nothing leaves your machine, and every verdict is computed, not guessed.</p>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button id="tab-interrogator" class="tab-btn active">Socratic Interrogator</button>
+  <button id="tab-fallacies" class="tab-btn">Fallacy Foundry</button>
+  <button id="tab-selfref" class="tab-btn">Self-Reference Lab</button>
+  <button id="tab-preferences" class="tab-btn">Preference Paradox</button>
+</nav>
+
+<main>
+  <!-- Socratic Interrogator -->
+  <section id="pane-interrogator" class="pane">
+    <h2>Socratic Interrogator</h2>
+    <p class="lede">State a belief. The interrogator asks <em>why</em>, then asks <em>why</em> again, until your justifications run out — then it shows you what the structure actually looks like: circular, contradictory, or resting on an unexamined assumption. It never tells you whether you are right; it only examines whether your reasoning holds together.</p>
+    <div class="box">
+      <label for="int-claim">Your claim</label>
+      <input id="int-claim" type="text" placeholder="I believe that …">
+      <div class="row">
+        <button id="int-begin" class="primary">Begin interrogation</button>
+      </div>
+      <div class="presets">
+        <button id="int-preset-book">The book is trustworthy</button>
+        <button id="int-preset-coffee">Coffee is good for you</button>
+        <button id="int-preset-ghosts">Ghosts exist</button>
+      </div>
+    </div>
+    <div id="int-flow" class="box hidden">
+      <p class="question" id="int-question"></p>
+      <input id="int-answer" type="text" placeholder="Because …">
+      <div class="row">
+        <button id="int-answer-btn" class="primary">Answer</button>
+        <button id="int-dunno" class="ghost">I don't know</button>
+        <button id="int-restart" class="ghost">Restart</button>
+      </div>
+    </div>
+    <div id="int-tree"></div>
+  </section>
+
+  <!-- Fallacy Foundry -->
+  <section id="pane-fallacies" class="pane hidden">
+    <h2>Fallacy Foundry</h2>
+    <p class="lede">Paste an argument. The foundry scans it for the shapes of twelve classic fallacies — cue phrases and argument skeletons — and flags them inline, with a note on what to check. It is a detector, not a judge: your text never leaves this page, and the final call is yours.</p>
+    <div class="box">
+      <label for="fal-text">The argument</label>
+      <textarea id="fal-text" rows="6" placeholder="Paste an argument here…"></textarea>
+      <div class="row">
+        <button id="fal-scan" class="primary">Scan for fallacies</button>
+        <button id="fal-example" class="ghost">Load an example</button>
+      </div>
+    </div>
+    <div id="fal-results"></div>
+  </section>
+
+  <!-- Self-Reference Lab -->
+  <section id="pane-selfref" class="pane hidden">
+    <h2>Self-Reference Lab</h2>
+    <p class="lede">Build a small universe of sentences that talk about each other's truth, and watch the engine try to decide what is true. Some systems settle; some never can. The engine uses the same fixed-point semantics logicians use for the liar paradox — and it will happily show you the exact sentence (or chain of sentences) that breaks your universe.</p>
+    <div class="box">
+      <div id="sr-rows"></div>
+      <div class="row">
+        <button id="sr-add" class="ghost">+ Add sentence</button>
+        <button id="sr-eval" class="primary">Evaluate</button>
+        <button id="sr-presets" class="ghost">Presets ▾</button>
+      </div>
+      <div class="presets" id="sr-preset-list"></div>
+    </div>
+    <div id="sr-result"></div>
+    <div class="row">
+      <button id="sr-share" class="ghost">Copy share link</button>
+    </div>
+  </section>
+
+  <!-- Preference Paradox -->
+  <section id="pane-preferences" class="pane hidden">
+    <h2>Preference Paradox</h2>
+    <p class="lede">Rank things the honest way — one head-to-head at a time. When you finish, the lab builds your preference graph and checks whether it contradicts itself. It can. You can genuinely prefer A over B, B over C, and C over A, all at once. Most people find out about their own taste cycles this way.</p>
+    <div class="box" id="pf-setup">
+      <label for="pf-items">Things to rank (one per line, 3–6)</label>
+      <textarea id="pf-items" rows="4">Coffee
+Tea
+Hot chocolate</textarea>
+      <div class="row">
+        <button id="pf-start" class="primary">Start ranking</button>
+      </div>
+    </div>
+    <div class="box hidden" id="pf-matchup">
+      <p class="question">Which do you prefer?</p>
+      <div class="row">
+        <button id="pf-left" class="big"></button>
+        <button id="pf-right" class="big"></button>
+      </div>
+      <p id="pf-progress" class="muted"></p>
+    </div>
+    <div id="pf-result"></div>
+  </section>
+</main>
+
+<footer>Runs entirely in your browser — zero dependencies, zero network requests. The verdicts are computed by four small engines; their tests live next to them in this repository.</footer>
+
+<script src="selfref.js"></script>
+<script src="fallacies.js"></script>
+<script src="interrogator.js"></script>
+<script src="preferences.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
