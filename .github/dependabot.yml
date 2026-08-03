@@ -6,9 +6,36 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Python — add one entry per project once it has real dependencies,
-  # e.g. directory: "/data/my-project"
+  # Python — one entry per project (each has its own pyproject.toml)
   - package-ecosystem: "pip"
-    directory: "/"
+    directory: "/data/canadian-food-inflation"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/data/canadian-labour-market-analysis"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/ai-ml/exoplanet-transit-classifier"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/ai-ml/llm-fine-tuning-workflow"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/it-ops/disk-failure-prediction"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/it-ops/infra-health-monitor"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/experiments/query-engine-benchmark"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/experiments/solar-system-positions"
     schedule:
       interval: "weekly"
