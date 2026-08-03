@@ -19,6 +19,7 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 | Astronomy data and ephemeris work | Solar system positions viewer (Astropy built-in ephemeris, 2,412 monthly frames, interactive HTML timeline) | Data Analyst, AI Data Analyst |
 | Procedural generation and seeded systems | Seedworlds experiment (one seed word grows a deterministic world: constructed language, terrain with biomes and rivers, creatures, creation myth; xmur3 + mulberry32 seeded streams; golden-value tests) | Analytics Engineer, Data Analyst, AI Data Analyst |
 | Formal logic and reasoning algorithms | Paradox Engine experiment (Kripke-style fixed-point truth evaluation with strong Kleene semantics and oscillation detection, Condorcet cycle detection, heuristic fallacy pattern library, zero-dependency interactive JS, golden-value tests) | Analytics Engineer, AI Data Analyst, Data Analyst |
+| Interactive simulation and responsive application development | Lemonade Wars experiment (deterministic day-cycle business simulation: per-district market drift, demand and finance engines, seeded RNG; responsive Pygame UI scaling to phone portrait and laptop landscape; pygbag browser build live on GitHub Pages; 61 hermetic tests incl. a headless UI smoke run) | Analytics Engineer, Application Support Analyst, Data Analyst |
 
 ## Target roles
 

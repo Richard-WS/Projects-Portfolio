@@ -9,6 +9,8 @@ production, logistics, staffing, finance, marketing, and risk.
 **Play it in your browser:** https://richard-ws.github.io/Projects-Portfolio/experiments/lemonade-wars/web/
 (runs on phones and laptops — the UI adapts to portrait and landscape)
 
+[![Lemonade Wars game screen](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/experiments/lemonade-wars/web/)
+
 ## Problem
 
 Classic business-simulation games each nailed one half of the fun. *Lemonade

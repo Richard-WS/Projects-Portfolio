@@ -12,4 +12,6 @@ Prototypes, tools, and side explorations that don't fit the other categories —
 
 - **[Paradox Engine](paradox-engine/)** — a museum of four instruments that break your own reasoning: a Socratic interrogator that builds justification trees and flags circularity, a fallacy foundry that highlights twelve classic fallacies inline, a Kripke-style self-reference lab that evaluates networks of self-referential sentences (TRUE / FALSE / UNGROUNDED / PARADOX), and a preference-paradox lab that catches Condorcet cycles in your own pairwise choices. Pure client-side JavaScript, live on GitHub Pages.
 
+- **[Lemonade Wars](lemonade-wars/)** — a beverage-empire business simulation that blends Lemonade Stand's recipe economics with Drug Wars' travelling commodity markets: a deterministic day-cycle engine (per-district prices, demand, finance, random events) with a responsive Pygame UI that adapts to phones and laptops, and a pygbag build that runs in the browser from GitHub Pages.
+
 New experiments are added here as they are completed.
