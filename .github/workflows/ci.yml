@@ -44,7 +44,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Test the labour market explorer
+      - name: Test every R and JavaScript project
         run: |
-          cd data/canadian-labour-market-explorer
-          bash scripts/test.sh
+          set -euo pipefail
+          found=0
+          for area in data ai-ml it-ops experiments; do
+            for proj in "$area"/*/; do
+              [ -d "$proj" ] || continue
+              [ -f "$proj/scripts/test.sh" ] || continue
+              echo "── Testing $proj"
+              (cd "$proj" && bash scripts/test.sh)
+              found=1
+            done
+          done
+          [ "$found" -eq 1 ] && echo "All projects passed." \
+                              || echo "No R/JS projects yet — CI is ready for the first one."
