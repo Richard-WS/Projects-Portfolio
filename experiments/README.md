@@ -8,4 +8,6 @@ Prototypes, tools, and side explorations that don't fit the other categories —
 
 - **[Solar system positions viewer](solar-system-positions/)** — an interactive 2D scatter-plot model of the solar system: every planet's position for every month from 1900 to 2100 (2,412 frames), computed with Astropy's built-in ephemeris and rendered as a self-contained HTML viewer with a scrubbable timeline. Live on GitHub Pages.
 
+- **[Seedworlds](seedworlds/)** — one word grows a complete world: a constructed language with its own sound rules and a 49-word vocabulary, a map with biomes, rivers and named places, six creatures that live in them, and a creation myth whose names all resolve to real parts of that world. Fully deterministic from the seed, pure client-side JavaScript, live on GitHub Pages.
+
 New experiments are added here as they are completed.

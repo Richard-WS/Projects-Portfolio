@@ -17,6 +17,7 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 | Pattern recognition on time-series data | SuperWASP and NGTS citizen-science classification | Data Analyst, AI Data Analyst |
 | Query engines and performance work | Query engine benchmark project (pandas vs Polars vs DuckDB, cross-engine verification) | Analytics Engineer, Data Analyst |
 | Astronomy data and ephemeris work | Solar system positions viewer (Astropy built-in ephemeris, 2,412 monthly frames, interactive HTML timeline) | Data Analyst, AI Data Analyst |
+| Procedural generation and seeded systems | Seedworlds experiment (one seed word grows a deterministic world: constructed language, terrain with biomes and rivers, creatures, creation myth; xmur3 + mulberry32 seeded streams; golden-value tests) | Analytics Engineer, Data Analyst, AI Data Analyst |
 
 ## Target roles
 
@@ -28,4 +29,4 @@ Skills mapped to the roles I target — data analytics, business intelligence, A
 
 ## How to use this
 
-New projects get added here with a link as they land in `data/`, `ai-ml/`, or `it-ops/` — each row maps a claim to something concrete a reviewer can open.
+New projects get added here with a link as they land in `data/`, `ai-ml/`, `it-ops/`, or `experiments/` — each row maps a claim to something concrete a reviewer can open.
