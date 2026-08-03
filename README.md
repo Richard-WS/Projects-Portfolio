@@ -2,6 +2,8 @@
 
 Data analytics, business intelligence, and IT service management professional. Open to remote and hybrid roles in data, AI, IT, and tech — including the Canadian federal government and data centre operations.
 
+[![CI](https://github.com/Richard-WS/Projects-Portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Richard-WS/Projects-Portfolio/actions/workflows/ci.yml)
+
 ## About
 
 I work across the data lifecycle: cleaning and validating data, analysing it with statistics and machine-learning methods, and presenting it through dashboards and reports that non-technical stakeholders can act on. I hold professional certificates in data analytics (Google, IBM), statistics (Wolfram), Power BI (Microsoft), and ITIL 4 service management, and I keep building on that foundation through applied projects — the ones in this repo are documented, tested, and reproducible.
