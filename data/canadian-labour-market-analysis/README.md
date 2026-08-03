@@ -10,6 +10,10 @@ star-schema warehouse, and answers real policy questions in pure SQL — from
 "how deep was the 2008 recession dip" to "how far has New Brunswick's
 unemployment rate sat above the national average, by decade".
 
+[![Unemployment charts from the warehouse queries](docs/screenshot.png)](docs/results/)
+
+Regenerated from the committed query results by `scripts/make_chart.py`.
+
 ## Problem
 
 StatsCan's downloadable tables are long, wide, and inconsistently formatted:
@@ -66,7 +70,7 @@ configs/example.yaml  table IDs, paths, query list (paths resolve to the project
 data/samples/         committed normalized samples (2020-2025) for a demo build
 data/raw/             downloaded StatsCan CSVs — gitignored, reproducible
 docs/results/         CSV output of every catalog query on the full dataset
-scripts/              download_data.sh, build_database.py
+scripts/              download_data.sh, build_database.py, make_chart.py
 tests/                59 hermetic tests (fixtures, schema, golden values, all queries)
 ```
 
