@@ -46,6 +46,38 @@ def balanced_sample_weights(y: np.ndarray) -> np.ndarray:
     return weights * (y.size / weights.sum())
 
 
+def staged_validation_auc(model, X, y, step: int = 10) -> list[dict]:
+    """Validation ROC-AUC after every ``step`` boosting iterations.
+
+    Reads the fitted model's staged predictions, so the curve is the real
+    training trajectory, not a re-fit. Returns an empty list for models
+    without staged predictions (e.g. logistic regression) or single-class
+    validation sets. The last point is the final fit.
+    """
+    if not hasattr(model, "staged_predict_proba"):
+        return []
+    if len(np.unique(np.asarray(y))) < 2:
+        return []
+    curve: list[dict] = []
+    for i, proba in enumerate(model.staged_predict_proba(X), start=1):
+        if i == 1 or i % step == 0:
+            curve.append(
+                {
+                    "iteration": i,
+                    "val_roc_auc": round(float(roc_auc_score(y, proba[:, 1])), 4),
+                }
+            )
+    if curve and curve[-1]["iteration"] != model.n_estimators:
+        final = model.predict_proba(X)[:, 1]
+        curve.append(
+            {
+                "iteration": int(model.n_estimators),
+                "val_roc_auc": round(float(roc_auc_score(y, final)), 4),
+            }
+        )
+    return curve
+
+
 def train_pipeline(
     X_train, y_train, cfg: Config, X_val=None, y_val=None, X_test=None, y_test=None,
     feature_names: list[str] | None = None,
@@ -139,6 +171,14 @@ def train_pipeline(
 
     _score(X_val, y_val, "validation")
     _score(X_test, y_test, "test")
+
+    # real training curve: validation ROC-AUC after every 10th boosting
+    # iteration, read off the fitted model's staged predictions. The last
+    # point is the final fit and matches the validation metric above.
+    if X_val is not None and y_val is not None:
+        curve = staged_validation_auc(best_model, scaler.transform(X_val), y_val)
+        if curve:
+            metrics["training_curve"] = curve
 
     if hasattr(best_model, "feature_importances_"):
         importance = best_model.feature_importances_

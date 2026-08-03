@@ -77,6 +77,18 @@ def _importance_figure(top_features: list[dict]) -> plt.Figure:
     return fig
 
 
+def _training_curve_figure(curve: list[dict]) -> plt.Figure:
+    iters = [p["iteration"] for p in curve]
+    aucs = [p["val_roc_auc"] for p in curve]
+    fig, ax = plt.subplots(figsize=(6.2, 4.0))
+    ax.plot(iters, aucs, lw=2, color="#2c7fb8", marker="o", ms=3)
+    ax.set_xlabel("Boosting iteration")
+    ax.set_ylabel("Validation ROC-AUC")
+    ax.set_title("Validation ROC-AUC during training")
+    ax.grid(True, alpha=0.3)
+    return fig
+
+
 def _curves_figure(raw_sample_path: Path) -> plt.Figure | None:
     """Plot four real light curves from the committed raw sample."""
     if not Path(raw_sample_path).is_file():
@@ -175,7 +187,7 @@ HTML_TEMPLATE = Template(
       <div class="value">$test_auc</div></div>
     <div class="card"><div class="label">Test PR-AUC</div>
       <div class="value">$test_pr_auc</div></div>
-    <div class="card"><div class="label">Training curves</div>
+    <div class="card"><div class="label">Train size</div>
       <div class="value">$train_size</div></div>
   </div>
 
@@ -196,6 +208,8 @@ HTML_TEMPLATE = Template(
       <figure><img src="$pr_img" alt="Precision-recall curve"></figure>
     </div>
   </section>
+
+  $training_curve_section
 
   <section>
     <h2>What the model looks at</h2>
@@ -274,6 +288,18 @@ def build_html_report(cfg: Config, metrics: dict, artifacts: dict) -> str:
 
     importance_img = _img_tag(_importance_figure(metrics.get("top_features", [])))
 
+    training_curve_section = ""
+    curve = metrics.get("training_curve") or []
+    if curve:
+        tc_img = _img_tag(_training_curve_figure(curve))
+        training_curve_section = (
+            "<section><h2>Training curve</h2>"
+            '<div class="charts"><figure><img src="' + tc_img
+            + '" alt="Validation ROC-AUC during training"></figure></div>'
+            "<p>Validation ROC-AUC measured after every 10th boosting iteration of "
+            "the chosen model; the last point is the fitted model.</p></section>"
+        )
+
     curves_html = ""
     curves_fig = _curves_figure(cfg.paths.raw_sample)
     if curves_fig is not None:
@@ -294,9 +320,7 @@ def build_html_report(cfg: Config, metrics: dict, artifacts: dict) -> str:
     return HTML_TEMPLATE.substitute(
         generated_at=html_mod.escape(generated),
         chosen_model=html_mod.escape(metrics["chosen_model"]),
-        cv_auc=html_mod.escape(
-            f"{metrics['cv_roc_auc_mean']} &plusmn; {metrics['cv_roc_auc_std']}"
-        ),
+        cv_auc=f"{metrics['cv_roc_auc_mean']} &plusmn; {metrics['cv_roc_auc_std']}",
         test_auc=f"{test_auc:.3f}",
         test_pr_auc=f"{test_pr:.3f}",
         train_size=str(metrics.get("train_size", "?")),
@@ -306,6 +330,7 @@ def build_html_report(cfg: Config, metrics: dict, artifacts: dict) -> str:
         pr_img=pr_img,
         importance_img=importance_img,
         curves_figure_html=curves_html,
+        training_curve_section=training_curve_section,
         importance_note=html_mod.escape(importance_note),
     )
 

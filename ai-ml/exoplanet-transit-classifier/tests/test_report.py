@@ -37,6 +37,21 @@ def _trained(tmp_path, separable_curves_csv):
     return cfg, metrics, artifacts
 
 
+def _persist_artifacts(tmp_path, cfg, separable_curves_csv):
+    """Write the feature matrices + raw sample so the report can recompute
+    curves exactly like a real `train` run."""
+    import pandas as pd
+
+    flux, y = load_light_curves(separable_curves_csv)
+    df = build_feature_frame(flux, y, cfg.features)
+    df.iloc[:80].to_csv(cfg.paths.feature_train, index=False)
+    df.iloc[80:100].to_csv(cfg.paths.feature_val, index=False)
+    df.iloc[100:].to_csv(cfg.paths.feature_test, index=False)
+    sample = pd.DataFrame(flux[:4])
+    sample.insert(0, "label", y[:4] + 1)
+    sample.to_csv(cfg.paths.raw_sample, index=False)
+
+
 def test_render_text_contains_key_results():
     metrics = {
         "chosen_model": "gradient_boosting",
@@ -57,28 +72,32 @@ def test_render_text_contains_key_results():
 
 def test_html_report_full(tmp_path, separable_curves_csv):
     cfg, metrics, artifacts = _trained(tmp_path, separable_curves_csv)
-    # persist the feature matrices + committed-style raw sample so the
-    # report can recompute curves exactly like a real `train` run
-    import pandas as pd
-
-    flux, y = load_light_curves(separable_curves_csv)
-    df = build_feature_frame(flux, y, cfg.features)
-    df.iloc[:80].to_csv(cfg.paths.feature_train, index=False)
-    df.iloc[80:100].to_csv(cfg.paths.feature_val, index=False)
-    df.iloc[100:].to_csv(cfg.paths.feature_test, index=False)
-    sample = pd.DataFrame(flux[:4])
-    sample.insert(0, "label", y[:4] + 1)
-    sample.to_csv(cfg.paths.raw_sample, index=False)
-
+    _persist_artifacts(tmp_path, cfg, separable_curves_csv)
     html = build_html_report(cfg, metrics, artifacts)
     assert "<title>Exoplanet transit classifier — results</title>" in html
     assert metrics["chosen_model"] in html  # whatever won the comparison
     assert "ROC-AUC" in html
     assert "$" not in html  # no Template placeholders left behind
-    assert html.count("data:image/png;base64,") == 4  # roc, pr, importance, curves
+    # roc, pr, importance, sample light curves (+ training curve if boosting won)
+    expected = 5 if metrics.get("training_curve") else 4
+    assert html.count("data:image/png;base64,") == expected
     for part in html.split("data:image/png;base64,")[1:]:
         b64 = part.split('"')[0]
         assert base64.b64decode(b64)[:8] == b"\x89PNG\r\n\x1a\n"  # PNG magic
+
+
+def test_html_report_training_curve_section(tmp_path, separable_curves_csv):
+    cfg, metrics, artifacts = _trained(tmp_path, separable_curves_csv)
+    metrics["training_curve"] = [
+        {"iteration": 1, "val_roc_auc": 0.60},
+        {"iteration": 15, "val_roc_auc": 0.85},
+        {"iteration": 30, "val_roc_auc": 0.92},
+    ]
+    _persist_artifacts(tmp_path, cfg, separable_curves_csv)
+    html = build_html_report(cfg, metrics, artifacts)
+    assert "Training curve" in html
+    assert "Validation ROC-AUC during training" in html
+    assert html.count("data:image/png;base64,") == 5
 
 
 def test_html_escapes_text(tmp_path, separable_curves_csv):

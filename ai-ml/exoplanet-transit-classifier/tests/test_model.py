@@ -14,6 +14,7 @@ from exoplanet_classifier.model import (
     predict,
     save_metrics,
     save_model,
+    staged_validation_auc,
     train_pipeline,
 )
 
@@ -89,6 +90,40 @@ def test_train_pipeline_on_separable_data(tmp_path, separable_curves_csv):
     for key in ("scaler", "model", "kind", "feature_names", "threshold"):
         assert key in artifacts
     assert artifacts["feature_names"] == names
+
+
+def test_staged_validation_auc_records_curve(tmp_path, separable_curves_csv):
+    from sklearn.ensemble import GradientBoostingClassifier
+    from sklearn.metrics import roc_auc_score
+    from sklearn.preprocessing import StandardScaler
+
+    cfg = _small_cfg(tmp_path)
+    X, y, names = _features_from_csv(separable_curves_csv, cfg.features)
+    X_tr, X_va, y_tr, y_va = X[:80], X[80:100], y[:80], y[80:100]
+    scaler = StandardScaler().fit(X_tr)
+    model = GradientBoostingClassifier(
+        n_estimators=30, max_depth=3, learning_rate=0.1, random_state=42
+    )
+    model.fit(scaler.transform(X_tr), y_tr)
+    curve = staged_validation_auc(model, scaler.transform(X_va), y_va)
+    assert curve and len(curve) >= 2
+    assert curve[0]["iteration"] == 1
+    assert curve[-1]["iteration"] == cfg.model.n_estimators
+    assert all(0.0 <= p["val_roc_auc"] <= 1.0 for p in curve)
+    final_auc = roc_auc_score(y_va, model.predict_proba(scaler.transform(X_va))[:, 1])
+    assert abs(curve[-1]["val_roc_auc"] - final_auc) < 1e-3
+    # monotone step size: points at 1, 10, 20, 30
+    assert [p["iteration"] for p in curve] == [1, 10, 20, 30]
+
+
+def test_staged_validation_auc_skips_non_boosting(tmp_path, separable_curves_csv):
+    from sklearn.linear_model import LogisticRegression
+
+    cfg = _small_cfg(tmp_path)
+    X, y, names = _features_from_csv(separable_curves_csv, cfg.features)
+    model = LogisticRegression(max_iter=500)
+    model.fit(X[:80], y[:80])
+    assert staged_validation_auc(model, X[80:100], y[80:100]) == []
 
 
 def test_train_pipeline_single_class_fails(tmp_path, synthetic_curves_csv):
