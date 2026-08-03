@@ -13,6 +13,8 @@ SuperWASP and NGTS data — here it is made reproducible and automated.
 
 The classification report is live on GitHub Pages: [docs/classification-report.html](https://richard-ws.github.io/Projects-Portfolio/ai-ml/exoplanet-transit-classifier/docs/classification-report.html).
 
+[![Exoplanet classifier report preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/ai-ml/exoplanet-transit-classifier/docs/classification-report.html)
+
 ## Problem
 
 - Kepler watched 150,000+ stars; most light curves contain no planet, and the

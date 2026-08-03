@@ -9,6 +9,8 @@ actually faces: every false alarm is a wasted drive swap.
 
 The failure-prediction report is live on GitHub Pages: [docs/disk-failure-report.html](https://richard-ws.github.io/Projects-Portfolio/it-ops/disk-failure-prediction/docs/disk-failure-report.html).
 
+[![Disk-failure prediction report preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/it-ops/disk-failure-prediction/docs/disk-failure-report.html)
+
 ## Problem
 
 - Backblaze publishes daily S.M.A.R.T. snapshots for the ~250,000 drives in

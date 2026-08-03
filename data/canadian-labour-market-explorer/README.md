@@ -6,6 +6,8 @@ build step, no external libraries.
 
 **Live demo:** [richard-ws.github.io/Projects-Portfolio/data/canadian-labour-market-explorer/dashboard/](https://richard-ws.github.io/Projects-Portfolio/data/canadian-labour-market-explorer/dashboard/)
 
+[![Canadian labour market dashboard preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/data/canadian-labour-market-explorer/dashboard/)
+
 ## What it shows
 
 - Unemployment, employment, participation, and youth vs prime-age

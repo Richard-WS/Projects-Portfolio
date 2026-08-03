@@ -15,6 +15,8 @@ cartographer drew, and the region names come from the same tongue.
 
 **Live demo:** [richard-ws.github.io/Projects-Portfolio/experiments/seedworlds/app/](https://richard-ws.github.io/Projects-Portfolio/experiments/seedworlds/app/)
 
+[![Seedworlds generated map preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/experiments/seedworlds/app/)
+
 ## The four forges
 
 | Forge | What it grows |

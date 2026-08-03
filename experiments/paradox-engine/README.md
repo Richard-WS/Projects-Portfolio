@@ -11,6 +11,8 @@ No AI, no network, no opinions: every verdict is computed on your machine.
 
 **Live demo:** [richard-ws.github.io/Projects-Portfolio/experiments/paradox-engine/app/](https://richard-ws.github.io/Projects-Portfolio/experiments/paradox-engine/app/)
 
+[![Paradox Engine interface preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/experiments/paradox-engine/app/)
+
 ## The four instruments
 
 | Instrument | What it breaks | How |

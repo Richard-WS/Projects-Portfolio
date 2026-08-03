@@ -4,6 +4,8 @@ A small, config-driven monitoring tool that checks whether your services are up,
 
 The demo report is live on GitHub Pages: [docs/demo-report.html](https://richard-ws.github.io/Projects-Portfolio/it-ops/infra-health-monitor/docs/demo-report.html).
 
+[![Infrastructure health demo report preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/it-ops/infra-health-monitor/docs/demo-report.html)
+
 ## Problem
 
 Most monitoring stacks are heavyweight for what small teams actually need: a few services, a couple of servers, one SLA commitment. Standing up an agent-based platform with a web dashboard is a lot of moving parts when the question is often just *"is it down, and how long was it down?"*

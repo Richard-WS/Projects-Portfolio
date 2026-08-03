@@ -5,6 +5,8 @@ every planet, plotted for every month from January 1900 to December 2100,
 with a controllable timeline. **2412 monthly frames, 8 planets, one
 self-contained HTML file.**
 
+[![Solar system viewer preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/experiments/solar-system-positions/viewer.html)
+
 ## Problem
 
 Textbook orbit diagrams are static snapshots. When you want to *feel* how

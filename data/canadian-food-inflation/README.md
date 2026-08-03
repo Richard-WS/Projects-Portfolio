@@ -4,6 +4,8 @@ How food prices have moved compared to overall inflation in Canada over the past
 
 The finished dashboard is live on GitHub Pages: [docs/dashboard.html](https://richard-ws.github.io/Projects-Portfolio/data/canadian-food-inflation/docs/dashboard.html).
 
+[![Grocery inflation dashboard preview](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/data/canadian-food-inflation/docs/dashboard.html)
+
 ## Dataset
 
 - **Source:** Statistics Canada, [Table 18-10-0004-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401) — Consumer Price Index, monthly, not seasonally adjusted
