@@ -103,6 +103,14 @@ def train(cfg: TrainConfig) -> dict:
 
     trainer.train()
 
+    # Per-step training loss from the trainer's log history (logging_steps=1),
+    # the data behind the training-curve chart.
+    loss_curve = [
+        {"step": h.get("step"), "train_loss": h["loss"]}
+        for h in trainer.state.log_history
+        if "loss" in h and "eval_loss" not in h
+    ]
+
     # Final evaluation with the trained adapter.
     final_metrics = trainer.evaluate(eval_dataset=eval_ds)
     final_ppl = math.exp(final_metrics["eval_loss"])
@@ -118,6 +126,7 @@ def train(cfg: TrainConfig) -> dict:
         "final_eval_loss": final_metrics["eval_loss"],
         "final_perplexity": final_ppl,
         "train_loss": trainer.state.log_history[-1].get("loss"),
+        "loss_curve": loss_curve,
         "output_dir": str(out_dir),
         "trainable_params": sum(p.numel() for p in model.parameters() if p.requires_grad),
     }

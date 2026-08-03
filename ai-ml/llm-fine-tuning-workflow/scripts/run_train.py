@@ -32,11 +32,14 @@ def main() -> None:
     print(f"baseline  eval loss: {metrics['baseline_eval_loss']:.4f}  perplexity: {metrics['baseline_perplexity']:.2f}")
     print(f"final     eval loss: {metrics['final_eval_loss']:.4f}  perplexity: {metrics['final_perplexity']:.2f}")
     print(f"trainable parameters: {metrics['trainable_params']:,}")
+    print(f"loss curve: {len(metrics['loss_curve'])} training steps recorded")
     print(f"adapter saved to: {metrics['output_dir']}")
 
     (PROJECT_ROOT / "outputs").mkdir(exist_ok=True)
     (PROJECT_ROOT / "outputs" / "train_metrics.json").write_text(json.dumps(metrics, indent=2))
     print("metrics -> outputs/train_metrics.json")
+    (PROJECT_ROOT / "outputs" / "loss_curve.json").write_text(json.dumps(metrics["loss_curve"], indent=2))
+    print("loss curve -> outputs/loss_curve.json")
 
 
 if __name__ == "__main__":
