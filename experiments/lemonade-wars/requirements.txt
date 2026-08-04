@@ -1,6 +1,0 @@
-# the game itself
-pygame-ce>=2.5
-
-# web build — optional, only needed to rebuild the GitHub Pages version:
-#   pip install pygbag
-#   ./build_web.sh

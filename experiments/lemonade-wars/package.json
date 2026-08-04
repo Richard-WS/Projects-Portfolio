@@ -1,0 +1,13 @@
+{
+  "name": "lemonade-wars",
+  "version": "2.0.0",
+  "description": "Zero-dependency browser business simulator — lemonade empire economics with market, weather, staff and finance. The JS core is a port of the tested Python sim (src/lemonwars), which stays in the repo as the behavioral spec.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

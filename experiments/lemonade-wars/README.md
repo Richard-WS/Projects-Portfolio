@@ -2,14 +2,15 @@
 
 A single-player business simulation that blends the recipe economics of
 *Lemonade Stand* with the travelling commodity markets of *Drug Wars*: you
-run a lemonade cart that grows into a beverage empire across five city
+run a lemonade cart that grows into a beverage empire across ten city
 districts. Every decision is a business decision — sourcing, pricing,
 production, logistics, staffing, finance, marketing, and risk.
 
-**Play it in your browser:** https://richard-ws.github.io/Projects-Portfolio/experiments/lemonade-wars/web/
-(runs on phones and laptops — the UI adapts to portrait and landscape)
+**Play it in your browser:** https://richard-ws.github.io/Projects-Portfolio/experiments/lemonade-wars/
+(opens instantly — it's a zero-dependency static page, no frameworks, no
+build step, no downloads; works on phones and laptops)
 
-[![Lemonade Wars game screen](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/experiments/lemonade-wars/web/)
+[![Lemonade Wars game screen](docs/screenshot.png)](https://richard-ws.github.io/Projects-Portfolio/experiments/lemonade-wars/)
 
 ## Problem
 
@@ -22,12 +23,14 @@ something you design, and the *market* is something you move between.
 
 ## Approach
 
-The whole game is a pure-Python simulation core with a thin Pygame UI:
+The whole game is a zero-dependency browser app: plain JavaScript modules
+over a DOM UI, with the simulation logic ported 1:1 from a tested Python
+core that stays in the repo as the behavioral spec.
 
-1. **Simulation core (`src/lemonwars/`, zero pygame imports).** A day-cycle
-   engine with deterministic seeded RNG, so every campaign is reproducible
-   and the whole game runs headless in CI.
-   - **Market** — five districts, each with its own ingredient prices that
+1. **Simulation core (`js/`, pure logic, no DOM).** A day-cycle engine with
+   a deterministic seeded RNG, so every campaign is reproducible and the
+   whole game runs headless in CI.
+   - **Market** — ten districts, each with its own ingredient prices that
      drift daily and react to supply shocks; price arbitrage pays for
      travelling between districts (the *Drug Wars* half).
    - **Recipe designer** — pick ingredients, sweetness, ice level and
@@ -43,73 +46,66 @@ The whole game is a pure-Python simulation core with a thin Pygame UI:
      to restaurant.
    - **Autoplay** — a scripted greedy player that plays complete campaigns,
      which is also what the smoke tests run headlessly.
-2. **Responsive UI (`src/lemonwars/ui/`).** Renders to a fixed logical grid
-   (1280×800 landscape / 720×1280 portrait, chosen from the window aspect)
-   then aspect-fits it onto the real window — one layout codebase that
-   adapts to laptops and phones. Touch is just click: pygbag maps taps to
-   mouse events.
-3. **Dual delivery.** `python main.py` runs the desktop version; a committed
-   pygbag build under `web/` runs in any browser from GitHub Pages.
-   Rebuild with `./build_web.sh`.
+2. **Python core (`src/lemonwars/`, reference spec).** The original
+   simulation, kept intact and fully tested. It defines every behavior the
+   JS port must match — the two suites are checked together in CI.
+3. **DOM UI (`js/app.js` + `css/`).** No game loop, no canvas, no render
+   thread: the UI re-renders only on player actions, which is what makes
+   the app instant to load and impossible to wedge. Save/load uses
+   `localStorage`; a seeded "Autoplay" button watches the simulation run.
 
 ## Results
 
-- **61 tests green** (run in CI on a bare runner — no display needed):
-  market drift and arbitrage, recipe cost/quality, demand and sales
-  resolution, day-cycle finance (taxes, interest, insurance, spoilage),
-  save/load round-trips, full-campaign autoplay, and a headless UI smoke
-  run that clicks through every screen and renders every tab in both
-  orientations.
+- **117 tests green across both suites** (run in CI on a bare runner — no
+  display needed):
+  - 60 JS tests (`node --test`): data-table invariants, market drift and
+    arbitrage, recipe cost/quality, demand and sales resolution, day-cycle
+    finance (taxes, interest, insurance, spoilage), bankruptcy and win
+    conditions, save/load round-trips (including mid-stream RNG position),
+    full-campaign autoplay.
+  - 57 Python tests (`pytest`): the reference core — same invariants, same
+    green CI.
 - The autoplay economy is stable: the scripted player survives 120-day
   campaigns and grows net worth on Normal; bankruptcy (debt ceiling, cash
   floor, or three health-code failures) is a real end state, not a formality.
 - Deterministic seeds make every run reproducible — a campaign on seed *N*
   is the same campaign on every platform.
+- Loads instantly: ~60 KB of JS and CSS, no network requests at runtime.
 
 ## How to run
 
-**Browser (no install):** open the web build link above.
-
-**Desktop:**
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python main.py
-```
+**Browser (no install):** open the link above.
 
 **Tests:**
 
 ```bash
-pip install -e ".[dev]"
+# JS port (Node 18+)
+node --test tests/*.test.js
+
+# Python reference core (pytest)
 python -m pytest
-```
-
-**Rebuild the web version:**
-
-```bash
-pip install pygbag
-./build_web.sh
 ```
 
 ## Project layout
 
 ```
 lemonade-wars/
-├── main.py                  # desktop entry point (also the pygbag target)
-├── build_web.sh             # rebuild + stage the web version
-├── web/                     # committed pygbag build, served by GitHub Pages
-├── src/lemonwars/
-│   ├── data.py              # static data: ingredients, districts, weather, …
-│   ├── market.py            # per-district ingredient markets
-│   ├── world.py             # weather & seasons
-│   ├── recipes.py           # recipe designer: usage, flavour, cost, quality
-│   ├── customers.py         # demand model + daily sales resolution
-│   ├── player.py            # player state, staff, spoilage
-│   ├── events.py            # random events + achievements
-│   ├── sim.py               # GameState: day cycle, actions, finance, endgame
-│   ├── saveload.py          # JSON save/load
-│   ├── autoplay.py          # scripted player for tests & demo
-│   └── ui/                  # responsive Pygame UI (theme, widgets, screens)
-└── tests/                   # 61 tests across 7 suites
+├── index.html              # app shell: title → difficulty → game → report → end
+├── css/style.css           # dark #0f151e theme
+├── js/
+│   ├── data.js             # static data: ingredients, districts, weather, …
+│   ├── market.js           # per-district ingredient markets
+│   ├── world.js            # weather & seasons
+│   ├── recipes.js          # recipe designer: usage, flavour, cost, quality
+│   ├── customers.js        # demand model + daily sales resolution
+│   ├── player.js           # player state, staff, spoilage
+│   ├── events.js           # random events + achievements
+│   ├── sim.js              # GameState: day cycle, actions, finance, endgame
+│   ├── rng.js              # seeded PRNG with save/restore
+│   ├── saveload.js         # localStorage save/load
+│   ├── autoplay.js         # scripted player for tests & demo
+│   └── app.js              # DOM UI: screens, tabs, actions
+├── src/lemonwars/          # Python reference core (behavioral spec)
+├── tests/                  # 60 JS tests (node:test)
+└── docs/screenshot.png     # real render of the running app
 ```
