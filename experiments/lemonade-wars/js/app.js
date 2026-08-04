@@ -5,8 +5,19 @@
 import { GameState } from "./sim.js";
 import { Autoplay } from "./autoplay.js";
 import { Recipe } from "./recipes.js";
+import { EVENTS } from "./events.js";
 import { ADS, DIFFICULTIES, DISTRICTS, EQUIPMENT, INGREDIENTS, INSURANCE_TYPES, LOAN_OPTIONS, PRODUCTS, TECH, TIERS, season_for_day } from "./data.js";
 import { districtIdeal, expectedCustomers, productFit, referencePrice } from "./customers.js";
+
+// Human-readable names for the event keys an insurance policy covers.
+// Some covers keys are abbreviations (recall, inspection_fine, fraud, cyber)
+// rather than event names — prettify those as a fallback.
+const EVENT_NAME = {};
+for (const ev of EVENTS) EVENT_NAME[ev.key] = ev.name;
+const coversDesc = (covers) =>
+  covers
+    .map((k) => EVENT_NAME[k] ?? k.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()))
+    .join(", ");
 
 const SAVE_KEY = "lemonade-wars-save";
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -579,7 +590,7 @@ function renderFinance(host) {
     const active = p.insurance.has(ins.key);
     return `<tr>
       <td>${esc(ins.name)}</td>
-      <td class="muted">${esc(ins.desc)}</td>
+      <td class="muted">${esc(coversDesc(ins.covers))}</td>
       <td class="num">${fmtNum(ins.premium)}/wk</td>
       <td>${active ? `<button data-toggle-ins="${ins.key}">Cancel</button>` : `<button class="primary" data-toggle-ins="${ins.key}" ${p.cash >= ins.premium ? "" : "disabled"}>Take</button>`}</td>
     </tr>`;
