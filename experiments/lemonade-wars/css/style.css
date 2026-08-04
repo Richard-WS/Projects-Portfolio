@@ -252,4 +252,40 @@ table.data tr:hover td { background: rgba(127, 168, 240, 0.05); }
   .topbar { gap: 6px; }
   .topbar .stat { min-width: 70px; }
   .diff-card { width: 100%; max-width: 320px; }
+
+  /* Tables must never outgrow their panel: block + internal scroll keeps
+     the panel background covering the full width while the table stays
+     reachable; cells wrap and buttons shrink so most tables fit outright. */
+  table.data {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.82rem;
+  }
+  table.data th, table.data td {
+    white-space: normal;
+    padding: 3px 3px;
+  }
+  table.data th { font-size: 0.7rem; letter-spacing: 0.4px; }
+  table.data td:first-child, table.data th:first-child { white-space: normal; }
+
+  /* keep numeric cells readable when they wrap */
+  table.data .num { font-size: 0.8rem; }
+  .badge { font-size: 0.6rem; padding: 1px 4px; }
+
+  /* smaller buttons so action columns fit on narrow screens */
+  button { padding: 4px 8px; font-size: 0.85rem; }
+
+  /* form controls: give selects/inputs room so option text is not cut off */
+  .row select, .row input[type="number"] { max-width: 170px; }
+
+  /* drop non-essential columns on phones (Travel button already shows the
+     price; storage/max-serve are secondary to the tier stats) */
+  .hide-sm { display: none; }
+
+  /* compact market buy controls so the action column fits */
+  .qty-control { gap: 3px; flex-wrap: wrap; }
+  .qty-control input[type="number"] { width: 38px !important; padding: 3px 4px; }
+  .qty-control button { padding: 3px 6px; }
+  .qty-control .primary { flex-basis: 100%; }
 }

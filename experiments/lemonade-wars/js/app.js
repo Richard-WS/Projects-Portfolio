@@ -223,13 +223,13 @@ function renderMarket(host) {
       <h3>Ingredient Market — ${esc(DISTRICTS[d0].name)}</h3>
       <p class="hint mb">Prices move daily with supply, season and events. Buying below the ${esc(DISTRICTS[d0].name)} baseline is a bargain. Storage: <b>${int(p.storageUsed())}/${int(p.capacity())}</b> units.</p>
       <table class="data">
-        <thead><tr><th>Ingredient</th><th>Price/unit</th><th>Baseline</th><th>Stock</th><th></th></tr></thead>
+        <thead><tr><th>Ingredient</th><th>Price/unit</th><th class="hide-sm">Baseline</th><th>Stock</th><th></th></tr></thead>
         <tbody>
           ${rows.map(({ key, ing, price, stock, base, deal }) => `
             <tr>
               <td>${esc(ing.name)}</td>
               <td class="num ${deal ? "pos" : ""}">${fmtNum(price)}</td>
-              <td class="num faint">${fmtNum(base)}</td>
+              <td class="num faint hide-sm">${fmtNum(base)}</td>
               <td class="num">${stock ? fmtNum(stock) : "—"}</td>
               <td>${qtySel(key)}</td>
             </tr>`).join("")}
@@ -431,11 +431,11 @@ function renderDistricts(host) {
     const visited = p.visited.has(d.key);
     return `
       <tr>
-        <td>${esc(d.name)} ${d.key === current ? '<span class="badge good">here</span>' : ""} ${visited ? '<span class="badge">visited</span>' : ""}</td>
+        <td>${esc(d.name)} ${d.key === current ? '<span class="badge good">here</span>' : ""} ${visited ? '<span class="badge hide-sm">visited</span>' : ""}</td>
         <td class="num">${pct(d.demand)}</td>
-        <td class="num">${pct(d.competition)}</td>
-        <td class="num">${fmtNum(d.cost_mult)}</td>
-        <td class="num">${fmtNum(d.fuel)}</td>
+        <td class="num hide-sm">${pct(d.competition)}</td>
+        <td class="num hide-sm">${fmtNum(d.cost_mult)}</td>
+        <td class="num hide-sm">${fmtNum(d.fuel)}</td>
         <td>
           ${d.key === current
             ? '<span class="faint">Current</span>'
@@ -452,7 +452,7 @@ function renderDistricts(host) {
       <h3>Districts — ${esc(DISTRICTS[current].name)}</h3>
       <p class="hint mb">Demand is how busy the district is, competition is rivals cutting into it, cost_mult scales ingredient prices, fuel is the trip cost in fuel units.</p>
       <table class="data">
-        <thead><tr><th>District</th><th>Demand</th><th>Competition</th><th>Cost ×</th><th>Fuel</th><th></th></tr></thead>
+        <thead><tr><th>District</th><th>Demand</th><th class="hide-sm">Competition</th><th class="hide-sm">Cost ×</th><th class="hide-sm">Fuel</th><th></th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>
@@ -482,7 +482,7 @@ function renderStaff(host) {
       <tr>
         <td>${esc(role.name)}</td>
         <td class="num">$${fmtNum(role.salary)}/day</td>
-        <td class="num">${emp ? fmtNum(emp.skill) : "—"}</td>
+        <td class="num hide-sm">${emp ? fmtNum(emp.skill) : "—"}</td>
         <td class="num">${emp ? pct(emp.morale) : "—"}</td>
         <td>${emp
           ? `<button data-fire="${key}">Fire</button>`
@@ -495,7 +495,7 @@ function renderStaff(host) {
       <h3>Staff</h3>
       <p class="hint mb">Staff cost a daily wage, add bonuses to service, quality and cleanliness, and morale drifts down slowly.</p>
       <table class="data">
-        <thead><tr><th>Role</th><th>Wage</th><th>Skill</th><th>Morale</th><th></th></tr></thead>
+        <thead><tr><th>Role</th><th>Wage</th><th class="hide-sm">Skill</th><th>Morale</th><th></th></tr></thead>
         <tbody>${staffRows}</tbody>
       </table>
     </div>
@@ -624,19 +624,19 @@ function renderFinance(host) {
     <div class="panel">
       <h3>Upgrades</h3>
       <table class="data">
-        <thead><tr><th>Tier</th><th>Cost</th><th>Storage</th><th>Customers</th><th>Max serve</th><th></th></tr></thead>
+        <thead><tr><th>Tier</th><th>Cost</th><th class="hide-sm">Storage</th><th>Customers</th><th class="hide-sm">Max serve</th><th></th></tr></thead>
         <tbody>
           ${TIERS.map((t, i) => {
             const cur = i === p.tier_idx;
             const nextTier = i === p.tier_idx + 1;
             const locked = i > p.tier_idx + 1;
             return `<tr>
-              <td>${esc(t.name)} ${cur ? '<span class="badge good">current</span>' : ""}</td>
+              <td>${esc(t.name)}</td>
               <td class="num">${fmtNum(t.cost)}</td>
-              <td class="num">${int(t.storage)}</td>
+              <td class="num hide-sm">${int(t.storage)}</td>
               <td class="num">${pct(t.cust_mult)}</td>
-              <td class="num">${int(t.max_serve)}</td>
-              <td>${nextTier ? `<button class="primary" id="btn-upgrade">Upgrade</button>` : locked ? '<span class="faint">locked</span>' : '<span class="faint">—</span>'}</td>
+              <td class="num hide-sm">${int(t.max_serve)}</td>
+              <td>${cur ? '<span class="faint">current</span>' : nextTier ? `<button class="primary" id="btn-upgrade">Upgrade</button>` : locked ? '<span class="faint">locked</span>' : '<span class="faint">—</span>'}</td>
             </tr>`;
           }).join("")}
         </tbody>
